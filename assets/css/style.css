@@ -1,0 +1,25 @@
+html {
+    margin:none;
+    padding:none;
+
+}
+
+h1 {
+    display:inline;
+}
+
+#visit {
+    background: linear-gradient(to top, #081130 0%, #479dee 100%);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing:-2px;
+}
+
+#galway {
+    background: linear-gradient(to bottom, #BA2D0B 0%, #140329 100%);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight:700;
+}
+
+.header-bar
