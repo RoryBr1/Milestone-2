@@ -25,19 +25,20 @@
             <a href="" class="nav-link"> <i class="fas fa-paper-plane" id="contact-desktop"></i> Contact</a>
         </nav>
 
-        <!-- Mobile Navbar -->
+        <!-- Mobile Navbar Toggle Button -->
         <div id="menu-button"><!-- Menu icon, when clicked toggles #mobile-nav visibility using assets/js/toggle.js -->
             <span data-toggle-target="#mobile-nav" id="menu-toggle"  class="toggle-btn"><i class="fas fa-bars"></i></span>
         </div>
-
-        <nav id="mobile-nav" class="invisible">
-            <ul id="mobile-nav-list">
-                <a href="index.html" class="nav-link"><li id="home"> <i class="fas fa-book-open"></i> Home </li> </a>
-                <a href="plan-a-visit.html" class="nav-link"><li id="plan-a-visit"> <i class="fas fa-map-marked"></i> Plan a Visit </li> </a>
-                <a href="" class="nav-link"><li id="contact"><i class="fas fa-paper-plane"></i> Contact </li> </a>
-            </ul>
-        </nav><!-- #mobile-nav -->
     </div><!-- .header-bar -->
+
+    <!-- Mobile Navbar (this sits outside .header-bar to avoid the .header-bar background color being applied )-->
+    <nav id="mobile-nav" class="invisible">
+        <ul id="mobile-nav-list">
+            <a href="index.html" class="nav-link"><li id="home"> <i class="fas fa-book-open"></i> Home </li> </a>
+            <a href="plan-a-visit.html" class="nav-link"><li id="plan-a-visit"> <i class="fas fa-map-marked"></i> Plan a Visit </li> </a>
+            <a href="" class="nav-link"><li id="contact"><i class="fas fa-paper-plane"></i> Contact </li> </a>
+        </ul>
+    </nav><!-- #mobile-nav -->
 
     <div class="welcome-text">
         <p> Galway, a harbour city on Ireland’s west coast, sits where the River Corrib meets the Atlantic Ocean. 

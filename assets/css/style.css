@@ -114,7 +114,8 @@ nav a:hover {
 
 #socials-footer {
     margin:auto;
-    width:95%;
+    margin-top:10px;
+    width:75%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     background: rgba(71, 157, 238,0.7);
@@ -145,7 +146,7 @@ nav a:hover {
 }
 
 #text-footer {
-    max-width:95%;
+    max-width:75%;
     margin:auto;
     padding-top:12px;
     padding-bottom:12px;
@@ -184,6 +185,9 @@ nav a:hover {
     .welcome-text {
         width:80%;
     }
+
+    #socials-footer {
+        width:95%;
 }
 
 /* MOBILE RESOLUTION */
@@ -202,8 +206,8 @@ nav a:hover {
     }
 
     .menu-button-clicked {
-        color:black;
-        text-shadow:0px 0px 5px royalblue;
+        color:rgb(78, 78, 78);
+        text-shadow:0px 0px 5px white;
     }
 
     #mobile-nav {
@@ -252,15 +256,15 @@ nav a:hover {
     }
 
     #home {
-        background-color:#22446d91;
+        background-color: rgba(40, 98, 168,0.85);
     }
 
     #plan-a-visit {
-        background-color:#67131D91;
+        background-color: rgba(103, 19, 29,0.85);
     }
 
     #contact {
-        background-color:#14094991;
+        background-color: rgba(20, 9, 73,0.8);
     }
 
     .visible {
