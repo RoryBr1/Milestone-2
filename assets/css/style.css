@@ -1,25 +1,247 @@
-html {
-    margin:none;
-    padding:none;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
 
+html {
+    background-image: url("../images/background.jpg");
+    min-width:601;
+    margin:0;
+    padding:0;
+    background-size:cover;
+    background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+::selection {
+    color: none;
+    background: none;
+}
+
+body {
+    background:none;
+    padding:0;
+    margin:0;
 }
 
 h1 {
     display:inline;
 }
 
+a {
+    text-decoration:none;
+}
+
 #visit {
+    font-size:2.5rem;
     background: linear-gradient(to top, #081130 0%, #479dee 100%);
+    background-clip:text;
 	-webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-weight:500;
     letter-spacing:-2px;
+    margin-left:8%;
+    vertical-align: middle;
 }
 
 #galway {
+    font-size:2.5rem;
     background: linear-gradient(to bottom, #BA2D0B 0%, #140329 100%);
+    background-clip:text;
 	-webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight:700;
+    vertical-align: middle;
 }
 
-.header-bar
+#hooker {
+    vertical-align:middle;
+}
+
+.header-bar {
+    box-sizing: border-box;
+    width:100%;
+    background: rgba(255,255,255,0.5);
+    padding:0;
+    margin:0;
+}
+
+#desktop-nav {
+    display:inline;
+    vertical-align: middle;
+    font-size:2rem;
+    font-weight:400;
+    vertical-align: middle;
+    margin-left:14%;
+}
+
+#desktop-nav a {
+    color:royalblue;
+    margin-right:5%;
+    animation-name:fadeBounce;
+    animation-duration:1.2s;
+    transition-property:background-color,border-color,text-shadow;
+	transition-duration:.3s;
+}
+
+nav a:hover {
+    text-shadow: 0px 0px 16px #4a71ff;
+}
+
+#desktop-nav i {
+    color:rgba(65,105,225,0.5);
+    padding-right:5px;
+}
+
+#menu-button {
+    display:none;
+}
+
+.invisible { /* This class is toggled on #mobile-nav when #menu-button is clicked*/
+    display:none;
+}
+
+.welcome-text {
+    background: rgba(255,255,255,0.7);
+    box-shadow:rgba(255,255,255,0.6);
+    width:60%;
+    margin:auto;
+    margin-top:10px;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:20px;
+    padding-right:20px;
+    border-radius:8px;
+}
+
+/* SMALL DESKTOP AND TABLET DEVICES */
+@media screen and (max-width:1280px) {
+    #visit, #galway {
+        font-size:2rem;
+    }
+
+    #desktop-nav {
+        margin-top:40px;
+        float:right;
+        margin-right:2%;
+    }
+
+    #desktop-nav a {
+        font-size:1.3rem;
+        margin-right:15px;
+    }
+
+    #desktop-nav {
+        margin-left:3%;
+    }
+
+    #desktop-nav i {
+        padding-right:none;
+    }
+
+    .welcome-text {
+        width:80%;
+    }
+}
+
+/* MOBILE RESOLUTION */
+@media screen and (max-width:768px) {
+    #desktop-nav {
+        display:none;
+    }
+
+    #menu-button {
+        cursor:pointer;
+        display:inline;
+        float:right;
+        margin-top:30px;
+        margin-right:5%;
+        font-size:3rem;
+    }
+
+    .menu-button-clicked {
+        color:black;
+        text-shadow:0px 0px 5px royalblue;
+    }
+
+    #mobile-nav {
+        animation-name:fadeBounce;
+        animation-duration:1.2s;
+        transition-property:background-color,border-color,text-shadow;
+        transition-duration:.3s;
+    }
+
+    #mobile-nav i {
+        color:rgba(255,255,255,0.5);
+        text-shadow:none;
+        padding-right:10px;
+    }
+
+    nav a {
+        font-size:1.4rem;
+        color:rgba(255,255,255,0.8);
+        text-shadow:0px 0px 3px rgba(0,0,0,0.5);
+        animation-name:fadeBounce;
+        animation-duration:1.2s;
+        transition-property:background-color,border-color,text-shadow;
+        transition-duration:.3s;
+    }
+
+    nav a:hover {
+        color:rgba(255,255,255,1);
+        text-shadow:0px 0px 6px rgba(255, 255, 255, 0.4);
+        animation-name:fadeBounce;
+        animation-duration:1.2s;
+        transition-property:background-color,border-color,text-shadow;
+        transition-duration:.3s;
+    }
+
+    ul {
+        padding-inline-start: 0px;
+    }
+
+    #home, #plan-a-visit, #contact {
+        padding-top:15px;
+        padding-bottom:15px;
+        margin-left:none;
+        list-style:none;
+        width:100%;
+        text-align:center;
+    }
+
+    #home {
+        background-color:#22446d91;
+    }
+
+    #plan-a-visit {
+        background-color:#67131D91;
+    }
+
+    #contact {
+        background-color:#14094991;
+    }
+
+    .visible {
+        display:block;
+    }
+}
+
+/*  ANIMATIONS  */
+@keyframes fadeBounce {
+	0% {
+		opacity:0;
+		transform: translateY(-200%);
+	}
+
+	50% {
+		transform:translateY(2px);
+	}
+
+	85% {
+    transform: translateY(-1px);
+    }
+
+	100% {
+		opacity:1;
+		transform:translateY(0);
+	}
+
+}
