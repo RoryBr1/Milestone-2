@@ -151,7 +151,7 @@ nav a:hover {
 }
 
 #text-footer {
-    max-width:75%;
+    width:75%;
     margin:auto;
     padding-top:12px;
     padding-bottom:12px;
@@ -190,9 +190,6 @@ nav a:hover {
     .welcome-text {
         width:80%;
     }
-
-    #socials-footer {
-        width:95%;
 }
 
 /* MOBILE RESOLUTION */
@@ -275,6 +272,14 @@ nav a:hover {
     .visible {
         display:block;
     }
+
+    #socials-footer {
+        width:95%;
+    }
+
+    #text-footer {
+        width:95%;
+    }
 }
 
 /*  ANIMATIONS  */
@@ -296,5 +301,4 @@ nav a:hover {
 		opacity:1;
 		transform:translateY(0);
 	}
-
 }
