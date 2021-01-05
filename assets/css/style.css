@@ -110,6 +110,7 @@ nav a:hover {
     width:60%;
     margin:auto;
     margin-top:10px;
+    margin-bottom:10px;
     padding-top:10px;
     padding-bottom:10px;
     padding-left:20px;
@@ -122,12 +123,22 @@ nav a:hover {
     margin:auto;
 }
 
+.map-buttons i {
+    opacity:60%;
+    padding-right:7%;
+}
+
 .map-buttons button {
     padding-top:8px;
     padding-bottom:8px;
     color:rgba(255,255,255,0.85);
     text-shadow: 0px 0px 3px rgba(0,0,0,0.3);
     border:none;
+    cursor:pointer;
+}
+
+.map-buttons button:hover {
+    color:rgba(255,255,255,1);
 }
 
 #hotels {
@@ -169,7 +180,7 @@ nav a:hover {
     background: rgba(71, 157, 238,0.7);
     height:60px;
     text-align:center;
-    padding-top:3px;
+    padding-top:6px;
     padding-bottom:3px;
 }
 
@@ -314,6 +325,18 @@ nav a:hover {
 
     .visible {
         display:block;
+    }
+
+    .map-buttons {
+        width:100%;
+        margin:auto;
+        margin-top:10px;
+    }
+
+    .map-buttons button {
+        font-size:1.5rem;
+        width:49.5%;
+        margin-left:0.5px;
     }
 
     #socials-footer {
