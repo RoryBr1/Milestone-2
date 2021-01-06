@@ -9,11 +9,7 @@
     <!-- FontAwesome: --> <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <!-- Custom CSS: --> <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <!-- jQUERY: --> <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- Map.js: --> <script src="assets/js/map.js"></script>
-    <!-- Google Maps JavaScript API --><script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDA89XweA-rkbA7g9oVUV3dwGYHmWCAdOQ&callback=initMap&libraries=&v=weekly"
-      defer
-    ></script>
+
 </head>
 
 <body>
@@ -58,10 +54,12 @@
         <button id="nature"> <i class="fas fa-tree"></i> Nature</button>
         <button id="activities"> <i class="fas fa-hiking"></i> Activities</button>
 
-        <div id="map"></div>
+      
     </div>
 
-  
+    <div id="map-container">
+        <div id="map"></div>
+    </div>
 
     <footer>
         <div id="socials-footer">
@@ -75,4 +73,9 @@
     </footer>
 </body>
     <!-- TOGGLE.js (used for toggling #mobile-nav with #menubutton): --> <script src="assets/js/toggle.js"></script>
+        <!-- Map.js: --> <script src="assets/js/map.js"></script>
+    <!-- Google Maps JavaScript API --><script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDA89XweA-rkbA7g9oVUV3dwGYHmWCAdOQ&callback=initMap&libraries=&v=weekly"
+    defer
+  ></script>
 </html>
