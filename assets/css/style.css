@@ -129,6 +129,13 @@ nav a:hover {
 }
 
 .map-buttons button {
+    opacity:96%;
+    background-color: rgba(103, 19, 29);;
+    font-size:2rem;
+    display:inline-block;
+    width:49.8%;
+    border-radius:4px;
+    margin-top:2px;
     padding-top:8px;
     padding-bottom:8px;
     color:rgba(255,255,255,0.85);
@@ -139,19 +146,6 @@ nav a:hover {
 
 .map-buttons button:hover {
     color:rgba(255,255,255,1);
-}
-
-.map-buttons button {
-    opacity:96%;
-    background-color: rgba(103, 19, 29);;
-    font-size:2rem;
-    display:inline-block;
-    width:49%;
-    border-radius:4px;
-    margin-top:2px;
-}
-
-.map-buttons button:hover {
     opacity:100%;
 }
 
@@ -159,8 +153,8 @@ nav a:hover {
     margin:0 auto;
     box-shadow: 0px 0px 6px rgba(0,0,0,0.8);
     margin-top:10px;
+    width:100%;
     height:500px;
-    width:65%;
     border-radius:4px;
 }
 
