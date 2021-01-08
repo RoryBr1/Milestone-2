@@ -9,36 +9,9 @@ function initMap() {
   });
 }
 
-
-// Restaurants
-const restaurantsButton = document.getElementById("restaurants");
-restaurantsButton.addEventListener("click", showRestaurants);
-
-let palasRestaurant = { position: {lat: 53.27039967529483, lng: -9.053005040529506},
-                        name: "Pálás Bar & Kitchen" };
-
-function showRestaurants(){
-    deleteMarkers(); // Clears all previous markers on the map
-    addMarker(palasRestaurant.position);
-}
-
 // Nightlife
 const nightlifeButton = document.getElementById("nightlife");
 nightlifeButton.addEventListener("click", showNightlife);
-
-
-let nightlife = [
-    {
-        name: "Seven Bridgestreet",
-        position: {lat: 53.27181651197241, lng: -9.055076401427293},
-        website: "http://sevenbridgestreet.ie/"
-    },
-    {
-        name: "The Quays Bar & Restaurant",
-        position: {lat: 53.27110339602522, lng: -9.053954830263663},
-        website: "https://quaysgalway.ie/"
-    }
-]
 
 function showNightlife(){
     deleteMarkers(); // Clears all previous markers on the map
