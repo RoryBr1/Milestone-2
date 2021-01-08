@@ -24,14 +24,27 @@ function showRestaurants(){
 
 // Nightlife
 const nightlifeButton = document.getElementById("nightlife");
-nightlifeButton.addEventListener("click", deleteMarkers);
 nightlifeButton.addEventListener("click", showNightlife);
 
-let sevenBar = { position: {lat:53.271938416799195, lng:-9.055065672591013},
-                        name: "Seven Bar & Grill" };
+
+let nightlife = [
+    {
+        name: "Seven Bridgestreet",
+        position: {lat: 53.27181651197241, lng: -9.055076401427293},
+        website: "http://sevenbridgestreet.ie/"
+    },
+    {
+        name: "The Quays Bar & Restaurant",
+        position: {lat: 53.27110339602522, lng: -9.053954830263663},
+        website: "https://quaysgalway.ie/"
+    }
+]
 
 function showNightlife(){
-    addMarker(sevenBar.position)
+    deleteMarkers(); // Clears all previous markers on the map
+    for (let i = 0; i < nightlife.length; i++) {
+        addMarker(nightlife[i].position)
+    };
 }
 
 // Adds a marker to the map and push to the array.
