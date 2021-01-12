@@ -4,7 +4,7 @@ let restaurants = [
         name: "Apoema Bistro",
         position: {lat:53.27597294388878, lng:9.049663295982244},
         website: "http://www.apoemabistro.ie/",
-        content: `<a href="http://www.apoemabistro.ie/">Website</a>`
+        contentString: `<a href="http://www.apoemabistro.ie/">Website</a>`
     },
     {
         name: "The Gourmet Offensive",

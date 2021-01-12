@@ -9,10 +9,6 @@ function initMap() {
   });
 }
 
-const infowindow = new google.maps.InfoWindow({
-    content: contentString,
-  });
-
 // Adds a marker to the map and push to the array.
 function addMarker(location) {
     const marker = new google.maps.Marker({
@@ -21,11 +17,7 @@ function addMarker(location) {
       animation: google.maps.Animation.DROP,
     });
     markers.push(marker);
-    
-    marker.addListener("click", () => {
-        infowindow.open(map, marker);
-    });
-  }
+}
 
   
 // Hotels
