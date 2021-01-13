@@ -141,6 +141,7 @@ nav a:hover {
     padding-bottom:8px;
     color:rgba(255,255,255,0.85);
     text-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+    outline:none;
     border:none;
     cursor:pointer;
 }
@@ -161,6 +162,34 @@ nav a:hover {
     width:100%;
     height:500px;
     border-radius:4px;
+}
+
+#map a {
+    font-weight:700;
+}
+
+#map button {
+    opacity:95%;
+    width:100px;
+    display:block;
+    margin:0 auto;
+    margin-top:6px;
+    border-style:none;
+    color:white;
+    background-image: linear-gradient( #6b8bff,  #315dff);
+    border-radius:3px;
+    outline:none;
+    cursor:pointer;
+    padding:2px;
+}
+
+#map button:hover {
+    opacity:100%;
+}
+
+#map button i {
+    color:rgba(255,255,255,0.8);
+    margin-right:2px;
 }
 
 #todo-container {

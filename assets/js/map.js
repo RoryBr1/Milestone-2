@@ -1,105 +1,52 @@
 let markers = [];
-  
+let selected = [];
+let activeInfoWindow;
+
+// Initialize map
 function initMap() {
-  const galway = { lat:53.27108077506178, lng:-9.056759662752283 };
+  const galway = { lat: 53.27108077506178, lng: -9.056759662752283 };
   map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 13.5,
-    center: galway,
-    mapTypeId: "terrain",
+      zoom: 14,
+      center: galway,
+      mapTypeId: "terrain",
   });
 }
 
-// Adds a marker to the map and push to the array.
-function addMarker(location) {
-    const marker = new google.maps.Marker({
-      position: location,
+// Following function 
+//  1) adds markers to the map when called 
+//  2) creates event listeners for markers being clicked 
+//  3) markerClick() opens infowindow. 
+const addMarker = (markerData) => {
+  const marker = new google.maps.Marker({
+      position: markerData.position,
       map: map,
       animation: google.maps.Animation.DROP,
-    });
-    markers.push(marker);
-}
+      content: markerData.content + `<br/> <button> <i class="fas fa-plus-square"></i> Add to List</button>`
+  });
 
-  
-// Hotels
-const hotelsButton = document.getElementById("hotels");
-hotelsButton.addEventListener("click", showHotels);
-
-function showHotels(){
-    deleteMarkers(); // Clears all previous markers on the map
-    for (let i = 0; i < hotels.length; i++) {
-        addMarker(hotels[i].position)
-    };
-}
-
-// Restaurants
-const restaurantsButton = document.getElementById("restaurants");
-restaurantsButton.addEventListener("click", showRestaurants);
-
-function showRestaurants(){
-    deleteMarkers(); // Clears all previous markers on the map
-    for (let i = 0; i < restaurants.length; i++) {
-        addMarker(restaurants[i].position)
-    };
-}
-
-// Nightlife
-const nightlifeButton = document.getElementById("nightlife");
-nightlifeButton.addEventListener("click", showNightlife);
-
-function showNightlife(){
-    deleteMarkers(); // Clears all previous markers on the map
-    for (let i = 0; i < nightlife.length; i++) {
-        addMarker(nightlife[i].position)
-    };
-}
-
-// Historic Sites
-const historicSitesButton = document.getElementById("historic-sites");
-historicSitesButton.addEventListener("click", showHistoricSites);
-
-function showHistoricSites(){
-    deleteMarkers(); // Clears all previous markers on the map
-    for (let i = 0; i < historicSites.length; i++) {
-        addMarker(historicSites[i].position)
-    };
-}
-
-// Nature
-const natureButton = document.getElementById("nature");
-natureButton.addEventListener("click", showNature);
-
-function showNature(){
-    deleteMarkers(); // Clears all previous markers on the map
-    for (let i = 0; i < nature.length; i++) {
-        addMarker(nature[i].position)
-    };
-}
-
-// Activities
-const activitiesButton = document.getElementById("activities");
-activitiesButton.addEventListener("click", showActivities);
-
-function showActivities(){
-    deleteMarkers(); // Clears all previous markers on the map
-    for (let i = 0; i < activities.length; i++) {
-        addMarker(activities[i].position)
-    };
-}
-
-// Sets the map on all markers in the array.
-function setMapOnAll(map) {
-  for (let i = 0; i < markers.length; i++) {
-    markers[i].setMap(map);
-  }
-}
-
-// Removes the markers from the map, but keeps them in the array.
-function clearMarkers() {
-  setMapOnAll(null);
+  markers.push(marker); // pushes markers to the markers array, which is cleared each time new markers are loaded.
+  marker.addListener("click", () => {
+      var infowindow = new google.maps.InfoWindow({
+          content: marker.content
+      });
+      // Closes any previously opened infowindows
+      if (activeInfoWindow) 
+          activeInfoWindow.close();
+      infowindow.open(map, marker);
+      activeInfoWindow = infowindow;
+  });
 }
 
 // Deletes all markers in the array by removing references to them.
-function deleteMarkers() {
-  clearMarkers();
+const deleteMarkers = () => {
+  markers.forEach(m => m.setMap(null));
   markers = [];
 }
+
+// Event Listeners for all buttons
+[...document.querySelectorAll('.map-buttons>button')].forEach(e => {
+  e.addEventListener("click", () => {
+      deleteMarkers();
+      markersSet[e.id].forEach(m => addMarker(m));
+  });
+});
