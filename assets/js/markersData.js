@@ -10,7 +10,6 @@
     }
 */
 
-
 let restaurants = [
     {
         name: "Seven Bar & Restaurant",

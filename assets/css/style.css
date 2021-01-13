@@ -193,8 +193,8 @@ nav a:hover {
 }
 
 #todo-container {
-    display: inline-block;
-    background:black;
+    display: none;
+    background:rgba(0, 0, 0, 0.192);
     height:500px;
     width:24%;
 }
