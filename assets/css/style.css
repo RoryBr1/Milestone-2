@@ -118,6 +118,7 @@ nav a:hover {
     border-radius:8px;
 }
 
+/* MAP STYLING */
 .map-buttons {
     width:25%;
     margin:auto;
@@ -192,13 +193,83 @@ nav a:hover {
     margin-right:2px;
 }
 
+/* TODO LIST STYLING */
 #todo-container {
-    display: none;
+    display: inline-block;
     background:rgba(0, 0, 0, 0.192);
     height:500px;
     width:24%;
 }
 
+table {
+    width:100%;
+}
+
+.todo-li {
+    width:100%;
+    cursor:pointer;
+    background:rgba(20, 9, 73,0.8);
+    font-size:1.2rem;
+    color:rgba(255,255,255,0.8);
+    text-shadow:0px 0px 3px rgba(0,0,0,0.5);
+    animation-name:fadeBounce;
+    animation-duration:0.8s;
+    transition-property:background-color,border-color,text-shadow;
+    transition-duration:.3s;
+}
+
+.todo-li:hover {
+    color:rgba(255,255,255,0.9);
+    animation-name:fadeBounce;
+    animation-duration:0.8s;
+    transition-property:background-color,border-color,text-shadow;
+    transition-duration:.3s;
+}
+
+.todo-buttons {
+    display:inline;
+    float:right;
+}
+
+.todo-complete {
+    text-decoration:line-through;
+}
+
+.complete-btn {
+    padding:0.5rem;
+    font-size:1rem;
+    border:none;
+    background:#90ee90;
+    border-radius:7px;
+    color:whitesmoke;
+    text-shadow: 0px 0px 4px rgba(0,0,0,0.5);
+    margin-left:1px;
+    margin-right:2px;
+    outline:none;
+    cursor:pointer;
+}
+
+.complete-btn:hover {
+    background:#71e271;
+}
+
+.delete-btn {
+    padding:0.5rem;
+    font-size:1rem;
+    border:none;
+    background:#f08080;
+    border-radius:7px;
+    color:rgb(63, 1, 1);
+    text-shadow: 0px 0px 4px rgba(0,0,0,0.3);
+    outline:none;
+    cursor:pointer;
+}
+
+.delete-btn:hover {
+    background:#ff6767;
+}
+
+/* FOOTER STYLING */
 #socials-footer {
     margin:auto;
     margin-top:10px;

@@ -36,8 +36,7 @@ const addMarker = (markerData) => {
           activeInfoWindow.close();
       infowindow.open(map, marker);
       activeInfoWindow = infowindow;
-      let activeMarkerName = markerData.name;
-      console.log(activeMarkerName);
+      activeMarkerName = markerData.name;
   });
 }
 
@@ -53,13 +52,4 @@ const deleteMarkers = () => {
       deleteMarkers();
       markersSet[e.id].forEach(m => addMarker(m));
   });
-});
-
-// Event Listener for "Add to List" button
-document.querySelector('body').addEventListener('click', event => {
-  // Check if the clicked element was actually a #add-button
-  if (event.target.matches('#add-button')) {
-      console.log(activeMarkerName);
-      addListItem();
-  }
 });

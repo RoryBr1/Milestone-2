@@ -1,46 +1,39 @@
-const addButton = document.querySelector("#add-button");
-const itemList = document.querySelector("#item-list")
-
 // EVENT LISTENER for #add-button
 document.querySelector('body').addEventListener('click', event => {
     // Check if the clicked element was actually a #add-button
     if (event.target.matches('#add-button')) {
         console.log(activeMarkerName);
-        addListItem();
+        addTodo();
     }
 });
 
-// FUNCTIONS
+const addButton = document.querySelector("#add-button");
+const todoList = document.querySelector("#todo-list");
+
+// COMPLETE BUTTON
 const completeButton = document.createElement("button");
 completeButton.innerHTML = `<button class="complete-btn"><i class="fas fa-check"></i></button>`;
-completeButton.classList.add("complete-btn");
-completeButton.addEventListener("click", completeListItem);
+$('body').on('click', '.complete-btn', function(){
+  $(this).closest('tr').toggleClass('todo-complete');
+});
 
+// DELETE BUTTON
 const deleteButton = document.createElement("button");
 deleteButton.innerHTML = `<button class="delete-btn"><i class="far fa-trash-alt"></i></button>`;
-deleteButton.classList.add("delete-btn");
-deleteButton.addEventListener("click", deleteListItem);
+$('body').on('click', '.delete-btn', function(){
+  $(this).closest('tr').fadeOut( "medium");
+});
 
-//add exercise to list
-function addListItem(event){ 
+// ADD TO LIST
+function addTodo(event){ 
 
-const listItem = document.createElement("div");
-listItem.classList.add("list-item");
+const todoItem = document.createElement("div");
+todoItem.classList.add("todo");
 
-//list item
-const newListItem = document.createElement("li");
-newListItem.innerHTML = 
-    `hello world` + completeButton.innerHTML + deleteButton.innerHTML;
+const newTodo = document.createElement("tr");
+newTodo.innerHTML = activeMarkerName + `<div class="todo-buttons">` + completeButton.innerHTML + deleteButton.innerHTML + `</div>`;
 
-newListItem.classList.add("exercise-li");
-itemList.appendChild(newListItem);
+newTodo.classList.add("todo-li");
+todoList.appendChild(newTodo);
 
-}
-
-function completeListItem(e) {
-    console.log("hello world");
-}
-
-function deleteListItem(e) {
-    console.log("delete world")
 }
