@@ -232,7 +232,7 @@ nav a:hover {
 
 #todo-list {
     display: inline-block;
-    background:rgba(0, 0, 0, 0.192);
+    background:rgba(20, 9, 73, 0.4);
     box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
     height:500px;
     width:24.5%;
@@ -282,8 +282,12 @@ nav a:hover {
 }
 
 .todo-complete {
-    text-decoration:line-through;
-    text-decoration-color: rgba(255,255,255,0.5);
+    opacity:0.4;
+}
+
+.todo-complete span {
+    text-decoration: line-through;
+    text-decoration-color:rgba(255,255,255,0.5);
 }
 
 .complete-btn {
@@ -594,5 +598,15 @@ ul::-webkit-scrollbar {
 	100% {
 		opacity:1;
 		transform:translateY(0);
+	}
+}
+
+@keyframes fadeOut {
+	0% {
+		opacity:1;
+	}
+
+	100% {
+		opacity:0.5;
 	}
 }
