@@ -156,8 +156,7 @@ nav a:hover {
 }
 
 .map-buttons button {
-    opacity:96%;
-    background-color: rgba(103, 19, 29);;
+    background-color: rgba(103, 19, 29);
     font-size:2rem;
     display:inline-block;
     width:100%;
@@ -170,11 +169,17 @@ nav a:hover {
     outline:none;
     border:none;
     cursor:pointer;
+    animation-name:fade;
+    animation-duration:0.3s;
+    transition-property:border, box-shadow, background, opacity;
+	transition-duration:.3s;
 }
 
 .map-buttons button:hover {
+    background-color: rgb(116, 23, 34);
     color:rgba(255,255,255,1);
     opacity:100%;
+    box-shadow: inset 0px 0px 3px rgba(0,0,0,0.3);
 }
 
 #map-container {
@@ -291,22 +296,30 @@ nav a:hover {
 }
 
 .delete-btn {
+    opacity:0.9;
     width:60px;
     padding:7px;
     font-size:1rem;
     border: 1px solid #f08080;;
-    background:#f08080;
+    background:#e05b5b;
     box-shadow: inset 0px 0px 4px rgba(0,0,0,0.5);
     border-radius:4px;
-    color:rgb(63, 1, 1);
-    text-shadow: 0px 0px 4px rgba(0,0,0,0.3);
+    color:rgb(223, 223, 223);
+    text-shadow: 0px 0px 4px rgba(0,0,0,0.5);
     margin-right:1px;
     outline:none;
     cursor:pointer;
+    animation-name:fade;
+    animation-duration:0.1s;
+    transition-property:border, box-shadow, background, opacity;
+	transition-duration:.2s;
 }
 
 .delete-btn:hover {
-    background:#f78b8b;
+    opacity:1;
+    background:#e05b5b;
+    border: 1px solid rgba(255,255,255,0.2);
+    box-shadow: none;
 }
 
 /* TODO LIST SCROLLBAR STYLING */
@@ -337,6 +350,8 @@ ul::-webkit-scrollbar {
     border-radius:5px;
   }
 
+
+
 /* FOOTER STYLING */
 #socials-footer {
     margin:auto;
@@ -352,7 +367,11 @@ ul::-webkit-scrollbar {
 }
 
 #socials-footer div:hover {
-    opacity:90%;
+    opacity:100%;
+    animation-name:fade;
+    animation-duration:0.3s;
+    transition-property:border, box-shadow, background, opacity;
+	transition-duration:.3s;
 }
 
 .social-icon {
@@ -369,6 +388,10 @@ ul::-webkit-scrollbar {
     margin-left:1%;
     margin-right:1%;
     border-radius:8px;
+    animation-name:fade;
+    animation-duration:0.3s;
+    transition-property:border, box-shadow, background, opacity;
+	transition-duration:.3s;
 }
 
 #text-footer {
@@ -383,7 +406,7 @@ ul::-webkit-scrollbar {
     text-align:center;
 }
 
-@media screen and (max-width:1384px) {
+@media screen and (max-width:1400px) {
     .todo-li {
         font-size:1.1rem;
     }

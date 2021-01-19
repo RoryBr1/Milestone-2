@@ -59,7 +59,7 @@ function getTodos(){
 }
 
 function removeLocalTodos(thisTodo){
-  let todos = [];
+  let todos;
   if(localStorage.getItem('todos') === null){
     todos = [];
     }else{
@@ -68,5 +68,6 @@ function removeLocalTodos(thisTodo){
     
     const todoIndex = todos.indexOf(thisTodo);
     console.log(todoIndex);
-    todos.splice(todos.indexOf(todoIndex), 1);
+    todos.splice(todos.indexOf(thisTodo), 1);
+    localStorage.setItem('todos', JSON.stringify(todos));
 }
