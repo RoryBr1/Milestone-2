@@ -16,7 +16,7 @@ const deleteButton = document.createElement("button");
 deleteButton.innerHTML = `<button class="delete-btn"><i class="far fa-trash-alt"></i></button>`;
 $('body').on('click', '.delete-btn', function(){
   $(this).closest('li').fadeOut( "medium");
-  removeLocalTodos();
+  removeLocalTodos($(this).parent().parent().html());
 });
 
 // ADD TO LIST
@@ -43,10 +43,10 @@ function saveLocalTodos(todo){
 }
 
 function getTodos(){
-    // CHECK IF TODO ITEMS ALREADY STORED
-    let todos;
-    if(localStorage.getItem('todos') === null){
-      todos = [];
+  // CHECK IF TODO ITEMS ALREADY STORED
+  let todos;
+  if(localStorage.getItem('todos') === null){
+    todos = [];
     }else{
       todos = JSON.parse(localStorage.getItem('todos'));
     }
@@ -58,8 +58,15 @@ function getTodos(){
     });
 }
 
-function removeLocalTodos(todo){
-  // CHECK IF TODO ITEMS ALREADY STORED
-  let todos;
-  console.log(todos);
+function removeLocalTodos(thisTodo){
+  let todos = [];
+  if(localStorage.getItem('todos') === null){
+    todos = [];
+    }else{
+      todos = JSON.parse(localStorage.getItem('todos'));
+    }
+    
+    const todoIndex = todos.indexOf(thisTodo);
+    console.log(todoIndex);
+    todos.splice(todos.indexOf(todoIndex), 1);
 }
