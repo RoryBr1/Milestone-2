@@ -1,4 +1,5 @@
 // EVENT LISTENER for #add-button
+document.addEventListener('DOMContentLoaded', getTodos);
 document.querySelector('body').addEventListener('click', event => {
     // Check if the clicked element was actually a #add-button
     if (event.target.matches('#add-button')) {
@@ -10,26 +11,55 @@ document.querySelector('body').addEventListener('click', event => {
 const addButton = document.querySelector("#add-button");
 const todoList = document.querySelector("#todo-list");
 
-// COMPLETE BUTTON
-const completeButton = document.createElement("button");
-completeButton.innerHTML = `<button class="complete-btn"><i class="fas fa-check"></i></button>`;
-$('body').on('click', '.complete-btn', function(){
-  $(this).closest('li').toggleClass('todo-complete');
-});
-
 // DELETE BUTTON
 const deleteButton = document.createElement("button");
 deleteButton.innerHTML = `<button class="delete-btn"><i class="far fa-trash-alt"></i></button>`;
 $('body').on('click', '.delete-btn', function(){
   $(this).closest('li').fadeOut( "medium");
+  removeLocalTodos();
 });
 
 // ADD TO LIST
 function addTodo(){ 
+  const newTodo = document.createElement("li");
+  newTodo.innerHTML = `<span>` + activeMarkerName + `</span>` + `<div class="todo-buttons">` + deleteButton.innerHTML + `</div>`;
+  newTodo.classList.add("todo-li");
+  // ADD TODO TO LOCAL STORAGE
+  saveLocalTodos(newTodo.innerHTML);
+  todoList.appendChild(newTodo);
+}
 
-const newTodo = document.createElement("li");
-newTodo.innerHTML = `<span>` + activeMarkerName + `</span>` + `<div class="todo-buttons">` + completeButton.innerHTML + deleteButton.innerHTML + `</div>`;
+// STORE TO LOCALSTORAGE
+function saveLocalTodos(todo){
+  // CHECK IF TODO ITEMS ALREADY STORED
+  let todos;
+  if(localStorage.getItem('todos') === null){
+    todos = [];
+  }else{
+    todos = JSON.parse(localStorage.getItem('todos'));
+  }
+  todos.push(todo);
+  localStorage.setItem('todos', JSON.stringify(todos));
+}
 
-newTodo.classList.add("todo-li");
-todoList.appendChild(newTodo);
+function getTodos(){
+    // CHECK IF TODO ITEMS ALREADY STORED
+    let todos;
+    if(localStorage.getItem('todos') === null){
+      todos = [];
+    }else{
+      todos = JSON.parse(localStorage.getItem('todos'));
+    }
+    todos.forEach(function(todo){
+      const newTodo = document.createElement("li");
+      newTodo.innerHTML = todo;
+      todoList.appendChild(newTodo);
+      newTodo.classList.add("todo-li");
+    });
+}
+
+function removeLocalTodos(todo){
+  // CHECK IF TODO ITEMS ALREADY STORED
+  let todos;
+  console.log(todos);
 }

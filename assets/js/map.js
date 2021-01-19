@@ -1,4 +1,5 @@
-let markers = [];
+var markers = [];//some array
+
 let selected = [];
 let activeInfoWindow;
 let activeMarkerName;
