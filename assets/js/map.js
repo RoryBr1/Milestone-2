@@ -11,6 +11,7 @@ function initMap() {
       zoom: 14,
       center: galway,
       mapTypeId: "terrain",
+      streetViewControl: false,
   });
 }
 

@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
 
 html {
@@ -8,7 +15,13 @@ html {
     background-size:cover;
     background-attachment: fixed;
     font-family: 'Roboto', sans-serif;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+::-moz-selection {
+    color: none;
+    background: none;
 }
 
 ::selection {
@@ -60,6 +73,8 @@ p a:hover {
 
 #visit {
     font-size:2.5rem;
+    background: -webkit-gradient(linear, left bottom, left top, from(#081130), to(#479dee));
+    background: -o-linear-gradient(bottom, #081130 0%, #479dee 100%);
     background: linear-gradient(to top, #081130 0%, #479dee 100%);
     background-clip:text;
 	-webkit-background-clip: text;
@@ -72,6 +87,8 @@ p a:hover {
 
 #galway {
     font-size:2.5rem;
+    background: -webkit-gradient(linear, left top, left bottom, from(#BA2D0B), to(#140329));
+    background: -o-linear-gradient(top, #BA2D0B 0%, #140329 100%);
     background: linear-gradient(to bottom, #BA2D0B 0%, #140329 100%);
     background-clip:text;
 	-webkit-background-clip: text;
@@ -85,7 +102,8 @@ p a:hover {
 }
 
 .header-bar {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     width:100%;
     background: rgba(255,255,255,0.5);
     padding:0;
@@ -104,10 +122,16 @@ p a:hover {
 #desktop-nav a {
     color:royalblue;
     margin-right:5%;
-    animation-name:fadeBounce;
-    animation-duration:1.2s;
+    -webkit-animation-name:fadeBounce;
+            animation-name:fadeBounce;
+    -webkit-animation-duration:1.2s;
+            animation-duration:1.2s;
+    -webkit-transition-property:background-color,border-color,text-shadow;
+    -o-transition-property:background-color,border-color,text-shadow;
     transition-property:background-color,border-color,text-shadow;
-	transition-duration:.3s;
+	-webkit-transition-duration:.3s;
+	     -o-transition-duration:.3s;
+	        transition-duration:.3s;
 }
 
 nav a:hover {
@@ -131,7 +155,8 @@ nav a:hover {
     font-size:0.9rem;
     text-align: center;
     background: rgba(255,255,255,0.7);
-    box-shadow:rgba(255,255,255,0.6);
+    -webkit-box-shadow:rgba(255,255,255,0.6);
+            box-shadow:rgba(255,255,255,0.6);
     width:60%;
     margin:auto;
     margin-top:10px;
@@ -169,17 +194,26 @@ nav a:hover {
     outline:none;
     border:none;
     cursor:pointer;
-    animation-name:fade;
-    animation-duration:0.3s;
+    -webkit-animation-name:fade;
+            animation-name:fade;
+    -webkit-animation-duration:0.3s;
+            animation-duration:0.3s;
+    -webkit-transition-property:border, background, opacity, -webkit-box-shadow;
+    transition-property:border, background, opacity, -webkit-box-shadow;
+    -o-transition-property:border, box-shadow, background, opacity;
     transition-property:border, box-shadow, background, opacity;
-	transition-duration:.3s;
+    transition-property:border, box-shadow, background, opacity, -webkit-box-shadow;
+	-webkit-transition-duration:.3s;
+	     -o-transition-duration:.3s;
+	        transition-duration:.3s;
 }
 
 .map-buttons button:hover {
     background-color: rgb(116, 23, 34);
     color:rgba(255,255,255,1);
     opacity:100%;
-    box-shadow: inset 0px 0px 3px rgba(0,0,0,0.3);
+    -webkit-box-shadow: inset 0px 0px 3px rgba(0,0,0,0.3);
+            box-shadow: inset 0px 0px 3px rgba(0,0,0,0.3);
 }
 
 #map-container {
@@ -189,7 +223,8 @@ nav a:hover {
 
 #map {
     margin:0 auto;
-    box-shadow: 0px 0px 6px rgba(0,0,0,0.8);
+    -webkit-box-shadow: 0px 0px 6px rgba(0,0,0,0.8);
+            box-shadow: 0px 0px 6px rgba(0,0,0,0.8);
     width:100%;
     height:500px;
     border-radius:4px;
@@ -207,6 +242,8 @@ nav a:hover {
     margin-top:6px;
     border-style:none;
     color:white;
+    background-image: -webkit-gradient( linear,  left top, left bottom,  from(#6b8bff),  to(#315dff));
+    background-image: -o-linear-gradient( #6b8bff,  #315dff);
     background-image: linear-gradient( #6b8bff,  #315dff);
     border-radius:3px;
     border: solid 1px #0037ff;
@@ -238,7 +275,8 @@ nav a:hover {
 #todo-list {
     display: inline-block;
     background:rgba(20, 9, 73, 0.4);
-    box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+    -webkit-box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+            box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
     height:506px;
     width:24.5%;
     border-radius:5px;
@@ -260,18 +298,30 @@ nav a:hover {
     font-size:1.2rem;
     color:rgba(255,255,255,0.8);
     text-shadow:0px 0px 3px rgba(0,0,0,0.5);
-    animation-name:fadeBounce;
-    animation-duration:0.8s;
+    -webkit-animation-name:fadeBounce;
+            animation-name:fadeBounce;
+    -webkit-animation-duration:0.8s;
+            animation-duration:0.8s;
+    -webkit-transition-property:background-color,border-color,text-shadow;
+    -o-transition-property:background-color,border-color,text-shadow;
     transition-property:background-color,border-color,text-shadow;
-    transition-duration:.3s;
+    -webkit-transition-duration:.3s;
+         -o-transition-duration:.3s;
+            transition-duration:.3s;
 }
 
 .todo-li:hover {
     color:rgba(255,255,255,0.9);
-    animation-name:fadeBounce;
-    animation-duration:0.8s;
+    -webkit-animation-name:fadeBounce;
+            animation-name:fadeBounce;
+    -webkit-animation-duration:0.8s;
+            animation-duration:0.8s;
+    -webkit-transition-property:background-color,border-color,text-shadow;
+    -o-transition-property:background-color,border-color,text-shadow;
     transition-property:background-color,border-color,text-shadow;
-    transition-duration:.3s;
+    -webkit-transition-duration:.3s;
+         -o-transition-duration:.3s;
+            transition-duration:.3s;
 }
 
 .todo-li span {
@@ -292,7 +342,8 @@ nav a:hover {
 
 .todo-complete span {
     text-decoration: line-through;
-    text-decoration-color:rgba(255,255,255,0.5);
+    -webkit-text-decoration-color:rgba(255,255,255,0.5);
+            text-decoration-color:rgba(255,255,255,0.5);
 }
 
 .delete-btn {
@@ -302,24 +353,34 @@ nav a:hover {
     font-size:1rem;
     border: 1px solid #f08080;;
     background:#e05b5b;
-    box-shadow: inset 0px 0px 4px rgba(0,0,0,0.5);
+    -webkit-box-shadow: inset 0px 0px 4px rgba(0,0,0,0.5);
+            box-shadow: inset 0px 0px 4px rgba(0,0,0,0.5);
     border-radius:4px;
     color:rgb(223, 223, 223);
     text-shadow: 0px 0px 4px rgba(0,0,0,0.5);
     margin-right:1px;
     outline:none;
     cursor:pointer;
-    animation-name:fade;
-    animation-duration:0.1s;
+    -webkit-animation-name:fade;
+            animation-name:fade;
+    -webkit-animation-duration:0.1s;
+            animation-duration:0.1s;
+    -webkit-transition-property:border, background, opacity, -webkit-box-shadow;
+    transition-property:border, background, opacity, -webkit-box-shadow;
+    -o-transition-property:border, box-shadow, background, opacity;
     transition-property:border, box-shadow, background, opacity;
-	transition-duration:.2s;
+    transition-property:border, box-shadow, background, opacity, -webkit-box-shadow;
+	-webkit-transition-duration:.2s;
+	     -o-transition-duration:.2s;
+	        transition-duration:.2s;
 }
 
 .delete-btn:hover {
     opacity:1;
     background:#e05b5b;
     border: 1px solid rgba(255,255,255,0.2);
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
 }
 
 /* TODO LIST SCROLLBAR STYLING */
@@ -328,29 +389,29 @@ ul::-webkit-scrollbar {
     width: 20px;
     height: 16px;
     border-radius:5px;
-  }
-  ul::-webkit-scrollbar-button {
+}
+ul::-webkit-scrollbar-button {
     width: 0px;
     height: 0px;
-  }
-  ul::-webkit-scrollbar-thumb {
+}
+ul::-webkit-scrollbar-thumb {
     background: #251d4e;
     border: solid 1px rgba(255,255,255,0.5);
-    box-shadow: 0px 0px 5px inset rgba(0, 81, 255, 0.952);
-    box-shadow: 0px 6px 6px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0px 0px 5px inset rgba(0, 81, 255, 0.952);
+            box-shadow: 0px 0px 5px inset rgba(0, 81, 255, 0.952);
+    -webkit-box-shadow: 0px 6px 6px rgba(0,0,0,0.3);
+            box-shadow: 0px 6px 6px rgba(0,0,0,0.3);
     border-radius:5px;
-  }
-  ul::-webkit-scrollbar-track {
+}
+ul::-webkit-scrollbar-track {
     background: hsla(261, 45%, 47%, 0.8);
     border: solid 1px rgba(255,255,255,0.3);
     border-radius:5px;
-  }
-  ul::-webkit-scrollbar-corner {
+}
+ul::-webkit-scrollbar-corner {
     background: transparent;
     border-radius:5px;
-  }
-
-
+}
 
 /* FOOTER STYLING */
 #socials-footer {
@@ -368,10 +429,18 @@ ul::-webkit-scrollbar {
 
 #socials-footer div:hover {
     opacity:100%;
-    animation-name:fade;
-    animation-duration:0.3s;
+    -webkit-animation-name:fade;
+            animation-name:fade;
+    -webkit-animation-duration:0.3s;
+            animation-duration:0.3s;
+    -webkit-transition-property:border, background, opacity, -webkit-box-shadow;
+    transition-property:border, background, opacity, -webkit-box-shadow;
+    -o-transition-property:border, box-shadow, background, opacity;
     transition-property:border, box-shadow, background, opacity;
-	transition-duration:.3s;
+    transition-property:border, box-shadow, background, opacity, -webkit-box-shadow;
+	-webkit-transition-duration:.3s;
+	     -o-transition-duration:.3s;
+	        transition-duration:.3s;
 }
 
 .social-icon {
@@ -379,19 +448,30 @@ ul::-webkit-scrollbar {
     font-size:1.8rem;
     color:white;
     text-shadow:0px 0px 3px rgba(0,0,0,0.6);
-    box-shadow:0px 0px 3px rgba(255,255,255,0.5);
+    -webkit-box-shadow:0px 0px 3px rgba(255,255,255,0.5);
+            box-shadow:0px 0px 3px rgba(255,255,255,0.5);
     display:inline-block;
     padding-left:14px;
     padding-right:14px;
+    background:-webkit-gradient(linear, left bottom, left top, from(#2743aa), to(#479dee));
+    background:-o-linear-gradient(bottom, #2743aa 0%, #479dee 100%);
     background:linear-gradient(to top, #2743aa 0%, #479dee 100%);
     line-height: 2;
     margin-left:1%;
     margin-right:1%;
     border-radius:8px;
-    animation-name:fade;
-    animation-duration:0.3s;
+    -webkit-animation-name:fade;
+            animation-name:fade;
+    -webkit-animation-duration:0.3s;
+            animation-duration:0.3s;
+    -webkit-transition-property:border, background, opacity, -webkit-box-shadow;
+    transition-property:border, background, opacity, -webkit-box-shadow;
+    -o-transition-property:border, box-shadow, background, opacity;
     transition-property:border, box-shadow, background, opacity;
-	transition-duration:.3s;
+    transition-property:border, box-shadow, background, opacity, -webkit-box-shadow;
+	-webkit-transition-duration:.3s;
+	     -o-transition-duration:.3s;
+	        transition-duration:.3s;
 }
 
 #text-footer {
@@ -488,10 +568,16 @@ ul::-webkit-scrollbar {
     }
 
     #mobile-nav {
-        animation-name:fadeBounce;
-        animation-duration:1.2s;
+        -webkit-animation-name:fadeBounce;
+                animation-name:fadeBounce;
+        -webkit-animation-duration:1.2s;
+                animation-duration:1.2s;
+        -webkit-transition-property:background-color,border-color,text-shadow;
+        -o-transition-property:background-color,border-color,text-shadow;
         transition-property:background-color,border-color,text-shadow;
-        transition-duration:.3s;
+        -webkit-transition-duration:.3s;
+             -o-transition-duration:.3s;
+                transition-duration:.3s;
     }
 
     #mobile-nav i {
@@ -504,23 +590,36 @@ ul::-webkit-scrollbar {
         font-size:1.4rem;
         color:rgba(255,255,255,0.8);
         text-shadow:0px 0px 3px rgba(0,0,0,0.5);
-        animation-name:fadeBounce;
-        animation-duration:1.2s;
+        -webkit-animation-name:fadeBounce;
+                animation-name:fadeBounce;
+        -webkit-animation-duration:1.2s;
+                animation-duration:1.2s;
+        -webkit-transition-property:background-color,border-color,text-shadow;
+        -o-transition-property:background-color,border-color,text-shadow;
         transition-property:background-color,border-color,text-shadow;
-        transition-duration:.3s;
+        -webkit-transition-duration:.3s;
+             -o-transition-duration:.3s;
+                transition-duration:.3s;
     }
 
     nav a:hover {
         color:rgba(255,255,255,1);
         text-shadow:0px 0px 6px rgba(255, 255, 255, 0.4);
-        animation-name:fadeBounce;
-        animation-duration:1.2s;
+        -webkit-animation-name:fadeBounce;
+                animation-name:fadeBounce;
+        -webkit-animation-duration:1.2s;
+                animation-duration:1.2s;
+        -webkit-transition-property:background-color,border-color,text-shadow;
+        -o-transition-property:background-color,border-color,text-shadow;
         transition-property:background-color,border-color,text-shadow;
-        transition-duration:.3s;
+        -webkit-transition-duration:.3s;
+             -o-transition-duration:.3s;
+                transition-duration:.3s;
     }
 
     ul {
-        padding-inline-start: 0px;
+        -webkit-padding-start: 0px;
+                padding-inline-start: 0px;
     }
 
     #home, #plan-a-visit, #contact {
@@ -575,7 +674,8 @@ ul::-webkit-scrollbar {
     #todo-list {
         display:block;
         margin:0 auto;
-        width:95%;
+        width:98%;
+        height:400px;
     }
 
     #socials-footer {
@@ -588,23 +688,60 @@ ul::-webkit-scrollbar {
 }
 
 /*  ANIMATIONS  */
-@keyframes fadeBounce {
+@-webkit-keyframes fadeBounce {
 	0% {
 		opacity:0;
-		transform: translateY(-200%);
+		-webkit-transform: translateY(-200%);
+		        transform: translateY(-200%);
 	}
 
 	50% {
-		transform:translateY(2px);
+		-webkit-transform:translateY(2px);
+		        transform:translateY(2px);
 	}
 
 	85% {
-    transform: translateY(-1px);
+    -webkit-transform: translateY(-1px);
+            transform: translateY(-1px);
     }
 
 	100% {
 		opacity:1;
-		transform:translateY(0);
+		-webkit-transform:translateY(0);
+		        transform:translateY(0);
+	}
+}
+@keyframes fadeBounce {
+	0% {
+		opacity:0;
+		-webkit-transform: translateY(-200%);
+		        transform: translateY(-200%);
+	}
+
+	50% {
+		-webkit-transform:translateY(2px);
+		        transform:translateY(2px);
+	}
+
+	85% {
+    -webkit-transform: translateY(-1px);
+            transform: translateY(-1px);
+    }
+
+	100% {
+		opacity:1;
+		-webkit-transform:translateY(0);
+		        transform:translateY(0);
+	}
+}
+
+@-webkit-keyframes fadeOut {
+	0% {
+		opacity:1;
+	}
+
+	100% {
+		opacity:0.5;
 	}
 }
 
