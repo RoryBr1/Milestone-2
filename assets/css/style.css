@@ -42,7 +42,6 @@ p a:hover {
     border-radius:4px;
 }
 
-
 .highlight-green {
     opacity:.8;
     background-color:#71e27186;
@@ -123,7 +122,7 @@ nav a:hover {
     display:none;
 }
 
-.invisible { /* This class is toggled on #mobile-nav when #menu-button is clicked*/
+.invisible { /* This class is toggled on #mobile-nav when #menu-button is clicked */
     display:none;
 }
 
@@ -203,8 +202,7 @@ nav a:hover {
     opacity:95%;
     width:100px;
     display:block;
-    margin:0 auto;
-    margin-top:6px;
+    margin:10px;
     border-style:none;
     color:white;
     background-image: linear-gradient( #6b8bff,  #315dff);
@@ -217,6 +215,10 @@ nav a:hover {
 
 #map button:hover {
     opacity:100%;
+}
+
+#map button:active {
+    box-shadow:inset 0px 0px 3px rgba(0,0,0,0.5);
 }
 
 #map button i {
@@ -311,7 +313,6 @@ nav a:hover {
 }
 
 /* TODO LIST SCROLLBAR STYLING */
-
 ul::-webkit-scrollbar {
     width: 20px;
     height: 16px;
@@ -543,6 +544,7 @@ ul::-webkit-scrollbar-corner {
     }
 
     .map-buttons {
+        font-size:0.9rem;
         width:100%;
         margin-left:0.3%;
         margin-top:10px;
