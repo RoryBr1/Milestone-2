@@ -459,7 +459,7 @@ ul::-webkit-scrollbar-corner {
     body {
         overflow-x: hidden;
     }
-    
+
     #desktop-nav {
         display:none;
     }
@@ -545,6 +545,12 @@ ul::-webkit-scrollbar-corner {
 
     #map-container {
         width:100%;
+    }
+
+    #map {
+        padding:0;
+        margin:0;
+        box-shadow:none;
     }
 
     .map-buttons {
