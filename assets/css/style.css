@@ -544,7 +544,7 @@ ul::-webkit-scrollbar-corner {
 
     .map-buttons {
         width:100%;
-        margin:auto;
+        margin-left:0.3%;
         margin-top:10px;
     }
 
