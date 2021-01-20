@@ -545,6 +545,8 @@ ul::-webkit-scrollbar-corner {
     
     #map-container {
         width:99%;
+        padding:0;
+        margin:0;
     }
 
     #map {
