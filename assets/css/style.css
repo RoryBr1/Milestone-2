@@ -456,6 +456,10 @@ ul::-webkit-scrollbar-corner {
 
 /* MOBILE RESOLUTION */
 @media screen and (max-width:768px) {
+    body {
+        overflow-x: hidden;
+    }
+    
     #desktop-nav {
         display:none;
     }
