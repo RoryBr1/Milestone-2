@@ -543,12 +543,6 @@ ul::-webkit-scrollbar-corner {
         display:block;
     }
 
-    #map-container {
-        width:100%;
-        padding:0;
-        margin:0;
-    }
-
     #map {
         padding:0;
         margin:0;
