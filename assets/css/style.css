@@ -275,29 +275,17 @@ nav a:hover {
 }
 
 .todo-li span {
+    width:65.9%;
     float:left;
     margin-top:6px;
     margin-left:3%;
 }
 
-.todo-buttons {
+.delete-btn {
+    opacity:0.9;
     display:inline;
     float:right;
     margin:1px;
-}
-
-.todo-complete {
-    opacity:0.4;
-}
-
-.todo-complete span {
-    text-decoration: line-through;
-    text-decoration-color:rgba(255,255,255,0.5);
-}
-
-.delete-btn {
-    opacity:0.9;
-    width:60px;
     padding:7px;
     font-size:1rem;
     border: 1px solid #f08080;;
