@@ -542,7 +542,11 @@ ul::-webkit-scrollbar-corner {
     .visible {
         display:block;
     }
-
+    
+    #map-container {
+        width:99%;
+    }
+    
     #map {
         padding:0;
         margin:0;
