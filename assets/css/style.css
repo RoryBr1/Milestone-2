@@ -122,6 +122,10 @@ nav a:hover {
 
 .invisible { /* This class is toggled on #mobile-nav when #menu-button is clicked */
     display:none;
+    animation-name:fadeBounce;
+    animation-duration:0.6s;
+    transition-property:border, box-shadow, background, opacity;
+	transition-duration:.3s;
 }
 
 .welcome-text {
@@ -143,9 +147,8 @@ nav a:hover {
 /* MAP STYLING */
 .map-buttons {
     display:inline-block;
+    vertical-align:top;
     width:25%;
-    margin:auto;
-    float:left;
 }
 
 .map-buttons i {
@@ -238,7 +241,7 @@ nav a:hover {
     background:rgba(20, 9, 73, 0.6);
     box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
     height:506px;
-    width:24.5%;
+    width:24.3%;
     overflow-y:auto;
     height:500px;
     margin:0;
@@ -378,16 +381,20 @@ footer {
 /* CONTACT WINDOW MODAL STYLING */
 #contact-window {
     width:40%;
-    height:60%;
+    height:fit-content;
     margin-left:30%;
     margin-right:30%;
     padding:10px;
     position: fixed;
     float: none;
     z-index:1000;
-    background:rgba(20, 9, 73, 0.94);
-    box-shadow:0px 0px 900px rgba(0, 0, 0, 1);
-    border:1px solid rgba(255,255,255,0.5);
+    background:rgba(20, 9, 73);
+    box-shadow:0px 0px 10px rgba(0, 0, 0, 1);
+    border: 1px solid rgb(111, 92, 206);
+    animation-name:fadeBounce;
+    animation-duration:0.6s;
+    transition-property:border, box-shadow, background, opacity;
+	transition-duration:.3s;
 }
 
 #contact-window h1 {
@@ -396,14 +403,121 @@ footer {
     letter-spacing:0.03ch;
 }
 
+#contact-window p {
+    color:rgba(255,255,255,0.9);
+    margin-left:10%;
+    margin-right:10%;
+}
+
 #close-window {
-    background:white;
+    color:rgba(255,255,255,0.6);
     border-radius:50%;
     text-align:center;
     height:1.1rem;
     width:1.1rem;
     cursor:pointer;
     float:right;
+    animation-name:fade;
+    animation-duration:0.1s;
+    transition-property:color, text-shadow;
+	transition-duration:.1s;
+}
+
+#close-window:hover {
+    color:rgba(255,255,255,0.8);
+    text-shadow: 0px 0px 4px rgba(255,255,255,0.9);
+}
+
+#contact-window form {
+    padding:20px;
+    padding-top:20px;
+    width:70%;
+    margin:0 auto;
+    outline:none;
+}
+
+#contact-window form input {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom:2%;
+    width:100%;
+    outline:none;
+}
+
+#contact-window form textarea {
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+    width:100.5%;
+    height:100px;
+    outline:none;
+}
+
+#send-button {
+    cursor: pointer;
+    color:rgba(255,255,255,0.9);
+    background:inherit;
+    outline:none;
+    padding:4px;
+    border: 1px solid rgb(111, 92, 206, 0.5);
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.7);
+    width:50%;
+    display:block;
+    margin: 0 auto;
+    margin-top:15px;
+    animation-name:fade;
+    animation-duration:0.1s;
+    transition-property:border, box-shadow, background, opacity;
+	transition-duration:.2s;
+}
+
+#send-button i {
+    opacity:0.6;
+    padding-left:10px;
+}
+
+#send-button:hover {
+    background:rgb(29, 17, 88);
+}
+
+.conditions-agree {
+    width:fit-content;
+    padding-top:15px;
+    margin:0 auto;
+    color:rgba(255,255,255,0.5);
+    font-size:0.6rem;
+}
+
+#form-error-message {
+    width:fit-content;
+    padding-top:15px;
+    margin:0 auto;
+    color:rgba(255,255,255,1);
+    font-size:0.8rem;
+    animation-name:fadeBounce;
+    animation-duration:0.6s;
+    transition-property:border, box-shadow, background, opacity;
+	transition-duration:.3s;
+}
+
+#sent-confirmation {
+    color:rgba(255,255,255,0.8);
+    text-shadow:rgba(0,0,0,0.6);
+    width:20%;
+    height:50px;
+    text-align: center;
+    margin-left:40%;
+    margin-right:40%;
+    padding:10px;
+    padding-top:25px;
+    position: fixed;
+    float: none;
+    z-index:1000;
+    background:rgba(20, 9, 73, 0.95);
+    box-shadow:0px 0px 900px rgba(0, 0, 0, 1);
+    border: 1px solid rgb(111, 92, 206);
+    animation-name:fadeBounce;
+    animation-duration:0.6s;
+    transition-property:border, box-shadow, background, opacity;
+	transition-duration:.3s;
 }
 
 /* SMALL DESKTOP AND TABLET DEVICES */
@@ -601,6 +715,25 @@ footer {
 
     #text-footer {
         width:95%;
+    }
+
+    #contact-window {
+        position:fixed;
+        top:100px;
+        width:90%;
+        margin-left:3%;
+    }
+
+    #contact-window form {
+        width:90%;
+        margin:0 auto;
+    }
+
+    #sent-confirmation {
+        position:fixed;
+        top:100px;
+        width:80%;
+        margin-left:10%;
     }
 }
 

@@ -21,6 +21,7 @@
 </head>
 
 <body>
+<div class="wrapper"><!-- .wrapper is used to ensure a minimum page height so that #footer is at the bottom of the page. -->
     <div class="header-bar">
         <a href="index.html">
             <h1 id="visit">Visit</h1><h1 id="galway">Galway</h1>
@@ -31,23 +32,43 @@
         <nav id="desktop-nav">
             <a href="index.html" class="nav-link" id="home-desktop"> <i class="fas fa-book-open"></i> Home </a>
             <a href="plan-a-visit.html" class="nav-link" id="plan-desktop"> <i class="fas fa-map-marked"></i> Plan a Visit </a>
-            <a href="" class="nav-link"> <i class="fas fa-paper-plane" id="contact-desktop"></i> Contact</a>
+            <a id="contact-button"> <i class="fas fa-paper-plane"></i> Contact</a>
         </nav>
 
         <!-- Mobile Navbar Toggle Button -->
-        <div id="menu-button"><!-- Menu icon, when clicked toggles #mobile-nav visibility using assets/js/toggle.js -->
+        <div id="menu-button"><!-- < Menu icon, when clicked toggles #mobile-nav visibility using toggle.js -->
             <span data-toggle-target="#mobile-nav" id="menu-toggle"  class="toggle-btn"><i class="fas fa-bars"></i></span>
         </div>
     </div><!-- .header-bar -->
 
-    <!-- Mobile Navbar (this sits outside .header-bar to avoid the .header-bar background color being applied )-->
+    <!-- Mobile Navbar | Invisible by default. Visibility triggered using toggle.js on mobile resolution when #menu-button clicked. -->
     <nav id="mobile-nav" class="invisible">
         <ul id="mobile-nav-list">
             <a href="index.html" class="nav-link"><li id="home"> <i class="fas fa-book-open"></i> Home </li> </a>
             <a href="plan-a-visit.html" class="nav-link"><li id="plan-a-visit"> <i class="fas fa-map-marked"></i> Plan a Visit </li> </a>
-            <a href="" class="nav-link" id="contact-button"><li id="contact"><i class="fas fa-paper-plane"></i> Contact </li> </a>
+            <a class="nav-link" id="contact-button-mob"><li id="contact"><i class="fas fa-paper-plane"></i> Contact </li> </a>
         </ul>
     </nav><!-- #mobile-nav -->
+
+        <!-- Contact Window | Invisible by default. Visibility triggered when #contact-button or #contact-button-mob is clicked. 
+    This is controlled using toggle.js. -->
+    <div id="contact-window" class="invisible">
+        <div id="close-window"> <i class="fas fa-times"></i> </div> <!-- "x" Button on top right of window. When clicked, closes window and resets visibility of #form-error-message, all via toggle.js. -->
+        <h1>Contact Us</h1>
+        <p> Send us a message using the form below, and our team will reply to you as soon as possible.</p>
+        <form id="contact-form" action="">
+	        <input id="username" name="username" type="text" placeholder="Enter your name"/> <br /> 
+            <input id="useremail" name="useremail" type="email" placeholder="Enter your e-mail"/> <br /> 
+            <textarea id="usermessage" form="contact-form" placeholder="Type your message.."></textarea><br />
+            <button type="button" id="send-button">Send Message<i class="fas fa-paper-plane"></i></i></button>
+            <div id="form-error-message" class="invisible">You must input your name, e-mail address and a message.</div> <!-- Invisible by default. Visibility triggered using toggle.js if any inputs are left empty. -->
+            <div class="conditions-agree">By clicking "Send Message" you agree to our Privacy Policy.</div>
+        </form>
+    </div>
+
+    <!-- Sent Confirmation | Small window with confirmation message which triggers using toggle.js when message successfully sent. Disappears after a short moment. -->
+    <div id="sent-confirmation" class="invisible">Your message has been sent.</div>
+    <!-- / contact window -->
 
     <div class="welcome-text">
         <p> Use the interactive map below to plan your trip. <br/><br/> Choose a category to view places on the map, click a marker, and click <span class="highlight-blue"> <i class="fas fa-plus-square"></i> Add to List</span> to add it to your trip itinerary.
@@ -55,6 +76,7 @@
         </p>
     </div>
 
+    <!-- Map Buttons | Displayed on left of map on desktop, or on top at smaller resolutions. When a button is clicked, map.js loads related markers into the map. -->
     <div class="map-buttons">
         <button id="hotels"> <i class="fas fa-hotel"></i> Hotels</button>
         <button id="restaurants"> <i class="fas fa-utensils"></i> Restaurants</button>
@@ -64,14 +86,17 @@
         <button id="activities"> <i class="fas fa-hiking"></i> Activities</button>
     </div>
 
+    <!-- Map | #map-container controls the width, border, shadow etc. #map is used by Google Maps JavaScript API to load the map itself. -->
     <div id="map-container">
         <div id="map"></div>
     </div>
 
+    <!-- Saved Locations / To-Do list | When "Add a Marker" is clicked on an infowindow, it will append it as a list item to #todo-list. Functionality for this is controlled with todoList.js -->
     <ul id="todo-list">
-        <li class="todo-li" id="todo-list-header"> <i class="fas fa-map-marker-alt"></i> My List</li>
+        <li class="todo-li" id="todo-list-header"> <i class="fas fa-map-marker-alt"></i>Saved Places</li>
     </ul>
-
+</div><!--/wrapper-->
+    <!-- Footer -->
     <footer>
         <div id="footer">
             <a href="http://www.instagram.com/" target="_blank"><div class="social-icon"><i class="fab fa-instagram"></i></div></a>
