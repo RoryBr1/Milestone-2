@@ -139,9 +139,59 @@ nav a:hover {
     box-shadow:rgba(255,255,255,0.6);
     padding-left:20%;
     padding-right:20%;
-    margin-bottom:10px;
     padding-top:10px;
     padding-bottom:10px;
+}
+
+.homepage-article {
+    height:fit-content;
+    width:75%;
+    background:white;
+    margin:0 auto;
+}
+
+#homepage-splash-text {
+    height:300px;
+    background-image: url("../images/index-splash.jpg");
+    background-size: cover;
+    font-size:2rem;
+    color:rgba(255,255,255,1);
+    text-shadow:0px 0px 55px rgba(0, 0, 0, 0.9);
+    text-shadow:0px 0px 15px rgba(0, 0, 0, 0.9);
+    margin-bottom:50px;
+}
+
+#homepage-splash-text h2 {
+    position:relative;
+    top:200px;
+    left:50px;
+}
+
+.image-container {
+    color:rgba(255,255,255,0.8);
+    text-shadow:0px 0px 5px rgba(0,0,0,0.9);
+    background-color:rgba(0,0,0,0.6);
+    display: block;
+    width:60%;
+    margin:0 auto;
+}
+
+.image-container img {
+    width:100%;
+}
+
+.homepage-article p {
+    width:80%;
+    margin:0 auto;
+}
+
+.homepage-article h3 {
+    font-size:2rem;
+    color: rgb(116, 23, 34);
+    width:80%;
+    margin: 0 auto;
+    padding-top:60px;
+    padding-bottom:20px;
 }
 
 /* MAP STYLING */
@@ -553,10 +603,20 @@ footer {
     }
 
     .welcome-text {
-        width:95%;
+        width:100%;
         margin:0 auto;
         padding:25px;
     }
+
+    .welcome-text p {
+        width:70%;
+        margin: 0 auto;
+    }
+    
+    #homepage-splash-text h2 {
+        font-size:2.23rem;
+    }
+
     .map-buttons {
         width:100%;
         margin-bottom:5px;
@@ -605,11 +665,16 @@ footer {
         margin-top:30px;
         margin-right:5%;
         font-size:3rem;
+        animation-name:fade;
+        animation-duration:.1;
+        transition-property:color,background-color,border-color,text-shadow,transform;
+        transition-duration:.3s;
     }
 
     .menu-button-clicked {
-        color:rgb(78, 78, 78);
-        text-shadow:0px 0px 5px white;
+        color:rgba(255,255,255);
+        text-shadow:0px 0px 4px rgba(0,0,0,0.8);
+        transform:scale(1.1);
     }
 
     #mobile-nav {
@@ -670,8 +735,25 @@ footer {
     }
 
     .welcome-text {
-        width:90%;
+        width:100%;
         font-size:0.9rem;
+    }
+
+    .homepage-article {
+        width:100%;
+    }
+
+    #homepage-splash-text {
+        height:200px;
+        background-size:cover;
+    }
+
+    #homepage-splash-text h2 {
+        text-shadow:0px 0px 8px rgba(0, 0, 0, 0.9),0px 0px 60px rgba(0, 81, 255,1);
+        margin-left:2%;
+        top:140px;
+        left:20px;
+        font-size:1.5rem;
     }
 
     .visible {
