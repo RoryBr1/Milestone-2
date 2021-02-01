@@ -31,6 +31,7 @@ h1 {
 }
 
 a {
+    white-space: nowrap;
     cursor:pointer;
     color:royalblue;
     text-decoration:none;
@@ -148,6 +149,8 @@ nav a:hover {
     width:75%;
     background:white;
     margin:0 auto;
+    padding-bottom:50px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 #homepage-splash-text {
@@ -167,20 +170,14 @@ nav a:hover {
     left:50px;
 }
 
-.image-container {
-    color:rgba(255,255,255,0.8);
-    text-shadow:0px 0px 5px rgba(0,0,0,0.9);
-    background-color:rgba(0,0,0,0.6);
-    display: block;
-    width:60%;
-    margin:0 auto;
-}
-
-.image-container img {
-    width:100%;
+.emphasise-paragraph {
+    font-size:1.2rem;
+    font-style: italic;
+    padding-bottom:50px;
 }
 
 .homepage-article p {
+    display: block;
     width:80%;
     margin:0 auto;
 }
