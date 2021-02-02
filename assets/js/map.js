@@ -8,10 +8,11 @@ let activeMarkerName;
 function initMap() {
   const galway = { lat: 53.27108077506178, lng: -9.056759662752283 };
   map = new google.maps.Map(document.getElementById("map"), {
-      zoom: 14,
+      zoom: 13,
       center: galway,
       mapTypeId: "terrain",
       streetViewControl: false,
+      
   });
 }
 
@@ -24,10 +25,12 @@ const addMarker = (markerData) => {
       position: markerData.position,
       map: map,
       animation: google.maps.Animation.DROP,
+      icon: { url: "http://maps.google.com/mapfiles/ms/icons/red-dot.png" },
       content: markerData.content + `<br/> <button id="add-button"> <i class="fas fa-plus-square"></i> Add to List</button>`
   });
 
   markers.push(marker); // pushes markers to the markers array, which is cleared each time new markers are loaded.
+  
   marker.addListener("click", () => {
       var infowindow = new google.maps.InfoWindow({
           content: marker.content

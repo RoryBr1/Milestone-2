@@ -241,6 +241,10 @@ nav a:hover {
     height:500px;
 }
 
+#map img {
+    height:5px;
+    width:5px;
+}
 #map a {
     font-weight:700;
 }
