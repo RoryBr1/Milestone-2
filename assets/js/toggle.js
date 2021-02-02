@@ -1,7 +1,6 @@
 const menuButton = document.getElementById("menu-button");
 const mobileNav = document.getElementById("mobile-nav");
 const contactButton = document.getElementById("contact-button");
-const contactLink = document.getElementById("contact-link");
 const contactButtonMob = document.getElementById("contact-button-mob");
 const contactWindow = document.getElementById("contact-window");
 const contactCloseButton = document.getElementById("close-window");
@@ -15,7 +14,6 @@ const formError = document.getElementById("form-error-message");
 
 menuButton.addEventListener("click", toggleMobNav);
 contactButton.addEventListener("click", openContactWindow);
-contactLink.addEventListener("click", openContactWindow);
 contactButtonMob.addEventListener("click", openContactWindow);
 contactCloseButton.addEventListener("click", closeWindow);
 sendButton.addEventListener("click", messageSent);
