@@ -1,6 +1,4 @@
- 
-
-.container img {
+ .container img {
     display: block;
     width:100%;
     margin:0 auto;
@@ -254,9 +252,6 @@ html.cssanimations .box-a {
     width: 8.332%;
 }
 @media screen and (min-width: 768px) {
-    .row {
-        margin-right: -40px;
-   }
     .col {
         padding-right: 40px;
    }

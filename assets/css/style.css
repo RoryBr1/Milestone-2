@@ -191,6 +191,11 @@ nav a:hover {
     padding-bottom:20px;
 }
 
+.container{
+    width:80%;
+    margin:0 auto;
+}
+
 /* MAP STYLING */
 .map-buttons {
     display:inline-block;
