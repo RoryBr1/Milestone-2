@@ -96,3 +96,8 @@ The modal window can be closed by clicking the "X" in the top-right corner of th
 Error message shown if the user attempts to submit an incomplete form
 * ![Confirmation message shown when the user successfully submits the form](wireframes/feature-confirmation-message.png)<br>
 Confirmation message shown when the user successfuly submits the form.
+## Interactive Tourist Map
+* ![Interactive tourist map, info-windows, and Saved Places functionality](wireframes/feature-map.gif)<br>
+This is designed as the primary functionality of the site; an interactive map which allows the user to view markers on the map based on categories of their interest. Accessed by clicking "Plan a Visit" on site navigation. Markers can be clicked, showing an info-window with information about the map. An "Add to List" button will add the marker to the "Saved Places" list, which is saved locally. The website can be refreshed or closed, and the list will persist when the user re-visits the page. Items can be deleted from the list by clicking the "Delete" icon next to them.
+The map is built using [Google Maps Javascript API](https://developers.google.com/maps/documentation/javascript/overview).
+Users can zoom in/out of the map by using the buttons on the bottom right of the map, or by double-clicking with the left and right mouse buttons.
