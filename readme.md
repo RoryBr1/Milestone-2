@@ -74,20 +74,20 @@ colours throughout the site.
 
 # Features
 The following is a list of the main functionalities of the site, built to fulfill the needs of the user as described in User Stories above.
-## Site Navigation
+* ## Site Navigation
 ![Site navigation bar](wireframes/feature-navbar.png)<br>
 Desktop navigation bar used to navigate between pages of the site and open the Contact Us modal.
-## Mobile Site Navigation
+* ## Mobile Site Navigation
 ![Mobile navigation bar](wireframes/feature-mobile-navbar.gif) <br>
 Toggle-enabled mobile navigation bar used to navigate the site on mobile devices.
-## Image Slideshow
+* ## Image Slideshow
 ![Image slideshow](wireframes/feature-slideshow.png) <br>
 Displayed on homepage allowing users to view images of the area conveniently.
-## Social Media Links
+* ## Social Media Links
 ![Social media links](wireframes/feature-footer.png)<br>
 Displayed in footer. When clicked, opens the relevant social media website in a new window. 
 This allows users to access more tourist-related content about Galway produced by the web team.
-## "Contact Us" Modal Window
+* ## "Contact Us" Modal Window
 ![Contact Us modal window](wireframes/feature-contact-modal.png)<br>
 Modal window opened when "Contact" is clicked either on the desktop or mobile navigation.
 User is prompted to enter their name, e-mail address, and a message to send to the web team. 
@@ -96,7 +96,7 @@ The modal window can be closed by clicking the "X" in the top-right corner of th
 Error message shown if the user attempts to submit an incomplete form
 * ![Confirmation message shown when the user successfully submits the form](wireframes/feature-confirmation-message.png)<br>
 Confirmation message shown when the user successfuly submits the form.
-## Interactive Tourist Map
+* ## Interactive Tourist Map
 * ![Interactive tourist map, info-windows, and Saved Places functionality](wireframes/feature-map.gif)<br>
 This is designed as the primary functionality of the site; an interactive map which allows the user to view markers on the map based on categories of their interest. Accessed by clicking "Plan a Visit" on site navigation. Markers can be clicked, showing an info-window with information about the map. An "Add to List" button will add the marker to the "Saved Places" list, which is saved locally. The website can be refreshed or closed, and the list will persist when the user re-visits the page. Items can be deleted from the list by clicking the "Delete" icon next to them.
 The map is built using [Google Maps Javascript API](https://developers.google.com/maps/documentation/javascript/overview).
