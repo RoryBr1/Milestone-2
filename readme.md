@@ -49,7 +49,7 @@ The website also features a *Contact* form which users can fill out and submit w
 
 ## Design 
 ![Screenshot from testing at http://ami.responsivedesign.is/](wireframes/header-screenshots.png)
-[Click here to view primary wireframes.](https://rorybr1.github.io/Milestone-2/wireframes/wireframes.html)
+[Click here to view primary wireframes.](https://rorybr1.github.io/Milestone-2/wireframes/wireframes.html) <br>
 [Click here to view design prototypes with color and images.](https://rorybr1.github.io/Milestone-2/wireframes/early-designs.html)
 ### Concept & Font Choice
 The site is designed to appear clean, professional, and uncomplicated while also appearing vibrant and welcoming.
