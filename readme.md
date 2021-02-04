@@ -79,4 +79,17 @@ The following is a list of the main functionalities of the site, built to fulfil
 Desktop navigation bar used to navigate between pages of the site and open the Contact Us modal.
 ## Mobile Site Navigation
 ![Mobile navigation bar](wireframes/feature-mobile-navbar.gif) <br>
-Toggle-enabled mobile navigation bar used to navigate on mobile devices.
+Toggle-enabled mobile navigation bar used to navigate the site on mobile devices.
+## Image Slideshow
+![Image slideshow](wireframes/feature-slideshow.png) <br>
+Displayed on homepage allowing users to view images of the area conveniently.
+## Social Media Links
+![Social media links](wireframes/feature-footer.png)<br>
+Displayed in footer. When clicked, opens the relevant social media website in a new window. 
+This allows users to access more tourist-related content about Galway produced by the web team.
+## "Contact Us" Modal Window
+![Contact Us modal window](wireframes/contact-modal.png)<br>
+Modal window opened when "Contact" is clicked either on the desktop or mobile navigation.
+User is prompted to enter their name, e-mail address, and a message to send to the web team. 
+The modal window can be closed by clicking the "X" in the top-right corner of the modal.
+* ![Contact Us error message shown when the user attempts to submit an incomplete form](wireframes/feature-error-message.png)<br>
