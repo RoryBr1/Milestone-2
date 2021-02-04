@@ -50,3 +50,25 @@ The website also features a *Contact* form which users can fill out and submit w
 ## Design 
 ![Screenshot from testing at http://ami.responsivedesign.is/](wireframes/header-screenshots.png)
 [Click here to view primary wireframes.](https://rorybr1.github.io/Milestone-2/wireframes/wireframes.html)
+### Concept & Font Choice
+The site is designed to appear clean, professional, and uncomplicated while also appearing vibrant and welcoming.
+Clean lines are used throughout and a design choice was made to avoid rounded border-corners on buttons and page divisions.
+A single font, *"Roboto"*, is used for the header, site navigation, headings and body content. A design choice was made to avoid 
+the use of multiple font families; headers are emphasised by using colour and larger font size.
+As the website is aimed to attract tourists, a vibrant background image is used that compliments the main colour scheme of the website.
+(See diagram below for further breakdown of the site's colour scheme). The background image has been blurred to ease readability and 
+avoid distracting from the main content.
+[FontAwesome](https://fontawesome.com/) Icons are used in the site navigation & on the "Plan A Visit" page (on category buttons and the "Saved Places" list, as well as in
+the footer (for social media links) to illustrate their meaning.
+### Colours
+Three main colours are used in throughout the site. 
+Burgundy - *rgba(103, 19, 29)*;
+Dark Royal Blue - *rgba(40, 98, 168)*;
+Deep Purple - *rgba(20, 9, 73)*;
+as well as White *rgba(255,255,255)* and Black *rgba(0,0,0)*.
+These colours are used with varying opacity throughout the site. See the images below demonstrating the consistent use of these
+colours throughout the site.
+![Colour scheme on Home page and Contact Us modal](wireframes/color-scheme-index.png)
+![Colour scheme on Plan A Visit](wireframes/color-scheme-map.png)
+![COlour scheme on mobile navigation](wireframes/color-scheme-mobile-menu.png)
+
