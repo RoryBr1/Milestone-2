@@ -72,3 +72,11 @@ colours throughout the site.
 ![Colour scheme on Plan A Visit](wireframes/color-scheme-map.png)
 ![COlour scheme on mobile navigation](wireframes/color-scheme-mobile-menu.png)
 
+# Features
+The following is a list of the main functionalities of the site, built to fulfill the needs of the user as described in User Stories above.
+## Site Navigation
+![Site navigation bar](wireframes/feature-navbar.png)
+Desktop navigation bar used to navigate between pages of the site and open the Contact Us modal.
+## Mobile Site Navigation
+![Mobile navigation bar](wireframes/feature-mobile-navbar.gif)
+Toggle-enabled mobile navigation bar used to navigate on mobile devices.
