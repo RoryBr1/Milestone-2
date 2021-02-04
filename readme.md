@@ -50,6 +50,7 @@ The website also features a *Contact* form which users can fill out and submit w
 ## Design 
 ![Screenshot from testing at http://ami.responsivedesign.is/](wireframes/header-screenshots.png)
 [Click here to view primary wireframes.](https://rorybr1.github.io/Milestone-2/wireframes/wireframes.html)
+[Click here to view design prototypes with color and images.](https://rorybr1.github.io/Milestone-2/wireframes/early-designs.html)
 ### Concept & Font Choice
 The site is designed to appear clean, professional, and uncomplicated while also appearing vibrant and welcoming.
 Clean lines are used throughout and a design choice was made to avoid rounded border-corners on buttons and page divisions.
@@ -103,11 +104,11 @@ The map is built using [Google Maps Javascript API](https://developers.google.co
 Users can zoom in/out of the map by using the buttons on the bottom right of the map, or by double-clicking with the left and right mouse buttons.
 
 # Future Features & Developer Maintenence 
-*The list of markers in assets/js/markersData.js must be kept up-to-date by the web team, by adding new markers and removing obsolete markers (for instance, if a business ceases or if a new business opens). In the future, this could be automated by loading marker data from an external, up-to-date source if one is found.*
+*The list of markers in assets/js/markersData.js must be kept up-to-date by the web team, by adding new markers and removing obsolete markers (for instance, if a restaurant closes or if a new business opens). In the future, this could be automated by loading marker data from an external, up-to-date source if one is found.*
 
 While the goal functionalities of the site have been achieved, additional features could add to the user's experience on the site.
 Future developers should consider this list of potential features. 
 * An informational video on the homepage to increase the educational value of the website. A visual media professional could be employed to produce a high-quality informational video for the front page of the website. 
 * On the "Plan A Visit" section > Interactive Map > "Saved Places" list, functionality could be added so that when a list-item is clicked, the relevant marker and info-window is highlighted on the map. This would enable users to quickly find the location of their Saved Places.
-* "Top Places to Visit This Week". A list could be added on either the homepage or the "Plan A Visit" page, which displays suggested locations for the user to discover on the map. The list could be updated with popular locations, or locations which are holding events on the given week. When clicked, list-items open the location's marker on the map, allowing them to save the suggested place to their Saved Places.
+* "Suggested Places to Visit". A list could be added on either the homepage or the "Plan A Visit" page, which displays suggested locations for the user to discover on the map. The list could be updated with popular locations, or locations which are holding events on the given week. When clicked, list-items open the location's marker on the map, allowing them to save the suggested place to their Saved Places.
 
