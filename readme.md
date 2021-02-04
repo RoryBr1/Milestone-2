@@ -88,8 +88,11 @@ Displayed on homepage allowing users to view images of the area conveniently.
 Displayed in footer. When clicked, opens the relevant social media website in a new window. 
 This allows users to access more tourist-related content about Galway produced by the web team.
 ## "Contact Us" Modal Window
-![Contact Us modal window](wireframes/contact-modal.png)<br>
+![Contact Us modal window](wireframes/feature-contact-modal.png)<br>
 Modal window opened when "Contact" is clicked either on the desktop or mobile navigation.
 User is prompted to enter their name, e-mail address, and a message to send to the web team. 
 The modal window can be closed by clicking the "X" in the top-right corner of the modal.
 * ![Contact Us error message shown when the user attempts to submit an incomplete form](wireframes/feature-error-message.png)<br>
+Error message shown if the user attempts to submit an incomplete form
+* ![Confirmation message shown when the user successfully submits the form](wireframes/feature-confirmation-message.png)<br>
+Confirmation message shown when the user successfuly submits the form.
