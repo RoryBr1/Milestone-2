@@ -72,7 +72,7 @@ colours throughout the site.
 ![Colour scheme on Plan A Visit](wireframes/color-scheme-map.png)
 ![COlour scheme on mobile navigation](wireframes/color-scheme-mobile-menu.png)
 
-# Features
+# Existing Features
 The following is a list of the main functionalities of the site, built to fulfill the needs of the user as described in User Stories above.
 * ## Site Navigation
 ![Site navigation bar](wireframes/feature-navbar.png)<br>
@@ -92,13 +92,22 @@ This allows users to access more tourist-related content about Galway produced b
 Modal window opened when "Contact" is clicked either on the desktop or mobile navigation.
 User is prompted to enter their name, e-mail address, and a message to send to the web team. 
 The modal window can be closed by clicking the "X" in the top-right corner of the modal.
-* ![Contact Us error message shown when the user attempts to submit an incomplete form](wireframes/feature-error-message.png)<br>
+ ![Contact Us error message shown when the user attempts to submit an incomplete form](wireframes/feature-error-message.png)<br>
 Error message shown if the user attempts to submit an incomplete form
-* ![Confirmation message shown when the user successfully submits the form](wireframes/feature-confirmation-message.png)<br>
+ ![Confirmation message shown when the user successfully submits the form](wireframes/feature-confirmation-message.png)<br>
 Confirmation message shown when the user successfuly submits the form.
 * ## Interactive Tourist Map
-* ![Interactive tourist map, info-windows, and Saved Places functionality](wireframes/feature-map.gif)<br>
-This is designed as the primary functionality of the site; an interactive map which allows the user to view markers on the map based on categories of their interest. Accessed by clicking "Plan a Visit" on site navigation. Markers can be clicked, showing an info-window with information about the map. An "Add to List" button will add the marker to the "Saved Places" list, which is saved locally. The website can be refreshed or closed, and the list will persist when the user re-visits the page. Items can be deleted from the list by clicking the "Delete" icon next to them.
+ ![Interactive tourist map, info-windows, and Saved Places functionality](wireframes/feature-map.gif)<br>
+An interactive map which allows the user to view markers on the map based on categories of their interest. Accessed by clicking "Plan a Visit" on site navigation. Markers can be clicked, showing an info-window with information about the map. An "Add to List" button will add the marker to the "Saved Places" list, which is saved locally. The website can be refreshed or closed, and the list will persist when the user re-visits the page. Items can be deleted from the list by clicking the "Delete" icon next to them.
 The map is built using [Google Maps Javascript API](https://developers.google.com/maps/documentation/javascript/overview).
 Users can zoom in/out of the map by using the buttons on the bottom right of the map, or by double-clicking with the left and right mouse buttons.
+
+# Future Features & Developer Maintenence 
+*The list of markers in assets/js/markersData.js must be kept up-to-date by the web team, by adding new markers and removing obsolete markers (for instance, if a business ceases or if a new business opens). In the future, this could be automated by loading marker data from an external, up-to-date source if one is found.*
+
+While the goal functionalities of the site have been achieved, additional features could add to the user's experience on the site.
+Future developers should consider this list of potential features. 
+* An informational video on the homepage to increase the educational value of the website. A visual media professional could be employed to produce a high-quality informational video for the front page of the website. 
+* On the "Plan A Visit" section > Interactive Map > "Saved Places" list, functionality could be added so that when a list-item is clicked, the relevant marker and info-window is highlighted on the map. This would enable users to quickly find the location of their Saved Places.
+* "Top Places to Visit This Week". A list could be added on either the homepage or the "Plan A Visit" page, which displays suggested locations for the user to discover on the map. The list could be updated with popular locations, or locations which are holding events on the given week. When clicked, list-items open the location's marker on the map, allowing them to save the suggested place to their Saved Places.
 
