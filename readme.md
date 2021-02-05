@@ -1,16 +1,37 @@
 ![Header Logo](wireframes/header-logo.png)
 # Interactive Tourist Map of Galway, Ireland
 
-# Table of Contents
+# Table of Content
+<hr>
 
 1. [Overview](#overview)
 2. [UX](#ux)
     * [Developer Goals](#developer-goals)
     * [User Stories](#user-stories)
     * [Design](#design)
-    * [Concept & Font Choice](### Concept & Font Choice)
+    * [Concept & Font Choice](#concept-&-font-choice)
+    * [Colors](#colours)
+3. [Existing Features](#Existing-Features)
+    * [Site Navigation](#site-navigation)
+    * [Mobile Site Navigation](#mobile-site-navigation)
+    * [Image Slideshow](#image-slideshow)
+    * [Social Media Links](#social-media-links)
+    * ["Contact Us" Modal Window](#"contact-us"-modal-window)
+    * [Interactive Tourist Map](#interactive-tourist-map)
+4. [Developer Notes](#developer-notes)
+    * [Future Features](#future-features)
+5. [Technologies Used](#technologies-used)
+    * [Code](#code)
+    * [Editors](#editors)
+    * [Additional Tools](#additional-tools)
+6. [Deployment](#deployment)
+    * [Github Pages](#github-pages)
+    * [Local Deployment](#local-deployment)
+7. [Testing](#testing)
+8. [Credits](#credits)
+    * [Acknowledgements](#acknowledgements)
 
-
+<hr>
 
 ## Overview
 
@@ -216,6 +237,7 @@ Future developers should consider this list of potential features.
 [Click here to view the Testing.md file.](wireframes/testing.md)
 
 <hr>
+
 # Credits
 
 ## Images
@@ -235,11 +257,13 @@ Source links are listed below for each image. Some images have been edited and a
 * [FontAwesome](https://fontawesome.com/) - Webfont technology used to display icons in the site navigation buttons, social media links in footer, category buttons on plan-a-visit.html, and anywhere the < i > HTML tag is used. 
 <br>
 
-<hr>
 
-# Acknowledgements 
+
+## Acknowledgements 
 
 * Special thanks to [Code Institute](https://codeinstitute.net/) Tutor Support who helped me troubleshoot at multiple points in the development of the project.
 * Special thanks to my [Code Institute](https://codeinstitute.net/) mentor, Arnold Kyeza, who gave helpful guidance and constructive feedback at multiple points throughout the project. 
 * [Javascript Google Maps Api Tutorial](https://www.youtube.com/watch?v=8NUqDc1bQ84) by Framework Television on [YouTube](http://www.youtube.com/) helped me in learning how to use the Google Maps JavaScript API.
 * [Beginner Vanilla Javascript Project Tutorial](https://www.youtube.com/watch?v=Ttf3CEsEwMQ) by Dev Ed on [YouTube](http://www.youtube.com/) helped me to build the "Saved Places" functionality on plan-a-visit.html.
+
+<hr>
