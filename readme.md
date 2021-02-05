@@ -9,7 +9,7 @@
     * [Developer Goals](#developer-goals)
     * [User Stories](#user-stories)
     * [Design](#design)
-    * [Concept & Font Choice](#concept-&-font-choice)
+    * [Concept & Font Choice](#concept-and-font-choice)
     * [Colors](#colours)
 3. [Existing Features](#Existing-Features)
     * [Site Navigation](#site-navigation)
@@ -89,7 +89,7 @@ The website also features a *Contact* form which users can fill out and submit w
 [Click here to view primary wireframes.](https://rorybr1.github.io/Milestone-2/wireframes/wireframes.html) <br>
 [Click here to view early design prototypes with color and images.](https://rorybr1.github.io/Milestone-2/wireframes/early-designs.html)
 
-* ### Concept & Font Choice
+* ### Concept and Font Choice
 
 The site is designed to appear clean, professional, and uncomplicated while also appearing vibrant and welcoming.
 Clean lines are used throughout and a design choice was made to avoid rounded border-corners on buttons and page divisions.
