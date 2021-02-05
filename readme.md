@@ -1,5 +1,14 @@
 ![Header Logo](wireframes/header-logo.png)
 
+# Table of Contents
+
+1. [Overview](##overview)
+2. [UX](#ux)
+    * [Developer Goals](##developer-goals)
+    * [User Stories](##user-stories
+    * [Design](##design)
+    * [Concept & Font Choice](### Concept & Font Choice)
+
 # Interactive Tourist Map of Galway, Ireland
 
 ## Overview
@@ -202,6 +211,10 @@ Future developers should consider this list of potential features.
         if using GitPod, follow [these instructions](https://www.gitpod.io/docs/languages/html/).
 <hr>
 
+# Testing 
+[Click here to view the Testing.md file.](wireframes/testing.md)
+
+<hr>
 # Credits
 
 ## Images
