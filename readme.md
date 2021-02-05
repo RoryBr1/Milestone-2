@@ -157,7 +157,7 @@ Future developers should consider this list of potential features.
         if using GitPod, follow [these instructions](https://www.gitpod.io/docs/languages/html/).
 # Credits
 ## Images
-    All images were used under license from stock photo websites. | [PixaBay License](https://pixabay.com/service/license/) | [Unsplash License](https://unsplash.com/license) <br>
+All images were used under license from stock photo websites. | [PixaBay License](https://pixabay.com/service/license/) | [Unsplash License](https://unsplash.com/license) <br>
     Source links are listed below for each image. Some images have been edited and adjusted for use on the site.
     * [background.jpg](https://pixabay.com/photos/galway-hookers-2676502/) - coolpropix on PixaBay. 
     * [dungaire-castle.jpg](https://pixabay.com/photos/castle-fort-ireland-irish-castle-5748206/) - bluetaichi on PixaBay
