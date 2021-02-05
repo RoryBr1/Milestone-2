@@ -136,6 +136,25 @@ Future developers should consider this list of potential features.
 * [Google Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools) - Used throughout development to view the website, test features, test JavaScript, and test responsiveness. 
 * [ScreenToGif](https://www.screentogif.com/) - Used to screen-record and create GIFs of these recordings for the purposes of readme.md and testing.md.
 
+# Deployment
+* ## GitHub Pages
+    The site is publicly accessible, hosted on the GitHub Pages platform.
+    This was achieved with the following steps:
+    1. Log into [GitHub](http://www.github.com/) as RoryBr1 (repository owner).
+    2. Click on the repository ("Milestone-2") link on the homepage.
+    3. Click "Settings" on near the top-right of the page.
+    4. Scroll down to GitHub Pages.
+    5. Click "Source" and select "master" and directory "/ (root)".
+    6. Click "Save".
+    7. The site has now been deployed, and its public URL is displayed in the "GitHub Pages" section on this settings page.
+* ## Local Deployment
+    1. Navigate to [the repository page on GitHub](https://github.com/RoryBr1/Milestone-2).
+    2. Click "Code" and the "Copy to Clipboard" button. You can use this address to clone the repository in your chosen editor/IDE.
+        <br>*or*<br>
+        If you have browser extensions, such as "Clone with VSCode" or the "Gitpod" browser extension on Chrome, a button will appear such as "Clone with VSCode" or "Open in Gitpod"; click this button to automatically clone and open the repository in your IDE.
+    3. To open a live preview of the website in VSCode, simply open the "index.html" file, right-click within the code, and click "Open with Live Server"; a locally hosted version of the website will open in your browser. 
+        <br>*or<br>
+        if using GitPod, follow [these instructions](https://www.gitpod.io/docs/languages/html/).
 # Credits
 ## Images
 All images were used under license from stock photo websites. | [PixaBay License](https://pixabay.com/service/license/) | [Unsplash License](https://unsplash.com/license) <br>
@@ -143,8 +162,8 @@ Source links are listed below for each image. Some images have been edited and a
 * [background.jpg](https://pixabay.com/photos/galway-hookers-2676502/) - coolpropix on PixaBay. 
 * [dungaire-castle.jpg](https://pixabay.com/photos/castle-fort-ireland-irish-castle-5748206/) - bluetaichi on PixaBay
 * [traditional-boats.jpg](https://pixabay.com/photos/traditional-sailing-boats-galway-2676503/) - coolpropix on PixaBay
-&emsp; * [galway-cathedral.jpg](https://unsplash.com/photos/woCygN0t-KE) - Gabriel Ramos on Unsplash
-&emsp; * [kylemore-abbey.jpg](https://pixabay.com/photos/kylemore-abbey-ireland-castle-4152831/) - UkyoKatayama on Pixabay
+* [galway-cathedral.jpg](https://unsplash.com/photos/woCygN0t-KE) - Gabriel Ramos on Unsplash
+* [kylemore-abbey.jpg](https://pixabay.com/photos/kylemore-abbey-ireland-castle-4152831/) - UkyoKatayama on Pixabay
 * [index-splash.jpg](https://unsplash.com/photos/gsLM7kBkDvw) - Ruby Doan on Unsplash
 
 ## Fonts
