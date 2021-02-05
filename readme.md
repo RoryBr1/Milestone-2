@@ -10,7 +10,7 @@
     * [User Stories](#user-stories)
     * [Design](#design)
     * [Concept & Font Choice](#concept-and-font-choice)
-    * [Colors](#colours)
+    * [Colours](#colours)
 3. [Existing Features](#Existing-Features)
     * [Site Navigation](#site-navigation)
     * [Mobile Site Navigation](#mobile-site-navigation)
@@ -32,6 +32,7 @@
     * [Acknowledgements](#acknowledgements)
 
 <hr>
+<hr>
 
 ## Overview
 
@@ -45,6 +46,8 @@ The website also features a *Contact* form which users can fill out and submit w
 
 *This site was created as a project for the [CodeInstitute](http://www.codeinstitute.net/) Full-Stack Software Development Course and is not maintained by an active web-team. Its purpose is purely educational*.
 <hr>
+
+[Back to Top](#table-of-content)
 
 # UX
 
@@ -80,6 +83,8 @@ The website also features a *Contact* form which users can fill out and submit w
 7. The website allows users to view points of interest in Galway based on category. On the "Plan A Visit" page, there is a list of *category* buttons to the left of the map (on mobile devices, this list will appear on top of the map). Clicking any of these buttons will load places on the map related to that category.
 8. Once markers have been loaded to the map by clicking a category button, the user can click on an individual marker to open that marker's *info-window*. This info window displays basic information about the marker, an "Add to List" button (see point 9 below) as well as a hyperlink to a related website. (This hyperlink will open in a new tab to avoid disrupting the user's experience). 
 9. The website features an interactive to-do list ("Saved Places") to which users can use to remember locations they would like to visit on their trip to Galway. This list is displayed to the right of the map, or to the bottom on mobile devices. Once markers have been loaded to the map by clicking a category button, the user can click any marker to open its *info-window*, and click "Add To List" to add the marker to Saved Places as a list item. Items can be deleted from the list by clicking the Delete (trash icon) button once the user has visited the location or changed their mind about doing so.
+
+[Back to Top](#table-of-content)
 
 <hr>
 
@@ -117,6 +122,9 @@ Colour scheme on Plan A Visit<br><br>
 
 ![Colour scheme on mobile navigation](wireframes/color-scheme-mobile-menu.png)<br><br>
 Colour scheme on mobile navigation
+
+
+[Back to Top](#table-of-content)
 
 <hr>
 
@@ -165,6 +173,8 @@ An interactive map which allows the user to view markers on the map based on cat
 The map is built using [Google Maps Javascript API](https://developers.google.com/maps/documentation/javascript/overview).
 Users can zoom in/out of the map by using the buttons on the bottom right of the map, or by double-clicking with the left and right mouse buttons. <br><br>
 
+[Back to Top](#table-of-content)
+
 <hr>
 
 # Developer Notes
@@ -177,6 +187,8 @@ Future developers should consider this list of potential features.
 * An informational video on the homepage to increase the educational value of the website. A visual media professional could be employed to produce a high-quality informational video for the front page of the website. 
 * On the "Plan A Visit" section > Interactive Map > "Saved Places" list, functionality could be added so that when a list-item is clicked, the relevant marker and info-window is highlighted on the map. This would enable users to quickly find the location of their Saved Places.
 * "Suggested Places to Visit" or similar. A list could be added on either the homepage or the "Plan A Visit" page, which displays suggested locations for the user to discover on the map. The list could be updated with popular locations, or locations which are holding events on the given week. When clicked, list-items open the location's marker on the map, allowing them to save the suggested place to their Saved Places.
+
+[Back to Top](#table-of-content)
 
 <hr>
 
@@ -206,6 +218,8 @@ Future developers should consider this list of potential features.
 * [Google Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools) - Used throughout development to view the website, test features, test JavaScript, and test responsiveness. 
 * [ScreenToGif](https://www.screentogif.com/) - Used to screen-record and create GIFs of these recordings for the purposes of readme.md and testing.md.
 
+[Back to Top](#table-of-content)
+
 <hr>
 
 # Deployment
@@ -231,6 +245,9 @@ Future developers should consider this list of potential features.
     3. To open a live preview of the website in VSCode, simply open the "index.html" file, right-click within the code, and click "Open with Live Server"; a locally hosted version of the website will open in your browser. 
         <br>*or<br>
         if using GitPod, follow [these instructions](https://www.gitpod.io/docs/languages/html/).
+
+[Back to Top](#table-of-content)
+
 <hr>
 
 # Testing 
@@ -258,7 +275,6 @@ Source links are listed below for each image. Some images have been edited and a
 <br>
 
 
-
 ## Acknowledgements 
 
 * Special thanks to [Code Institute](https://codeinstitute.net/) Tutor Support who helped me troubleshoot at multiple points in the development of the project.
@@ -267,3 +283,5 @@ Source links are listed below for each image. Some images have been edited and a
 * [Beginner Vanilla Javascript Project Tutorial](https://www.youtube.com/watch?v=Ttf3CEsEwMQ) by Dev Ed on [YouTube](http://www.youtube.com/) helped me to build the "Saved Places" functionality on plan-a-visit.html.
 
 <hr>
+
+[Back to Top](#table-of-content)
