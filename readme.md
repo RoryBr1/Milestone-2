@@ -6,7 +6,7 @@
 1. [Overview](#overview)
 2. [UX](#ux)
     * [Developer Goals](#developer-goals)
-    * [User Stories](#user-stories
+    * [User Stories](#user-stories)
     * [Design](#design)
     * [Concept & Font Choice](### Concept & Font Choice)
 
