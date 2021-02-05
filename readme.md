@@ -122,7 +122,6 @@ Future developers should consider this list of potential features.
 * [jQuery](https://jquery.com/) - JavaScript library used for ease of development in *map,js, todoList.js, toggle.js*.
 * [Google Maps JavaScript API](https://developers.google.com/maps/documentation/javascript/overview) - Referenced in plan-a-visit.html and technologies used in assets/js/map.js. Used as basis for the interactive map on plan-a-visit.html.
 * [Slideshow](https://codepen.io/learnwebcode/pen/RjpyWd?editors=1100) - Including assets/js/slideshow.js and assets/css/slideshow.css. Used on index.html to enact image slideshow functionality. Code written by [Brad Schiff](https://codepen.io/learnwebcode). Styling edited to fit site needs.
-* [FontAwesome](https://fontawesome.com/) - Icons used in the site navigation buttons, social media links in footer, category buttons on plan-a-visit.html, and anywhere the < i > HTML tag is used. 
 
 ## Editors
 * [Visual Studio Code](https://code.visualstudio.com/) - Open-source code editor. Used throughout development to write code.
@@ -139,4 +138,15 @@ Future developers should consider this list of potential features.
 
 # Credits
 ## Images
-* []
+All images were used under license from stock photo websites. | [PixaBay License](https://pixabay.com/service/license/) | [Unsplash License](https://unsplash.com/license) <br>
+Source links are listed below for each image.
+* [background.jpg](https://pixabay.com/photos/galway-hookers-2676502/) - coolpropix on PixaBay 
+* [dungaire-castle.jpg](https://pixabay.com/photos/castle-fort-ireland-irish-castle-5748206/) - bluetaichi on PixaBay
+* [traditional-boats.jpg](https://pixabay.com/photos/traditional-sailing-boats-galway-2676503/) - coolpropix on PixaBay
+* [galway-cathedral.jpg](https://unsplash.com/photos/woCygN0t-KE) - Gabriel Ramos on Unsplash
+* [kylemore-abbey.jpg](https://pixabay.com/photos/kylemore-abbey-ireland-castle-4152831/) - UkyoKatayama on Pixabay
+* [index-splash.jpg](https://unsplash.com/photos/gsLM7kBkDvw) - Ruby Doan on Unsplash
+
+## Fonts
+* [Google Fonts](https://fonts.google.com/specimen/Roboto) - Webfonts service. "Roboto" font used throughout site.
+* [FontAwesome](https://fontawesome.com/) - Webfont technology used to display icons in the site navigation buttons, social media links in footer, category buttons on plan-a-visit.html, and anywhere the < i > HTML tag is used. 
