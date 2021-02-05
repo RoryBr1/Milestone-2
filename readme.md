@@ -11,6 +11,8 @@ The main functionality of the site is an interactive map which displays places o
 Users can select a category to view places ("*markers*") on the map, belong to that category. When a marker is clicked, an *info-window* is displayed to the user showing the marker's name, basic information, a website link related to the marker, and an "*Add to List*" button. Users can click "Add to List" to add the marker to their trip itenirary ("*Saved Places*"), visible to the right of the map or to the bottom on mobile devices. The purpose of Saved Places is to allow users to create a list of places that they intend to visit.
 
 The website also features a *Contact* form which users can fill out and submit which triggers an e-mail to be sent to the webmaster inbox. The form contains fields for the user's *name, e-mail address* and their *message.*
+
+*This site was created as a project for the [CodeInstitute](http://www.codeinstitute.net/) Full-Stack Software Development Course and is not maintained by an active web-team. Its purpose is purely educational*.
 <hr>
 
 # UX
@@ -56,7 +58,7 @@ The website also features a *Contact* form which users can fill out and submit w
 [Click here to view primary wireframes.](https://rorybr1.github.io/Milestone-2/wireframes/wireframes.html) <br>
 [Click here to view early design prototypes with color and images.](https://rorybr1.github.io/Milestone-2/wireframes/early-designs.html)
 
-### Concept & Font Choice
+* ### Concept & Font Choice
 
 The site is designed to appear clean, professional, and uncomplicated while also appearing vibrant and welcoming.
 Clean lines are used throughout and a design choice was made to avoid rounded border-corners on buttons and page divisions.
@@ -67,17 +69,23 @@ As the website is aimed to attract tourists, a vibrant background image is used 
 avoid distracting from the main content.
 [FontAwesome](https://fontawesome.com/) Icons are used in the site navigation & on the "Plan A Visit" page (on category buttons and the "Saved Places" list, as well as in
 the footer (for social media links) to illustrate their meaning.
-### Colours
+* ### Colours
 Three main colours are used in throughout the site. 
 Burgundy - *rgba(103, 19, 29)*;
 Dark Royal Blue - *rgba(40, 98, 168)*;
 Deep Purple - *rgba(20, 9, 73)*;
 as well as White *rgba(255,255,255)* and Black *rgba(0,0,0)*.
 These colours are used with varying opacity throughout the site. See the images below demonstrating the consistent use of these
-colours throughout the site.
+colours throughout the site.<br><br>
+
 ![Colour scheme on Home page and Contact Us modal](wireframes/color-scheme-index.png)
+Colour scheme on Home page and Contact Us modal<br><br>
+
 ![Colour scheme on Plan A Visit](wireframes/color-scheme-map.png)
-![COlour scheme on mobile navigation](wireframes/color-scheme-mobile-menu.png)
+Colour scheme on Plan A Visit<br><br>
+
+![Colour scheme on mobile navigation](wireframes/color-scheme-mobile-menu.png)<br><br>
+Colour scheme on mobile navigation
 
 <hr>
 
@@ -111,7 +119,7 @@ This allows users to access more tourist-related content about Galway produced b
 ![Contact Us modal window](wireframes/feature-contact-modal.png)<br>
 Modal window opened when "Contact" is clicked either on the desktop or mobile navigation.
 User is prompted to enter their name, e-mail address, and a message to send to the web team. 
-The modal window can be closed by clicking the "X" in the top-right corner of the modal.<br>
+The modal window can be closed by clicking the "X" in the top-right corner of the modal.<br><br>
 
  ![Contact Us error message shown when the user attempts to submit an incomplete form](wireframes/feature-error-message.png)<br>
 Error message shown if the user attempts to submit an incomplete form <br><br>
