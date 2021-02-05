@@ -11,6 +11,7 @@ The main functionality of the site is an interactive map which displays places o
 Users can select a category to view places ("*markers*") on the map, belong to that category. When a marker is clicked, an *info-window* is displayed to the user showing the marker's name, basic information, a website link related to the marker, and an "*Add to List*" button. Users can click "Add to List" to add the marker to their trip itenirary ("*Saved Places*"), visible to the right of the map or to the bottom on mobile devices. The purpose of Saved Places is to allow users to create a list of places that they intend to visit.
 
 The website also features a *Contact* form which users can fill out and submit which triggers an e-mail to be sent to the webmaster inbox. The form contains fields for the user's *name, e-mail address* and their *message.*
+<hr>
 
 # UX
 
@@ -47,11 +48,16 @@ The website also features a *Contact* form which users can fill out and submit w
 8. Once markers have been loaded to the map by clicking a category button, the user can click on an individual marker to open that marker's *info-window*. This info window displays basic information about the marker, an "Add to List" button (see point 9 below) as well as a hyperlink to a related website. (This hyperlink will open in a new tab to avoid disrupting the user's experience). 
 9. The website features an interactive to-do list ("Saved Places") to which users can use to remember locations they would like to visit on their trip to Galway. This list is displayed to the right of the map, or to the bottom on mobile devices. Once markers have been loaded to the map by clicking a category button, the user can click any marker to open its *info-window*, and click "Add To List" to add the marker to Saved Places as a list item. Items can be deleted from the list by clicking the Delete (trash icon) button once the user has visited the location or changed their mind about doing so.
 
+<hr>
+
 ## Design 
+
 ![Screenshot from testing at http://ami.responsivedesign.is/](wireframes/header-screenshots.png)
 [Click here to view primary wireframes.](https://rorybr1.github.io/Milestone-2/wireframes/wireframes.html) <br>
 [Click here to view early design prototypes with color and images.](https://rorybr1.github.io/Milestone-2/wireframes/early-designs.html)
+
 ### Concept & Font Choice
+
 The site is designed to appear clean, professional, and uncomplicated while also appearing vibrant and welcoming.
 Clean lines are used throughout and a design choice was made to avoid rounded border-corners on buttons and page divisions.
 A single font, *"Roboto"*, is used for the header, site navigation, headings and body content. A design choice was made to avoid 
@@ -73,49 +79,72 @@ colours throughout the site.
 ![Colour scheme on Plan A Visit](wireframes/color-scheme-map.png)
 ![COlour scheme on mobile navigation](wireframes/color-scheme-mobile-menu.png)
 
+<hr>
+
 # Existing Features
+
 The following is a list of the main functionalities of the site, built to fulfill the needs of the user as described in User Stories above.
+
 * ## Site Navigation
+
 ![Site navigation bar](wireframes/feature-navbar.png)<br>
-Desktop navigation bar used to navigate between pages of the site and open the Contact Us modal.
+Desktop navigation bar used to navigate between pages of the site and open the Contact Us modal.<br><br>
+
 * ## Mobile Site Navigation
+
 ![Mobile navigation bar](wireframes/feature-mobile-navbar.gif) <br>
-Toggle-enabled mobile navigation bar used to navigate the site on mobile devices.
+Toggle-enabled mobile navigation bar used to navigate the site on mobile devices.<br><br>
+
 * ## Image Slideshow
+
 ![Image slideshow](wireframes/feature-slideshow.png) <br>
-Displayed on homepage allowing users to view images of the area conveniently.
+Displayed on homepage allowing users to view images of the area conveniently.<br><br>
+
 * ## Social Media Links
+
 ![Social media links](wireframes/feature-footer.png)<br>
 Displayed in footer. When clicked, opens the relevant social media website in a new window. 
-This allows users to access more tourist-related content about Galway produced by the web team.
+This allows users to access more tourist-related content about Galway produced by the web team.<br><br>
+
 * ## "Contact Us" Modal Window
+
 ![Contact Us modal window](wireframes/feature-contact-modal.png)<br>
 Modal window opened when "Contact" is clicked either on the desktop or mobile navigation.
 User is prompted to enter their name, e-mail address, and a message to send to the web team. 
-The modal window can be closed by clicking the "X" in the top-right corner of the modal.
+The modal window can be closed by clicking the "X" in the top-right corner of the modal.<br>
+
  ![Contact Us error message shown when the user attempts to submit an incomplete form](wireframes/feature-error-message.png)<br>
-Error message shown if the user attempts to submit an incomplete form
+Error message shown if the user attempts to submit an incomplete form <br><br>
+
  ![Confirmation message shown when the user successfully submits the form](wireframes/feature-confirmation-message.png)<br>
-Confirmation message shown when the user successfuly submits the form.
+Confirmation message shown when the user successfuly submits the form. <br><br>
+
 * ## Interactive Tourist Map
+
  ![Interactive tourist map, info-windows, and Saved Places functionality](wireframes/feature-map.gif)<br>
 An interactive map which allows the user to view markers on the map based on categories of their interest. Accessed by clicking "Plan a Visit" on site navigation. Markers can be clicked, showing an info-window with information about the map. An "Add to List" button will add the marker to the "Saved Places" list, which is saved locally. The website can be refreshed or closed, and the list will persist when the user re-visits the page. Items can be deleted from the list by clicking the "Delete" icon next to them.
 The map is built using [Google Maps Javascript API](https://developers.google.com/maps/documentation/javascript/overview).
-Users can zoom in/out of the map by using the buttons on the bottom right of the map, or by double-clicking with the left and right mouse buttons.
+Users can zoom in/out of the map by using the buttons on the bottom right of the map, or by double-clicking with the left and right mouse buttons. <br><br>
 
-## Developer Notes
+<hr>
+
+# Developer Notes
 * *The list of markers in assets/js/markersData.js must be kept up-to-date by the web team, by adding new markers and removing obsolete markers (for instance, if a restaurant closes or if a new business opens). In the future, this could be automated by loading marker data from an external, up-to-date source if one is found.* 
 * As this project was created for educational purposes, the Contact Us form has not been linked to an e-mail account and does not trigger an e-mail to be sent to any mailbox. In the future, this can be done easily using [EmailJS](https://www.emailjs.com/). 
 
-### Future Features
+## Future Features
 While the primary functionalities of the site have been achieved, additional features could add to the user's experience on the site.
 Future developers should consider this list of potential features. 
 * An informational video on the homepage to increase the educational value of the website. A visual media professional could be employed to produce a high-quality informational video for the front page of the website. 
 * On the "Plan A Visit" section > Interactive Map > "Saved Places" list, functionality could be added so that when a list-item is clicked, the relevant marker and info-window is highlighted on the map. This would enable users to quickly find the location of their Saved Places.
 * "Suggested Places to Visit" or similar. A list could be added on either the homepage or the "Plan A Visit" page, which displays suggested locations for the user to discover on the map. The list could be updated with popular locations, or locations which are holding events on the given week. When clicked, list-items open the location's marker on the map, allowing them to save the suggested place to their Saved Places.
 
+<hr>
+
 # Technologies Used
+
 ## Code
+
 * [HTML5](https://www.w3.org/standards/webdesign/htmlcss.html) - Used on all pages for page structure and content.
 * [CSS](https://www.w3.org/standards/webdesign/htmlcss.html) - Used on all pages for content styling and placement.
 * [JavaScript](https://www.javascript.com/) - Used to enable interactivity of: *Contact Us* modal, *image slideshow* on index.html, *toggle-enabled mobile navigation*, *interactive map* on plan-a-visit.html.
@@ -124,11 +153,13 @@ Future developers should consider this list of potential features.
 * [Slideshow](https://codepen.io/learnwebcode/pen/RjpyWd?editors=1100) - Including assets/js/slideshow.js and assets/css/slideshow.css. Used on index.html to enact image slideshow functionality. Code written by [Brad Schiff](https://codepen.io/learnwebcode). Styling edited to fit site needs.
 
 ## Editors
+
 * [Visual Studio Code](https://code.visualstudio.com/) - Open-source code editor. Used throughout development to write code.
 * [GitPod](https://www.gitpod.io/) - Cloud-based code editor. Workspace-sharing feature used when receiving assistance from [Code Institute](https://codeinstitute.net/) Tutor Support.
 * [GIMP Image Editor](https://www.gimp.org/) - Used throughout to crop and edit images.
 
 ## Additional Tools
+
 * [Balsamiq](https://balsamiq.com/) - Used to create primary wireframes in the design process.
 * [JustInMind](https://www.justinmind.com/) - Used to create more detailed wireframes/prototypes.
 * [Responsively](https://responsively.app/) - Used to test site responsiveness throughout development.
@@ -136,8 +167,12 @@ Future developers should consider this list of potential features.
 * [Google Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools) - Used throughout development to view the website, test features, test JavaScript, and test responsiveness. 
 * [ScreenToGif](https://www.screentogif.com/) - Used to screen-record and create GIFs of these recordings for the purposes of readme.md and testing.md.
 
+<hr>
+
 # Deployment
+
 * ## GitHub Pages
+
     The site is publicly accessible, hosted on the GitHub Pages platform.
     This was achieved with the following steps:
     1. Log into [GitHub](http://www.github.com/) as RoryBr1 (repository owner).
@@ -147,7 +182,9 @@ Future developers should consider this list of potential features.
     5. Click "Source" and select "master" and directory "/ (root)".
     6. Click "Save".
     7. The site has now been deployed, and its public URL is displayed in the "GitHub Pages" section on this settings page.
+
 * ## Local Deployment
+
     1. Navigate to [the repository page on GitHub](https://github.com/RoryBr1/Milestone-2).
     2. Click "Code" and the "Copy to Clipboard" button. You can use this address to clone the repository in your chosen editor/IDE.
         <br>*or*<br>
@@ -155,22 +192,31 @@ Future developers should consider this list of potential features.
     3. To open a live preview of the website in VSCode, simply open the "index.html" file, right-click within the code, and click "Open with Live Server"; a locally hosted version of the website will open in your browser. 
         <br>*or<br>
         if using GitPod, follow [these instructions](https://www.gitpod.io/docs/languages/html/).
+<hr>
+
 # Credits
+
 ## Images
+
 All images were used under license from stock photo websites. | [PixaBay License](https://pixabay.com/service/license/) | [Unsplash License](https://unsplash.com/license) <br>
-    Source links are listed below for each image. Some images have been edited and adjusted for use on the site.
-    * [background.jpg](https://pixabay.com/photos/galway-hookers-2676502/) - coolpropix on PixaBay. 
-    * [dungaire-castle.jpg](https://pixabay.com/photos/castle-fort-ireland-irish-castle-5748206/) - bluetaichi on PixaBay
-    * [traditional-boats.jpg](https://pixabay.com/photos/traditional-sailing-boats-galway-2676503/) - coolpropix on PixaBay
-    * [galway-cathedral.jpg](https://unsplash.com/photos/woCygN0t-KE) - Gabriel Ramos on Unsplash
-    * [kylemore-abbey.jpg](https://pixabay.com/photos/kylemore-abbey-ireland-castle-4152831/) - UkyoKatayama on Pixabay
-    * [index-splash.jpg](https://unsplash.com/photos/gsLM7kBkDvw) - Ruby Doan on Unsplash
+Source links are listed below for each image. Some images have been edited and adjusted for use on the site.
+* [background.jpg](https://pixabay.com/photos/galway-hookers-2676502/) - coolpropix on PixaBay. 
+* [dungaire-castle.jpg](https://pixabay.com/photos/castle-fort-ireland-irish-castle-5748206/) - bluetaichi on PixaBay
+* [traditional-boats.jpg](https://pixabay.com/photos/traditional-sailing-boats-galway-2676503/) - coolpropix on PixaBay
+* [galway-cathedral.jpg](https://unsplash.com/photos/woCygN0t-KE) - Gabriel Ramos on Unsplash
+* [kylemore-abbey.jpg](https://pixabay.com/photos/kylemore-abbey-ireland-castle-4152831/) - UkyoKatayama on Pixabay
+* [index-splash.jpg](https://unsplash.com/photos/gsLM7kBkDvw) - Ruby Doan on Unsplash
 
 ## Fonts
+
 * [Google Fonts](https://fonts.google.com/specimen/Roboto) - Webfonts service. "Roboto" font used throughout site.
 * [FontAwesome](https://fontawesome.com/) - Webfont technology used to display icons in the site navigation buttons, social media links in footer, category buttons on plan-a-visit.html, and anywhere the < i > HTML tag is used. 
+<br>
+
+<hr>
 
 # Acknowledgements 
+
 * Special thanks to [Code Institute](https://codeinstitute.net/) Tutor Support who helped me troubleshoot at multiple points in the development of the project.
 * Special thanks to my [Code Institute](https://codeinstitute.net/) mentor, Arnold Kyeza, who gave helpful guidance and constructive feedback at multiple points throughout the project. 
 * [Javascript Google Maps Api Tutorial](https://www.youtube.com/watch?v=8NUqDc1bQ84) by Framework Television on [YouTube](http://www.youtube.com/) helped me in learning how to use the Google Maps JavaScript API.
