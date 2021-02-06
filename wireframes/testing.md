@@ -207,6 +207,10 @@ The Developer followed through each of the User Stories, *on desktop and mobile 
         * ✔ Once I have filled the form out correctly, and click "Send Message", the window closes, and a notification is displayed assuring me that my message has been received.
         * ✔ If I click "Contact" again, I can see that the form has been reset since my message was successfully submitted.
 
+        ![Opening, closing contact modal](testing-contact-1.gif)
+        ![Error message displayed when contact form not completed](testing-contact-2.gif)
+        ![Success message on contact form submission](testing-contact-3.gif)
+
     4. **As a user, I want to find the company's social media platforms to follow and share with my friends.**
         * ✔ If I scroll to the bottom of the page, there are links to the company's social media websites.
         * ✔ The links, when clicked, open the relevant social media site in a new browser tab so as not to interrupt my experience.
