@@ -92,7 +92,7 @@ The following warning was found
     pt>↩      <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />↩   </
     ```
 
-A fix was found [here](https://www.webdeveloper.com/d/367195-avoid-validation-warnings-on-meta-viewport/2) and implemented.
+* A fix was found [here](https://www.webdeveloper.com/d/367195-avoid-validation-warnings-on-meta-viewport/2) and implemented.
 
 After this was corrected, the HTML passed without error or warning. 
 
@@ -113,37 +113,37 @@ The following errors were found and corrected.
     14  	::selection	Value Error : color none is not a color value : none
     ```
 
-The line was removed as it was unnecessary. 
+    The line was removed as it was unnecessary. 
 
 2. 
     ```
     62	#visit	text is not a background-clip value : text
     74	#galway	text is not a background-clip value : text
     ```
-These lines were removed to satisfy the validator as they did not affect the rendering of the page.
+    These lines were removed to satisfy the validator as they did not affect the rendering of the page.
 
 3. 
     ```
     134	.welcome-text	Value Error : width only 0 can be a unit. You must put a unit after your number : 80
     ```
-This line was removed as it was redundant.
+    This line was removed as it was redundant.
 
 4. 
     ```
     140	.welcome-text	rgb(255, 255, 255, 0.6) is not a box-shadow value : rgb(255, 255, 255, 0.6)
     ```
 
-This line was removed as it was redundant.
+    This line was removed as it was redundant.
 
 5. 
     ```
     676	#menu-button	0.1 is not a animation-duration value : 0.1
     ```
 
-The value was corrected to be a unit in seconds.
+    The value was corrected to be a unit in seconds.
 
 6. 
     ```
     720	ul	Property padding-inline-start doesn't exist : 0
     ```
-This line was removed as it was redundant.
+    This line was removed as it was redundant.
