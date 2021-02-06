@@ -14,8 +14,6 @@
 <hr>
 <hr>
 
-
-
 ## W3C Validation 
 ### HTML
 *index.html* and *plan-a-visit.html* were both put through the [W3C HTML Validator](https://validator.w3.org/)
@@ -87,6 +85,8 @@ After these errors were corrected, the HTML passed without error or warning.
 
 ![HTML Validation Screenshot index.html](html-validation-index.png)
 
+[Back to top](#testing)
+
 <hr>
 
 * ### Plan-a-visit
@@ -104,6 +104,8 @@ The following warning was found
     After this was corrected, the HTML passed without error or warning. 
 
     ![HTML Validation Screenshot plan-a-visit.html](html-validation-plan.png)
+
+[Back to top](#testing)
 
 <hr>
 <hr>
@@ -167,6 +169,8 @@ All CSS was put through the [W3C CSS Validation Service](https://jigsaw.w3.org/c
     The CSS passed the validator without error.
     ![css validation screenshot - slideshow.css ](css-validation-slideshow-css.png)
 
+[Back to top](#testing)
+
 <hr>
 <hr>
 
@@ -182,6 +186,8 @@ All CSS was put through the [W3C CSS Validation Service](https://jigsaw.w3.org/c
 
 <hr>
 <hr>
+
+[Back to top](#testing)
 
 # User Stories
 
@@ -207,6 +213,8 @@ The site was also tested in Chrome Developer Tools with the console open to test
     ✔ The "Previous" and "Next" buttons show me the previous and next images in the slideshow respectively.
 
     ✔ The caption on the bottom of the slideshow matches the relevant image, and is readable.
+    
+    [Back to top](#testing)
 
 3. **As a user, I want to be able to navigate the whole website easily and quickly whether I am using it on my laptop, phone, or tablet device.**
 
@@ -235,6 +243,8 @@ The site was also tested in Chrome Developer Tools with the console open to test
     ![Opening, error message when not complete, closing contact modal](testing-contact-1.gif)
     ![Success message on contact form submission](testing-contact-3.gif)
 
+    [Back to top](#testing)
+
 <hr>
 
 5. **As a user, I want to find the company's social media platforms to follow and share with my friends.**
@@ -258,6 +268,8 @@ The site was also tested in Chrome Developer Tools with the console open to test
     ✔ The map is visually clear and displays the names of localities.
 
     ![Zooming and maneuvering the map](testing-map-1.gif)
+
+    [Back to top](#testing)
     
     <hr>
     
@@ -279,6 +291,8 @@ The site was also tested in Chrome Developer Tools with the console open to test
 
     ![Clicking a category to view markers on the map](testing-map-2.gif)
 
+    [Back to top](#testing)
+
     <hr>
 
 8. **As a user, I want to visit the website of a place in Galway that I'm interested in going to, to learn more about it.**
@@ -298,6 +312,8 @@ The site was also tested in Chrome Developer Tools with the console open to test
     ✔ Clicking the Delete (trash) icon next to a list item deletes it both in the list and the local storage.
 
     ![Adding and deleting markers on the list](testing-map-3.gif)
+
+    [Back to top](#testing)
 
     <hr>
 
