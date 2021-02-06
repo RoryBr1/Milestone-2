@@ -8,12 +8,13 @@
 * #### Index.html
     The following errors were found and corrected
 
-1.   ```
+1.   
+    ```
     Error: Bad value 120px for attribute height on element img: Expected a digit but saw p instead.
      From line 31, column 13; to line 31, column 131
      < img src="assets/images/hooker.png" alt="Galway Hooker, type of fishing boat home to Galway." id="hooker" height=120px >↩     
      ```
-"height=120px" corrected to "height=120".
+    "height=120px" corrected to "height=120".
 
 2. 
     ```
@@ -22,7 +23,7 @@
      < a href="index.html" class="nav-link" >↩     
     ```
 
-This same error was found for the "Plan A Visit" and "Contact" links in #mobile-nav. The "Ul" element was changed to a "nav" element.
+    This same error was found for the "Plan A Visit" and "Contact" links in #mobile-nav. The "Ul" element was changed to a "nav" element.
 
 3.  
     ```
@@ -31,7 +32,7 @@ This same error was found for the "Plan A Visit" and "Contact" links in #mobile-
      ↩         < form id="contact-form" action="" >↩    
     ```
 
-action="" was removed.
+    action="" was removed.
 
 4.  
     ```
@@ -40,7 +41,7 @@ action="" was removed.
      lane">< /i >< /i >< /butt 
     ```
 
-The stray < /i > tag was removed.
+    The stray < /i > tag was removed.
 
 5. 
     ``` 
@@ -49,7 +50,7 @@ The stray < /i > tag was removed.
             < br/  >↩      
     ```  
 
-Several < br/ > tags written incorrectly written with a space before the closing bracket. The spaces were removed.
+    Several < br/ > tags written incorrectly written with a space before the closing bracket. The spaces were removed.
 
 6. 
     ```
@@ -57,4 +58,4 @@ Several < br/ > tags written incorrectly written with a space before the closing
      From line 159, column 73; to line 159, column 106
      ton): --> <script src="assets/js/toggle.js"></scri 
     ```
-Script tag was outside of < body >. All script tags were moved to within < body >.
+    Script tag was outside of < body >. All script tags were moved to within < body >.
