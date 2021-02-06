@@ -70,4 +70,5 @@
 
 After these errors were corrected, the HTML passed without error or warning. ![HTML Validation Screenshot index.html](html-validation-index.png)
 
-    * 
+* #### Plan-a-visit.html
+    
