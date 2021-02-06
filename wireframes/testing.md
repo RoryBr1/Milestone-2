@@ -188,14 +188,21 @@ The [User Stories](https://github.com/RoryBr1/Milestone-2/blob/master/readme.md#
 The Developer followed through each of the User Stories, *on desktop and mobile devices*, and tested the site for functionality while doing so.
 
 1. **As a user, I want to learn about Galway city as a tourist destination and why I should go there.**
+
 ✔ On index.html, there is text and images of Galway that are visible on page load.
+
 ✔ The navigation bar and body text prompt me to explore the site, and visit the Plan A Visit page.
+
 ✔ There is a contact link for me to ask the siteowner questions.
 
 2.  **As a user, I want to see pictures of Galway that will give me a sense of what the city is like to visit.**
+
     ✔ On index.html, there is a slideshow of pictures to view.
+
     ✔ The pictures are automatically displayed in rotation, for a couple of seconds each.
+
     ✔ The "Previous" and "Next" buttons show me the previous and next images in the slideshow respectively.
+    
     ✔ The caption on the bottom of the slideshow matches the relevant image, and is readable.
 
 3. **As a user, I want to submit a message to the company behind the website, know that my message has been received, and will receive a reply.**
