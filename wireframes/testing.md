@@ -7,6 +7,7 @@
     * [Index.html](#Index)
     * [Plan-a-visit.html](#Plan-a-visit)
     * [/assets/css/style.css](#Style)
+    * [JavaScript](#JavaScript)
 2. 
 <hr>
 <hr>
@@ -165,10 +166,11 @@ All CSS was put through the [W3C CSS Validation Service](https://jigsaw.w3.org/c
     ![css validation screenshot - slideshow.css ](css-validation-slideshow-css.png)
 
 ## JavaScript
+
     The following files in assets/js/ were passed through [JSHint](https://jshint.com/):
-    * todoList.js
-    * toggle.js
-    * map.js
+* todoList.js
+* toggle.js
+* map.js
 
     Warnings included use of template literals for compatibility reasons. A developer decision was made to continue using template literals as they are supported by most browsers and are common JavaScript developer practice. 
     Warnings about undefined/unused variables are to be ignored; they may be undefined/unused within the context of the individual script, but they are defined/used by an external script. (ie. map.js calls the variable "map", which is not defined within map.js but is used by the external Google Maps JavaScript API.)
