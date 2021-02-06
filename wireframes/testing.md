@@ -60,7 +60,8 @@
     ```
     Script tag was outside of < body >. All script tags were moved to within < body >.
 
-7. ```
+7. 
+    ```
     Error: Element li not allowed as child of element a in this context. (Suppressing further errors from this subtree.)
     From line 50, column 19; to line 50, column 32
           <li id="home"> <i cl 
@@ -71,4 +72,11 @@
 After these errors were corrected, the HTML passed without error or warning. ![HTML Validation Screenshot index.html](html-validation-index.png)
 
 * #### Plan-a-visit.html
-    
+The following warning was found
+1. 
+    ```
+        Warning: Consider avoiding viewport values that prevent users from resizing documents.
+        rom line 20, column 7; to line 20, column 115
+        pt>↩      <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />↩   </
+    ```
+A fix was found [here](https://www.webdeveloper.com/d/367195-avoid-validation-warnings-on-meta-viewport/2) and implemented.
