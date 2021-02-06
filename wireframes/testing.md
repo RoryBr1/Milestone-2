@@ -2,8 +2,8 @@
 
 ## Tables of Content 
 1. [W3C Validation](#html)
-    * [Index.html](#Index.html)
-    * [Plan-a-visit.html](#Plan-a-visit.html)
+    * [Index.html](#Index)
+    * [Plan-a-visit.html](#Plan-a-visit)
 
 <hr>
 
@@ -12,7 +12,7 @@
 ## W3C Validation 
 ### HTML
 *index.html* and *plan-a-visit.html* were both put through the [W3C HTML Validator](https://validator.w3.org/)
-* ### Index.html
+* ### Index
     The following errors were found and corrected
 
 1.   
@@ -80,7 +80,7 @@ After these errors were corrected, the HTML passed without error or warning.
 
 ![HTML Validation Screenshot index.html](html-validation-index.png)
 
-* ### Plan-a-visit.html
+* ### Plan-a-visit
 The following warning was found
 
 1. 
