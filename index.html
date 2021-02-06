@@ -44,8 +44,8 @@
          </div>
          <!-- .header-bar -->
          <!-- Mobile Navbar | Invisible by default. Visibility triggered using toggle.js on mobile resolution when #menu-button clicked. -->
-         <nav id="mobile-nav" class="invisible">
-            <ul id="mobile-nav-list">
+         <div id="mobile-nav" class="invisible">
+            <nav id="mobile-nav-list">
                <a href="index.html" class="nav-link">
                   <li id="home"> <i class="fas fa-book-open"></i> Home </li>
                </a>
@@ -55,8 +55,8 @@
                <a class="nav-link" id="contact-button-mob">
                   <li id="contact"><i class="fas fa-paper-plane"></i> Contact </li>
                </a>
-            </ul>
-         </nav>
+            </nav>
+         </div>
          <!-- #mobile-nav -->
          <!-- Contact Window | Invisible by default. Visibility triggered when #contact-button or #contact-button-mob is clicked. 
             This is controlled using toggle.js. -->
@@ -65,11 +65,11 @@
             <!-- "x" Button on top right of window. When clicked, closes window and resets visibility of #form-error-message, all via toggle.js. -->
             <h1>Contact Us</h1>
             <p> Send us a message using the form below, and our team will reply to you as soon as possible.</p>
-            <form id="contact-form" action="">
-               <input id="username" name="username" type="text" placeholder="Enter your name"/> <br /> 
-               <input id="useremail" name="useremail" type="email" placeholder="Enter your e-mail"/> <br /> 
+            <form id="contact-form">
+               <input id="username" name="username" type="text" placeholder="Enter your name"/> <br> 
+               <input id="useremail" name="useremail" type="email" placeholder="Enter your e-mail"/> <br> 
                <textarea id="usermessage" form="contact-form" placeholder="Type your message.."></textarea>
-               <br />
+               <br>
                <button type="button" id="send-button">Send Message<i class="fas fa-paper-plane"></i></i></button>
                <div id="form-error-message" class="invisible">You must input your name, e-mail address and a message.</div>
                <!-- Invisible by default. Visibility triggered using toggle.js if any inputs are left empty. -->
@@ -130,7 +130,7 @@
             <!-- / slideshow -->
             <h3>Plan Your Visit</h3>
             <p>Click <a href="plan-a-visit.html"><i class="fas fa-map-marked"></i> Plan a Visit</a> to view our interactive tourist map of Galway City, where you can find hotels, restaurants, 
-               historic sites and other attractions to visit in Galway. <br /><br />
+               historic sites and other attractions to visit in Galway. <br><br>
                Create a list of your top destinations, and make the most of your visit to Galway City.
             </p>
             <h3>Got Questions?</h3>
@@ -151,9 +151,9 @@
             <a href="http://www.youtube.com/" target="_blank">
                <div class="social-icon"><i class="fab fa-twitter"></i></div>
             </a>
-            <br/ >
+            <br>
             &copy; VisitGalway | All Rights Reserved 
-            <br/ >
+            <br>
          </div>
       </footer>
    </body>
