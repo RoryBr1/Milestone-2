@@ -94,9 +94,9 @@ The following warning was found
 
 * A fix was found [here](https://www.webdeveloper.com/d/367195-avoid-validation-warnings-on-meta-viewport/2) and implemented.
 
-After this was corrected, the HTML passed without error or warning. 
+    After this was corrected, the HTML passed without error or warning. 
 
-![HTML Validation Screenshot plan-a-visit.html](html-validation-plan.png)
+    ![HTML Validation Screenshot plan-a-visit.html](html-validation-plan.png)
 
 <hr>
 
@@ -147,3 +147,6 @@ The following errors were found and corrected.
     720	ul	Property padding-inline-start doesn't exist : 0
     ```
     This line was removed as it was redundant.
+
+    After these fixes, the CSS passed without error. 
+    ![css validation screenshot - style.css ](css-validation-style-css.png)
