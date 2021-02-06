@@ -59,3 +59,11 @@
      ton): --> <script src="assets/js/toggle.js"></scri 
     ```
     Script tag was outside of < body >. All script tags were moved to within < body >.
+
+7. ```
+    Error: Element li not allowed as child of element a in this context. (Suppressing further errors from this subtree.)
+    From line 50, column 19; to line 50, column 32
+          <li id="home"> <i cl 
+    ```
+    
+    < li > elements were changed to < div > elements.
