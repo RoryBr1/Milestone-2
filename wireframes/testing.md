@@ -1,11 +1,18 @@
 # Testing
 
+## Tables of Content 
+1. [W3C Validation](#html)
+    * [Index.html](#Index.html)
+    * [Plan-a-visit.html](#Plan-a-visit.html)
+
 <hr>
+
+
 
 ## W3C Validation 
 ### HTML
 *index.html* and *plan-a-visit.html* were both put through the [W3C HTML Validator](https://validator.w3.org/)
-* #### Index.html
+* ### Index.html
     The following errors were found and corrected
 
 1.   
@@ -69,16 +76,21 @@
     
     < li > elements were changed to < div > elements.
 
-After these errors were corrected, the HTML passed without error or warning. ![HTML Validation Screenshot index.html](html-validation-index.png)
+After these errors were corrected, the HTML passed without error or warning. 
 
-* #### Plan-a-visit.html
+![HTML Validation Screenshot index.html](html-validation-index.png)
+
+* ### Plan-a-visit.html
 The following warning was found
 1. 
     ```
-        Warning: Consider avoiding viewport values that prevent users from resizing documents.
-        rom line 20, column 7; to line 20, column 115
-        pt>↩      <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />↩   </
+    Warning: Consider avoiding viewport values that prevent users from resizing documents.
+    rom line 20, column 7; to line 20, column 115
+    pt>↩      <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />↩   </
     ```
+
 A fix was found [here](https://www.webdeveloper.com/d/367195-avoid-validation-warnings-on-meta-viewport/2) and implemented.
 
-After this was corrected, the HTML passed without error or warning. ![HTML Validation Screenshot plan-a-visit.html](html-validation-plan.png)
+After this was corrected, the HTML passed without error or warning. 
+
+![HTML Validation Screenshot plan-a-visit.html](html-validation-plan.png)
