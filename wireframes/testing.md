@@ -105,8 +105,8 @@ All CSS was put through the [W3C CSS Validation Service](https://jigsaw.w3.org/c
 
 * ### Style
     
-Located at assets/css/style.css. 
-The following errors were found and corrected.
+    Located at assets/css/style.css. 
+    The following errors were found and corrected.
 
 1. 
     ```
@@ -148,5 +148,11 @@ The following errors were found and corrected.
     ```
     This line was removed as it was redundant.
 
-    After these fixes, the CSS passed without error. 
+    After these fixes, the CSS passed the validator without error. 
+
     ![css validation screenshot - style.css ](css-validation-style-css.png)
+
+* ### Slideshow.css
+    Located at assets/css/slideshow.css.
+    The CSS passed the validator without error.
+    ![css validation screenshot - slideshow.css ](css-validation-slideshow-css.png)
