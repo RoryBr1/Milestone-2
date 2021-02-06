@@ -184,10 +184,10 @@ All CSS was put through the [W3C CSS Validation Service](https://jigsaw.w3.org/c
     Warnings included use of template literals for compatibility reasons. A developer decision was made to continue using template literals as they are supported by most browsers and are common JavaScript developer practice. 
     Warnings about undefined/unused variables are to be ignored; they may be undefined/unused within the context of the individual script, but they are defined/used by an external script. (ie. map.js calls the variable "map", which is not defined within map.js but is used by the external Google Maps JavaScript API.)
 
-<hr>
-<hr>
-
 [Back to top](#testing)
+
+<hr>
+<hr>
 
 # User Stories
 
@@ -213,7 +213,7 @@ The site was also tested in Chrome Developer Tools with the console open to test
     ✔ The "Previous" and "Next" buttons show me the previous and next images in the slideshow respectively.
 
     ✔ The caption on the bottom of the slideshow matches the relevant image, and is readable.
-    
+
     [Back to top](#testing)
 
 3. **As a user, I want to be able to navigate the whole website easily and quickly whether I am using it on my laptop, phone, or tablet device.**
@@ -315,5 +315,13 @@ The site was also tested in Chrome Developer Tools with the console open to test
 
     [Back to top](#testing)
 
+After the above testing, the developer is confident that the site meets the needs of the User Stories without error or experience interruption.
+
     <hr>
 
+## Feedback
+The site was shown to peers and fellow developers who were encouraged to interact with the site and provide their feedback. Overall response from users was positive and no new bugs were encountered. Suggestions were noted and may be included in [Future Features](https://github.com/RoryBr1/Milestone-2/blob/master/readme.md#future-features) .
+
+My [CodeInstitute](http://www.codeinstitute.net/) mentor, Arnold Kyeza, returned constructive feedback and advice at multiple stages throughout the project.
+
+[Back to top](#testing)

@@ -1,3 +1,11 @@
+/* This script deals with the followiing functionalities:
+  - Initializing the map
+  - Event listners for category buttons
+  - Adding markers to the map when category buttons are clicked
+  - Opening the relevant marker's info window when clicked, based on the data in markersData.js
+
+  All location data is stored in assets/js/markersData.js. */
+
 var markers = [];//some array
 
 let selected = [];

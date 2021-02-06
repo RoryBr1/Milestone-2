@@ -1,3 +1,9 @@
+/* This script deals with all Saved Places list functionality, including
+  - Adding info-window info into a list item
+  - Allowing the user to delete list items
+  - Storing the list to localstorage, and rendering any existing localstorage data into the list on page load.
+*/
+
 // EVENT LISTENER for #add-button
 document.addEventListener('DOMContentLoaded', getTodos);
 document.querySelector('body').addEventListener('click', event => {

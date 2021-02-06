@@ -1,3 +1,13 @@
+/* This script stores all marker data used for map.js and todoList.js, including
+    - Marker name
+    - Marker position to be placed on the map
+    - Content of info-windows
+
+    Arrays are created named after and relevant to each category: hotels, restaurants, nightlife, historicSites, nature and activities.
+    To create new markers in any category, use the template below and insert within the relavant array.
+    Examine the format of existing markers to make sure it matches, and test all markers on the map after adding them.
+*/
+
 /*  MARKER FORMAT TEMPLATE   
     {
         name: " INSERT MARKER NAME ",
