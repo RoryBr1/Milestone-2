@@ -1,10 +1,12 @@
 # Testing
 
-## Tables of Content 
+## Table of Content 
 1. [W3C Validation](#html)
     * [Index.html](#Index)
     * [Plan-a-visit.html](#Plan-a-visit)
+    * [/assets/css/style.css](#Style)
 
+<hr>
 <hr>
 
 
@@ -95,3 +97,7 @@ A fix was found [here](https://www.webdeveloper.com/d/367195-avoid-validation-wa
 After this was corrected, the HTML passed without error or warning. 
 
 ![HTML Validation Screenshot plan-a-visit.html](html-validation-plan.png)
+
+<hr>
+
+## Css
