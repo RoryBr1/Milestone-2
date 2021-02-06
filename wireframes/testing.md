@@ -28,3 +28,7 @@
     > At line 153, column 17
            > < br/  >↩        
     Several < br/ > tags written incorrectly written with a space before the closing bracket. The spaces were removed.
+6. > Error: Stray start tag script.
+    > From line 159, column 73; to line 159, column 106
+    > ton): --> <script src="assets/js/toggle.js"></scri
+    Script tag was outside of < body >. All script tags were moved to within < body >.
