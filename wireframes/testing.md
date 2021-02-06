@@ -80,3 +80,5 @@ The following warning was found
         pt>↩      <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />↩   </
     ```
 A fix was found [here](https://www.webdeveloper.com/d/367195-avoid-validation-warnings-on-meta-viewport/2) and implemented.
+
+After this was corrected, the HTML passed without error or warning. ![HTML Validation Screenshot plan-a-visit.html](html-validation-plan.png)
