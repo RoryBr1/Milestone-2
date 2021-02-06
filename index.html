@@ -23,110 +23,111 @@
    </head>
    <body>
       <div class="wrapper">
-      <!-- .wrapper is used to ensure a minimum page height so that #footer is at the bottom of the page. -->
-      <div class="header-bar">
-         <a href="index.html">
-            <h1 id="visit">Visit</h1>
-            <h1 id="galway">Galway</h1>
-            <img src="assets/images/hooker.png" alt="Galway Hooker, type of fishing boat home to Galway." id="hooker" height=120px>
-         </a>
-         <!-- Desktop Navbar -->
-         <nav id="desktop-nav">
-            <a href="index.html" class="nav-link" id="home-desktop"> <i class="fas fa-book-open"></i> Home </a>
-            <a href="plan-a-visit.html" class="nav-link" id="plan-desktop"> <i class="fas fa-map-marked"></i> Plan a Visit </a>
-            <a id="contact-button"> <i class="fas fa-paper-plane"></i> Contact</a>
-         </nav>
-         <!-- Mobile Navbar Toggle Button -->
-         <div id="menu-button">
-            <!-- < Menu icon, when clicked toggles #mobile-nav visibility using toggle.js -->
-            <span data-toggle-target="#mobile-nav" id="menu-toggle"  class="toggle-btn"><i class="fas fa-bars"></i></span>
+         <!-- .wrapper is used to ensure a minimum page height so that #footer is at the bottom of the page. -->
+         <div class="header-bar">
+            <a href="index.html">
+               <h1 id="visit">Visit</h1>
+               <h1 id="galway">Galway</h1>
+               <img src="assets/images/hooker.png" alt="Galway Hooker, type of fishing boat home to Galway." id="hooker" height=120>
+            </a>
+            <!-- Desktop Navbar -->
+            <nav id="desktop-nav">
+               <a href="index.html" class="nav-link" id="home-desktop"> <i class="fas fa-book-open"></i> Home </a>
+               <a href="plan-a-visit.html" class="nav-link" id="plan-desktop"> <i class="fas fa-map-marked"></i> Plan a Visit </a>
+               <a id="contact-button"> <i class="fas fa-paper-plane"></i> Contact</a>
+            </nav>
+            <!-- Mobile Navbar Toggle Button -->
+            <div id="menu-button">
+               <!-- < Menu icon, when clicked toggles #mobile-nav visibility using toggle.js -->
+               <span data-toggle-target="#mobile-nav" id="menu-toggle"  class="toggle-btn"><i class="fas fa-bars"></i></span>
+            </div>
          </div>
-      </div>
-      <!-- .header-bar -->
-      <!-- Mobile Navbar | Invisible by default. Visibility triggered using toggle.js on mobile resolution when #menu-button clicked. -->
-      <nav id="mobile-nav" class="invisible">
-         <ul id="mobile-nav-list">
-            <a href="index.html" class="nav-link">
-               <li id="home"> <i class="fas fa-book-open"></i> Home </li>
-            </a>
-            <a href="plan-a-visit.html" class="nav-link">
-               <li id="plan-a-visit"> <i class="fas fa-map-marked"></i> Plan a Visit </li>
-            </a>
-            <a class="nav-link" id="contact-button-mob">
-               <li id="contact"><i class="fas fa-paper-plane"></i> Contact </li>
-            </a>
-         </ul>
-      </nav>
-      <!-- #mobile-nav -->
-      <!-- Contact Window | Invisible by default. Visibility triggered when #contact-button or #contact-button-mob is clicked. 
-         This is controlled using toggle.js. -->
-      <div id="contact-window" class="invisible">
-         <div id="close-window"> <i class="fas fa-times"></i> </div>
-         <!-- "x" Button on top right of window. When clicked, closes window and resets visibility of #form-error-message, all via toggle.js. -->
-         <h1>Contact Us</h1>
-         <p> Send us a message using the form below, and our team will reply to you as soon as possible.</p>
-         <form id="contact-form" action="">
-            <input id="username" name="username" type="text" placeholder="Enter your name"/> <br /> 
-            <input id="useremail" name="useremail" type="email" placeholder="Enter your e-mail"/> <br /> 
-            <textarea id="usermessage" form="contact-form" placeholder="Type your message.."></textarea>
+         <!-- .header-bar -->
+         <!-- Mobile Navbar | Invisible by default. Visibility triggered using toggle.js on mobile resolution when #menu-button clicked. -->
+         <nav id="mobile-nav" class="invisible">
+            <ul id="mobile-nav-list">
+               <a href="index.html" class="nav-link">
+                  <li id="home"> <i class="fas fa-book-open"></i> Home </li>
+               </a>
+               <a href="plan-a-visit.html" class="nav-link">
+                  <li id="plan-a-visit"> <i class="fas fa-map-marked"></i> Plan a Visit </li>
+               </a>
+               <a class="nav-link" id="contact-button-mob">
+                  <li id="contact"><i class="fas fa-paper-plane"></i> Contact </li>
+               </a>
+            </ul>
+         </nav>
+         <!-- #mobile-nav -->
+         <!-- Contact Window | Invisible by default. Visibility triggered when #contact-button or #contact-button-mob is clicked. 
+            This is controlled using toggle.js. -->
+         <div id="contact-window" class="invisible">
+            <div id="close-window"> <i class="fas fa-times"></i> </div>
+            <!-- "x" Button on top right of window. When clicked, closes window and resets visibility of #form-error-message, all via toggle.js. -->
+            <h1>Contact Us</h1>
+            <p> Send us a message using the form below, and our team will reply to you as soon as possible.</p>
+            <form id="contact-form" action="">
+               <input id="username" name="username" type="text" placeholder="Enter your name"/> <br /> 
+               <input id="useremail" name="useremail" type="email" placeholder="Enter your e-mail"/> <br /> 
+               <textarea id="usermessage" form="contact-form" placeholder="Type your message.."></textarea>
+               <br />
+               <button type="button" id="send-button">Send Message<i class="fas fa-paper-plane"></i></i></button>
+               <div id="form-error-message" class="invisible">You must input your name, e-mail address and a message.</div>
+               <!-- Invisible by default. Visibility triggered using toggle.js if any inputs are left empty. -->
+               <div class="conditions-agree">By clicking "Send Message" you agree to our Privacy Policy.</div>
+            </form>
+         </div>
+         <!-- Sent Confirmation | Small window with confirmation message which triggers using toggle.js when message successfully sent. Disappears after a short moment. -->
+         <div id="sent-confirmation" class="invisible">Your message has been sent. <i class="far fa-check-circle"></i></div>
+         <!-- / contact window -->
+         <div class="homepage-article">
+            <div id="homepage-splash-text">
+               <h2>Welcome to the <em>City of the Tribes.</em> </h2>
+            </div>
             <br />
-            <button type="button" id="send-button">Send Message<i class="fas fa-paper-plane"></i></i></button>
-            <div id="form-error-message" class="invisible">You must input your name, e-mail address and a message.</div>
-            <!-- Invisible by default. Visibility triggered using toggle.js if any inputs are left empty. -->
-            <div class="conditions-agree">By clicking "Send Message" you agree to our Privacy Policy.</div>
-         </form>
-      </div>
-      <!-- Sent Confirmation | Small window with confirmation message which triggers using toggle.js when message successfully sent. Disappears after a short moment. -->
-      <div id="sent-confirmation" class="invisible">Your message has been sent. <i class="far fa-check-circle"></i></div>
-      <!-- / contact window -->
-      <div class="homepage-article">
-      <div id="homepage-splash-text">
-         <h2>Welcome to the <em>City of the Tribes.</em> </h2>
-      </div>
-      <br />
-      <p class="emphasise-paragraph">Galway, a harbour city on Ireland’s west coast, sits where the River Corrib meets the Atlantic Ocean. 
-         The city’s hub is 18th-century Eyre Square, a popular meeting spot surrounded by shops and traditional pubs that often offer live Irish folk music. 
-         Nearby, stone-clad cafes, boutiques and art galleries line the winding lanes of the Latin Quarter, which retains portions of the medieval city walls.
-      </p>
-      <!-- SLIDESHOW: -->
-         <!-- container -->
-         <div class="container">
-            <!-- row -->
-            <div class="row">
-               <!-- col -->
-               <div>
-                  <div class="cycle-slideshow" data-cycle-slides=".slide" data-cycle-pause-on-hover="true">
-                     <span class="cycle-prev">&laquo;</span>
-                     <span class="cycle-next">&raquo;</span>
-                     <span class="cycle-pager"></span>
-                     <div class="slide">
-                        <img src="assets/images/dunguaire-castle.jpg" alt="Dunguaire Castle, a 16th century tower-house to the south-east of Galway Bay.">
-                        <div class="slide-text">
-                           <p>Dunguaire Castle, a 16th century tower-house to the south-east of Galway Bay.</p>
+            <p class="emphasise-paragraph">Galway, a harbour city on Ireland’s west coast, sits where the River Corrib meets the Atlantic Ocean. 
+               The city’s hub is 18th-century Eyre Square, a popular meeting spot surrounded by shops and traditional pubs that often offer live Irish folk music. 
+               Nearby, stone-clad cafes, boutiques and art galleries line the winding lanes of the Latin Quarter, which retains portions of the medieval city walls.
+            </p>
+            <!-- SLIDESHOW: -->
+            <!-- container -->
+            <div class="container">
+               <!-- row -->
+               <div class="row">
+                  <!-- col -->
+                  <div>
+                     <div class="cycle-slideshow" data-cycle-slides=".slide" data-cycle-pause-on-hover="true">
+                        <span class="cycle-prev">&laquo;</span>
+                        <span class="cycle-next">&raquo;</span>
+                        <span class="cycle-pager"></span>
+                        <div class="slide">
+                           <img src="assets/images/dunguaire-castle.jpg" alt="Dunguaire Castle, a 16th century tower-house to the south-east of Galway Bay.">
+                           <div class="slide-text">
+                              <p>Dunguaire Castle, a 16th century tower-house to the south-east of Galway Bay.</p>
+                           </div>
                         </div>
-                     </div>
-                     <div class="slide">
-                        <img src="assets/images/galway-cathedral.jpg" alt="Interior of Galway Cathedral. Completed in 1962, it remains the newest great-stone cathedral in Europe.">
-                        <div class="slide-text">
-                           <p>Interior of Galway Cathedral. Completed in 1962, it remains the newest great-stone cathedral in Europe.</p>
+                        <div class="slide">
+                           <img src="assets/images/galway-cathedral.jpg" alt="Interior of Galway Cathedral. Completed in 1962, it remains the newest great-stone cathedral in Europe.">
+                           <div class="slide-text">
+                              <p>Interior of Galway Cathedral. Completed in 1962, it remains the newest great-stone cathedral in Europe.</p>
+                           </div>
                         </div>
-                     </div>
-                     <div class="slide">
-                        <img src="assets/images/traditional-boats.jpg" alt="Galway is known for its rich fishing tradition, and home to a unique build of sailboat known as the Hooker.">
-                        <div class="slide-text">
-                           <p>Galway is known for its rich fishing tradition, and home to a unique build of sailboat known as the Hooker.</p>
+                        <div class="slide">
+                           <img src="assets/images/traditional-boats.jpg" alt="Galway is known for its rich fishing tradition, and home to a unique build of sailboat known as the Hooker.">
+                           <div class="slide-text">
+                              <p>Galway is known for its rich fishing tradition, and home to a unique build of sailboat known as the Hooker.</p>
+                           </div>
                         </div>
-                     </div>
-                     <div class="slide">
-                        <img src="assets/images/kylemore-abbey.jpg" alt="Kylemore Abbey, a Benedictine monastery founded in 1920 for Belgian nuns fleeing WWI.">
-                        <div class="slide-text">
-                           <p>Kylemore Abbey, a Benedictine monastery founded in 1920 for Belgian nuns fleeing WWI.</p>
+                        <div class="slide">
+                           <img src="assets/images/kylemore-abbey.jpg" alt="Kylemore Abbey, a Benedictine monastery founded in 1920 for Belgian nuns fleeing WWI.">
+                           <div class="slide-text">
+                              <p>Kylemore Abbey, a Benedictine monastery founded in 1920 for Belgian nuns fleeing WWI.</p>
+                           </div>
                         </div>
                      </div>
                   </div>
                </div>
             </div>
-         </div><!-- / slideshow -->
+            <!-- / slideshow -->
             <h3>Plan Your Visit</h3>
             <p>Click <a href="plan-a-visit.html"><i class="fas fa-map-marked"></i> Plan a Visit</a> to view our interactive tourist map of Galway City, where you can find hotels, restaurants, 
                historic sites and other attractions to visit in Galway. <br /><br />
@@ -135,7 +136,7 @@
             <h3>Got Questions?</h3>
             <p>Let us help you make the most of your visit to Galway. Our tourist information team are available to help you.
                Click <a href="#contact-button"><i class="fas fa-map-marked"></i> Contact</a> on the menu above to send us a message and we will get back to you as soon as possible.
-           </p>
+            </p>
          </div>
       </div>
       <!--/wrapper-->

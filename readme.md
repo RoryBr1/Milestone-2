@@ -45,9 +45,10 @@ Users can select a category to view places ("*markers*") on the map, belong to t
 The website also features a *Contact* form which users can fill out and submit which triggers an e-mail to be sent to the webmaster inbox. The form contains fields for the user's *name, e-mail address* and their *message.*
 
 *This site was created as a project for the [CodeInstitute](http://www.codeinstitute.net/) Full-Stack Software Development Course and is not maintained by an active web-team. Its purpose is purely educational*.
-<hr>
 
 [Back to Top](#table-of-content)
+
+<hr>
 
 # UX
 
