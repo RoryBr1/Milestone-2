@@ -8,7 +8,8 @@
     * [Plan-a-visit.html](#Plan-a-visit)
     * [/assets/css/style.css](#Style)
     * [JavaScript](#JavaScript)
-2. 
+2. [User Stories](#user-stories)
+    * 
 <hr>
 <hr>
 
@@ -165,6 +166,9 @@ All CSS was put through the [W3C CSS Validation Service](https://jigsaw.w3.org/c
     The CSS passed the validator without error.
     ![css validation screenshot - slideshow.css ](css-validation-slideshow-css.png)
 
+<hr>
+<hr>
+
 ## JavaScript
 #### The following files in assets/js/ were passed through [JSHint](https://jshint.com/)
 
@@ -175,4 +179,51 @@ All CSS was put through the [W3C CSS Validation Service](https://jigsaw.w3.org/c
     Warnings included use of template literals for compatibility reasons. A developer decision was made to continue using template literals as they are supported by most browsers and are common JavaScript developer practice. 
     Warnings about undefined/unused variables are to be ignored; they may be undefined/unused within the context of the individual script, but they are defined/used by an external script. (ie. map.js calls the variable "map", which is not defined within map.js but is used by the external Google Maps JavaScript API.)
 
-# 
+<hr>
+<hr>
+
+# User Stories
+
+The [User Stories](https://github.com/RoryBr1/Milestone-2/blob/master/readme.md#user-stories) were used as a basis to test the site. 
+The Developer followed through each of the User Stories, *on desktop and mobile devices*, and tested the site for functionality while doing so.
+
+    1. **As a user, I want to learn about Galway city as a tourist destination and why I should go there.**
+        * ✔ On index.html, there is text and images of Galway that are visible on page load.
+        * ✔ The navigation bar and body text prompt me to explore the site, and visit the Plan A Visit page.
+        * ✔ There is a contact link for me to ask the siteowner questions.
+
+    2.  **As a user, I want to see pictures of Galway that will give me a sense of what the city is like to visit.**
+        * ✔ On index.html, there is a slideshow of pictures to view.
+        * ✔ The pictures are automatically displayed in rotation, for a couple of seconds each.
+        * ✔ The "Previous" and "Next" buttons show me the previous and next images in the slideshow respectively.
+        * ✔ The caption on the bottom of the slideshow matches the relevant image, and is readable.
+
+    3. **As a user, I want to submit a message to the company behind the website, know that my message has been received, and will receive a reply.**
+        * ✔ There is a Contact link on the navigation bar at the top of each page that is clearly visible.
+        * ✔ When I click the Contact link, the Contact Us form appears conveniently in a modal window.
+        * ✔ If I want to close the window, the intuitive "X" button in its top right corner will do so.
+        * ✔ The format and purpose of the form fields are clear and intuitive. 
+        * ✔ If I try to submit the form without completing it, an error message appears.
+        * ✔ Once I have filled the form out correctly, and click "Send Message", the window closes, and a notification is displayed assuring me that my message has been received.
+        * ✔ If I click "Contact" again, I can see that the form has been reset since my message was successfully submitted.
+
+    4. **As a user, I want to find the company's social media platforms to follow and share with my friends.**
+        * ✔ If I scroll to the bottom of the page, there are links to the company's social media websites.
+        * ✔ The links, when clicked, open the relevant social media site in a new browser tab so as not to interrupt my experience.
+
+    5. **As a user, I want to see a map of Galway that can give me an orientation of the place as a visitor.**
+        * ✔ The body text towards the bottom of index.html informs me that I can view this map by clicking "Plan A Visit".
+        * ✔ When I click Plan A Visit, the page opens within the same browser window as it should.
+        * ✔ The page loads a map centered on Galway city centre.
+        * ✔ The map can be zoomed in/out by clicking the "+" or "-" buttons on the map.
+        * ✔ The map can be maneuvered by clicking and dragging it.
+        * ✔ The map is visually clear and displays the names of localities.
+    
+    6. **As a user, I want to find hotels / restaurants / nightlife / historic sites / nature / activities in Galway that are worth visiting so I can make the most of my trip.**
+        * ✔ [While on Plan A Visit] Buttons are displayed to the left (top on mobile devices) of the map, clearly labeled and with icons, which are intuitively linked to the map.
+        * ✔ When I click on the *Hotels, Restaurants, Nightlife, Historic Sites, Nature *or* Activities* buttons, marker points are loaded onto the map.
+        * ✔ When I click any of the markers, it shows me an info-window displaying information about that marker, which is related to the category of the button that I clicked on.
+        * ✔ The info-window has text that is helpful and clear to read.
+        * ✔ The info-window has a link to a website that is relevant to the marker I have just clicked.
+        * ✔ If I click the link in the info-window, it opens the site in a new browser tab so as not to interrupt my experience.
+        * ✔ I can close the info-window by clicking the "x" in the top right corner of it.
