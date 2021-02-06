@@ -166,7 +166,8 @@ All CSS was put through the [W3C CSS Validation Service](https://jigsaw.w3.org/c
     ![css validation screenshot - slideshow.css ](css-validation-slideshow-css.png)
 
 ## JavaScript
-* The following files in assets/js/ were passed through [JSHint](https://jshint.com/):
+
++ The following files in assets/js/ were passed through [JSHint](https://jshint.com/)
 
 * todoList.js
 * toggle.js
