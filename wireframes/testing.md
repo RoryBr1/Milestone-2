@@ -84,6 +84,8 @@ After these errors were corrected, the HTML passed without error or warning.
 
 ![HTML Validation Screenshot index.html](html-validation-index.png)
 
+<hr>
+
 * ### Plan-a-visit
 The following warning was found
 
@@ -100,6 +102,7 @@ The following warning was found
 
     ![HTML Validation Screenshot plan-a-visit.html](html-validation-plan.png)
 
+<hr>
 <hr>
 
 ## CSS
@@ -153,6 +156,8 @@ All CSS was put through the [W3C CSS Validation Service](https://jigsaw.w3.org/c
     After these fixes, the CSS passed the validator without error. 
 
     ![css validation screenshot - style.css ](css-validation-style-css.png)
+
+    <hr>
 
 * ### Slideshow.css
     Located at assets/css/slideshow.css.
