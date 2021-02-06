@@ -82,6 +82,7 @@ After these errors were corrected, the HTML passed without error or warning.
 
 * ### Plan-a-visit.html
 The following warning was found
+
 1. 
     ```
     Warning: Consider avoiding viewport values that prevent users from resizing documents.
