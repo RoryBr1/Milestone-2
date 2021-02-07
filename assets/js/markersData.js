@@ -28,6 +28,7 @@ let hotels = [
             lng: -9.054967632117835 
         },
         content: `<b>Jurys Inn Galway</b> <br />
+                    Hotel
                   <a href="https://www.jurysinns.com/hotels/galway/?utm_source=google&utm_medium=local" target="_blank">Website</a>`
     }, 
     {
@@ -37,7 +38,148 @@ let hotels = [
             lng: -9.047536935531378 
         },
         content: `<b>Harbour Hotel</b> <br />
+                    Hotel <br>
                     <a href="https://www.harbour.ie/?utm_source=google&utm_medium=organic&utm_campaign=Knowledge_Graph" target="_blank">Website</a>`
+    }, 
+    {
+        name: "The Residence Hotel",
+        position: {  
+            lat: 53.27103737916188, 
+            lng: -9.05434074579078
+        },
+        content: `<b>The Residence Hotel</b> <br />
+                    Hotel <br>
+                    <a href="http://www.theresidencehotel.ie/en/?utm_source=google&utm_medium=organic&utm_campaign=Knowledge_Graph" target="_blank">Website</a>`
+    }, 
+    {
+        name: "The House Hotel", 
+        position: {  
+            lat: 53.270672401786555,
+            lng: -9.053422135271697
+        },
+        content: `<b>The House Hotel</b> <br />
+                    Hotel <br>
+                    <a href="http://www.thehousehotel.ie/?utm_source=mybusiness&utm_medium=organic" target="_blank">Website</a>`
+    }, 
+    {
+        name: "Galway Arms Inn", 
+        position: {   
+            lat: 53.271475872476785,
+            lng: -9.056988728816263
+        },
+        content: `<b>Galway Arms Inn</b> <br />
+                    Hotel <br>
+                    <a href="http://galwayarmsinn.com-galway.com/" target="_blank">Website</a>`
+    }, 
+    {
+        name: "The Ardilaun Hotel", 
+        position: {    
+            lat: 53.26775683353552,
+            lng: -9.080827084575802
+        },
+        content: `<b>The Ardilaun Hotel</b> <br />
+                    Hotel <br>
+                    <a href="https://www.theardilaunhotel.ie/" target="_blank">Website</a>`
+    }, 
+    {
+        name: "Galway Bay Hotel", 
+        position: {    
+            lat: 53.25855521962067, 
+            lng: -9.084858299920429
+        },
+        content: `<b>Galway Bay Hotel</b> <br />
+                    Hotel <br>
+                    <a href="http://www.galwaybayhotel.com/" target="_blank">Website</a>`
+    }, 
+    {
+        name: "Anno Santo Hotel", 
+        position: {     
+            lat: 53.263355005069656,
+            lng: -9.08863485139975
+        },
+        content: `<b>Anno Santo Hotel</b> <br />
+                    Hotel <br>
+                    <a href="http://www.annosantohotel.com/" target="_blank">Website</a>`
+    }, 
+    {
+        name: "Salthill Hotel", 
+        position: {     
+            lat: 53.25870796999936, 
+            lng: -9.087261561523563
+        },
+        content: `<b>Salthill Hotel</b> <br />
+                    Hotel <br>
+                    <a href="https://www.salthillhotel.com/?utm_source=mybusiness&utm_medium=organic&utm_campaign=Google%20My%20Business" target="_blank">Website</a>`
+    }, 
+    {
+        name: "Park House Hotel", 
+        position: {     
+            lat: 53.274742343731006, 
+            lng: -9.046960699920428
+        },
+        content: `<b>Park House Hotel</b> <br />
+                    Hotel <br>
+                    <a href="https://www.parkhousehotel.ie/?utm_source=mybusiness&utm_medium=organic" target="_blank">Website</a>`
+    }, 
+    {
+        name: "Park House Hotel", 
+        position: {     
+            lat: 53.274742343731006, 
+            lng: -9.046960699920428
+        },
+        content: `<b>Park House Hotel</b> <br />
+                    Hotel <br>
+                    <a href="https://www.parkhousehotel.ie/?utm_source=mybusiness&utm_medium=organic" target="_blank">Website</a>`
+    }, 
+    {
+        name: "Clayton Hotel", 
+        position: {      
+            lat: 53.29136237873036,
+            lng: -8.989341330609685
+        },
+        content: `<b>Clayton Hotel</b> <br />
+                    Hotel <br>
+                    <a href="https://ad.doubleclick.net/ddm/trackclk/N1074062.3844254CLAYTONHOTELS-OR/B24186235.278894805;dc_trk_aid=472925211;dc_trk_cid=135201398;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=" target="_blank">Website</a>`
+    }, 
+    {
+        name: "Clybaun Hotel", 
+        position: {      
+            lat: 53.26970306726223, 
+            lng: -9.107568315265057
+        },
+        content: `<b>Clybaun Hotel</b> <br />
+                    Hotel <br>
+                    <a href="http://www.clybaunhotel.ie/" target="_blank">Website</a>`
+    }, 
+    {
+        name: "Imperial Hotel", 
+        position: {       
+            lat: 53.27467185628938,
+            lng: -9.051038045954312
+        },
+        content: `<b>Imperial Hotel</b> <br />
+                    Hotel <br>
+                    <a href="http://www.clybaunhotel.ie/" target="_blank">Website</a>`
+    }, 
+    {
+        name: "The Maldron Hotel", 
+        position: {       
+            lat: 53.28578913960272, 
+            lng: -9.045122599920427
+        },
+        content: `<b>The Maldron Hotel</b> <br />
+                    Hotel <br>
+                    <a href="https://ad.doubleclick.net/ddm/trackclk/N1074062.3913567MALDRONHOTELS-OR/B24608539.282337852;dc_trk_aid=476090150;dc_trk_cid=137767636;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=$%7BGDPR%7D;gdpr_consent=$%7BGDPR_CONSENT_755%7D" target="_blank">Website</a>`
+    }, 
+    {
+        name: "The Connacht Hotel", 
+        position: {       
+            lat: 53.280084888887394, 
+            lng: -9.021187784575803
+        },
+        content: `<b>The Connacht Hotel</b> <br />
+                    Hotel <br>
+                    <a href="https://ad.doubleclick.net/ddm/trackclk/N1074062.3913567MALDRONHOTELS-OR/B24608539.282337852;dc_trk_aid=476090150;dc_trk_cid=137767636;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=$%7BGDPR%7D;gdpr_consent=$%7BGDPR_CONSENT_755%7D" target="_blank">Website</a>`
     }
 ];
 
