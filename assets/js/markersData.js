@@ -827,6 +827,106 @@ let activities = [
         Golf <br>
         <a href="http://www.galwaygolf.com/" target="_blank">Website</a>`
     },
+    {
+        name: "Great Escape Rooms",
+        position: {       
+            lat: 53.27386553936585, 
+            lng: -9.053522244160893
+        },
+        content: `<b>Great Escape Rooms</b> <br>
+        Escape Room <br>
+        <a href="http://greatescaperooms.ie/" target="_blank">Website</a>`
+    },
+    {
+        name: "Waterside Zorbing",
+        position: {       
+            lat: 53.277362026224324, 
+            lng: -9.054148151401487
+        },
+        content: `<b>Waterside Zorbing</b> <br>
+        Outdoor activity <br>
+        <a href="http://www.getwest.ie/water-zorbing/" target="_blank">Website</a>`
+    },
+    {
+        name: "Pure Skill",
+        position: {       
+            lat: 53.27133798110528, 
+            lng: -9.100741161219371
+        },
+        content: `<b>Pure Skill</b> <br>
+        Gaelic Sports Complex<br>
+        <a href="http://www.pureskill.ie/" target="_blank">Website</a>`
+    },
+    {
+        name: "Galway Walks ",
+        position: {       
+            lat: 53.274689552753806, 
+            lng: -9.048460876685633
+        },
+        content: `<b>Galway Walks </b> <br>
+        Tour guide <br>
+        <a href="http://www.galwaywalks.com/" target="_blank">Website</a>`
+    },
+    {
+        name: "Planet Entertainment Centre",
+        position: {       
+            lat: 53.27953196150168, 
+            lng: -9.048261172918158
+        },
+        content: `<b>Planet Entertainment Centre</b> <br>
+        Bowling, Arcade, Snooker <br>
+        <a href="http://www.planetgalway.ie/" target="_blank">Website</a>`
+    },
+    {
+        name: "Claudes Casino",
+        position: {       
+            lat: 53.25962237785931, 
+            lng: -9.076502425580449
+        },
+        content: `<b>Claudes Casino</b> <br>
+        Casino <br>
+        <a href="https://facebook.com/Claudes-Casino-Salthill-297509226486/" target="_blank">Website</a>`
+    },
+    {
+        name: "Seapoint Leisure",
+        position: {       
+            lat: 53.25964699625536, 
+            lng: -9.075540041095756
+        },
+        content: `<b>Seapoint Leisure</b> <br>
+        Amusement Center <br>
+        <a href="https://www.facebook.com/seapointgalway/" target="_blank">Website</a>`
+    },
+    {
+        name: "Galway Bay Boat Tours",
+        position: {       
+            lat: 53.26901202906572, 
+            lng: -9.047193666652664
+        },
+        content: `<b>Galway Bay Boat Tours</b> <br>
+        Tour organiser <br>
+        <a href="http://www.galwaybaytours.com/" target="_blank">Website</a>`
+    },
+    {
+        name: "Eglinton Casino",
+        position: {       
+            lat: 53.27469800875754, 
+            lng: -9.052455081569898
+        },
+        content: `<b>Eglinton Casino</b> <br>
+        Casino/Snooker Hall <br>
+        <a href="http://www.theeglinton.com/" target="_blank">Website</a>`
+    },
+    {
+        name: "Caesers Palace",
+        position: {       
+            lat: 53.27390136403644, 
+            lng: -9.04843831375855
+        },
+        content: `<b>Caesers Palace</b> <br>
+        Casino <br>
+        <a href="https://caesars.vantageclub.ie/" target="_blank">Website</a>`
+    }
 ];
 
 let markersSet = {
