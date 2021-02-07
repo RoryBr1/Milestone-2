@@ -1,7 +1,7 @@
 ![Header Logo](wireframes/header-logo.png)
 # Interactive Tourist Map of Galway, Ireland
 
-# Table of Content
+# Table of Contents
 <hr>
 
 1. [Overview](#overview)

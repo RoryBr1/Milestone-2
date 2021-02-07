@@ -2,7 +2,7 @@
 
 # Testing
 
-## Table of Content 
+## Table of Contents 
 1. [W3C & JSHint Validation](#html)
     * [Index.html](#Index)
     * [Plan-a-visit.html](#Plan-a-visit)
