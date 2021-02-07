@@ -354,6 +354,16 @@ let restaurants = [
         content: `<b>Asian Tea House</b> <br>
                     Asian restaurant <br>
                     <a href="http://www.asianteahouse.ie/" target="_blank">Website</a>`
+    }, 
+    {
+        name: "Pasta Factory",
+        position: { 
+            lat: 53.274322352312446, 
+            lng: -9.053658346544482
+        },
+        content: `<b>Pasta Factory</b> <br>
+                    Restaurant <br>
+                    <a href="http://pastafactoryrestaurant.com/" target="_blank">Website</a>`
     }
 ];
 
@@ -364,8 +374,9 @@ let nightlife = [
             lat: 53.27020397986475,
             lng: -9.058122630263655
         },
-        content: `<b>Róisín Dubh</b> <br>
-        <a href="http://www.roisindubh.net/" target="_blank">Website</a>`
+        content: `<b>Róisín Dubh</b> <br> 
+                    Bar / Nightclub <br>
+                <a href="http://www.roisindubh.net/" target="_blank">Website</a>`
     },
     {
         name: "Seven Bar & Restaurant",
@@ -374,6 +385,7 @@ let nightlife = [
             lng: -9.055076401427293 
         },
         content: `<b>Seven Bar & Restaurant</b> <br>
+                   Bar / Nightclub <br>
                   <a href="http://sevenbridgestreet.ie/" target="_blank">Website</a>`
     },
     {
@@ -383,7 +395,158 @@ let nightlife = [
             lng: -9.054195876266448
         },
         content: `<b>The Front Door Pub</b> <br>
-                  <a href="http://sevenbridgestreet.ie/" target="_blank">Website</a>`
+        Bar / Nightclub <br>          
+        <a href="http://sevenbridgestreet.ie/" target="_blank">Website</a>`
+    },
+    {
+        name: "Coyotes Late Bar",
+        position: {  
+            lat: 53.2728463326419, 
+            lng: -9.05269203270198
+        },
+        content: `<b>Coyotes Late Bar</b> <br>
+        Bar / Nightclub <br>          
+        <a href="http://www.coyotes.ie/" target="_blank">Website</a>`
+    },
+    {
+        name: "DNA",
+        position: {  
+            lat: 53.27389255839181, 
+            lng: -9.050393813114722
+        },
+        content: `<b>DNA</b> <br>
+        Bar / Nightclub <br>          
+        <a href="http://www.dnagalway.com/" target="_blank">Website</a>`
+    },
+    {
+        name: "Electric",
+        position: {  
+            lat: 53.273813011654504, 
+            lng:  -9.052903160666355
+        },
+        content: `<b>Electric</b> <br>
+        Bar / Nightclub <br>          
+        <a href="https://www.facebook.com/ElectricGalway/" target="_blank">Website</a>`
+    },
+    {
+        name: "Halo",
+        position: {  
+            lat: 53.27365723451133, 
+            lng: -9.05261578412678
+        },
+        content: `<b>Halo</b> <br>
+        Bar / Nightclub <br>          
+        <a href="https://www.facebook.com/HaloNightclubGalway/" target="_blank">Website</a>`
+    },
+    {
+        name: "O'Connell's Bar",
+        position: {  
+            lat: 53.274629524394314, 
+            lng: -9.048317062865136
+        },
+        content: `<b>O'Connell's Bar</b> <br>
+        Bar / Nightclub <br>          
+        <a href="http://www.oconnellsbargalway.com/" target="_blank">Website</a>`
+    },
+    {
+        name: "Nova",
+        position: {  
+            lat: 53.270207022355535, 
+            lng: -9.059079234472488
+        },
+        content: `<b>Nova</b> <br>
+        Bar / LGBT Friendly <br>          
+        <a href="https://www.facebook.com/novabargalway/" target="_blank">Website</a>`
+    },
+    {
+        name: "Caribou",
+        position: {  
+            lat: 53.275567829217266,
+            lng:  -9.05249732321061
+        },
+        content: `<b>Caribou</b> <br>
+        Bar / Nightclub <br>          
+        <a href="http://www.caribougalway.com/" target="_blank">Website</a>`
+    },
+    {
+        name: "Barr An Chaladh",
+        position: {  
+            lat: 53.27529042860854, 
+            lng: -9.052763403899911
+        },
+        content: `<b>Barr An Chaladh</b> <br>
+        Traditional Pub <br>          
+        <a href="https://barr-an-chaladh.business.site/" target="_blank">Website</a>`
+    },
+    {
+        name: "Taaffes Bar",
+        position: {  
+            lat: 53.2723584217657, 
+            lng: -9.05315675202358
+        },
+        content: `<b>Taaffes Bar</b> <br>
+        Traditional Pub <br>          
+        <a href="https://www.facebook.com/taaffes.bar.1/" target="_blank">Website</a>`
+    },
+    {
+        name: "Tigh Chóilí",
+        position: {  
+            lat: 53.27234348810739, 
+            lng: -9.05355591082315
+        },
+        content: `<b>Tigh Chóilí</b> <br>
+        Traditional Pub <br>          
+        <a href="http://tigcoiligalway.com/" target="_blank">Website</a>`
+    },
+    {
+        name: "An Púcán",
+        position: {  
+            lat: 53.27455168016004, 
+            lng: -9.047430501228757
+        },
+        content: `<b>An Púcán</b> <br>
+        Bar / Nightclub <br>          
+        <a href="https://anpucan.ie/" target="_blank">Website</a>`
+    },
+    {
+        name: "The Skeff Bar",
+        position: {  
+            lat: 53.27410851028751, 
+            lng: -9.050059078277625
+        },
+        content: `<b>The Skeff Bar</b> <br>
+        Bar / Nightclub <br>          
+        <a href="http://www.theskeff.ie/" target="_blank">Website</a>`
+    },
+    {
+        name: "Monroe's Tavern",
+        position: {  
+            lat: 53.270024905933, 
+            lng: -9.057768144904271
+        },
+        content: `<b>Monroe's Tavernb</b> <br>
+        Bar / Nightclub <br>          
+        <a href="http://www.monroes.ie/" target="_blank">Website</a>`
+    },
+    {
+        name: "Sally Longs Rock Bar",
+        position: {  
+            lat: 53.27414458776358, 
+            lng: -9.053625178480377
+        },
+        content: `<b>Sally Longs Rock Bar</b> <br>
+        Rock Bar/LGBT Friendly <br>          
+        <a href="https://www.sallylongs.com/" target="_blank">Website</a>`
+    },
+    {
+        name: "1520  Bar",
+        position: {  
+            lat: 53.27106893716259, 
+            lng: -9.054376737990207
+        },
+        content: `<b>1520  Bar</b> <br>
+        Bar <br>          
+        <a href="https://1520.ie/" target="_blank">Website</a>`
     }
 ];
 
@@ -395,6 +558,7 @@ let historicSites = [
             lng: -9.054088588073709
         },
         content: `<b>Spanish Arch</b> <br>
+        Historic site <br>
         <a href="https://www.galwaytourism.ie/pThe-Spanish-Arch.html" target="_blank">Website</a>`
     },
     {
@@ -404,6 +568,7 @@ let historicSites = [
             lng: -9.053648705785124
         },
         content: `<b>Galway City Museum</b> <br>
+        Museum <br>
         <a href="http://www.galwaycitymuseum.ie/" target="_blank">Website</a>`
     },
     {
@@ -413,6 +578,7 @@ let historicSites = [
             lng: -9.051535125058386
         },
         content: `<b>Statue of Oscar & Eduard Wilde</b> <br>
+        Historic Statue <br>
         <a href="http://galwaycity.ie/" target="_blank">Website</a>`
     },
     {
@@ -422,6 +588,7 @@ let historicSites = [
             lng: -9.053670587146563
         },
         content: `<b>Hall of the Red Earl</b> <br>
+        Castle <br>
         <a href="http://www.galwaycivictrust.ie/" target="_blank">Website</a>`
     },
     {
@@ -431,15 +598,17 @@ let historicSites = [
             lng: -9.07365433982323
         },
         content: `<b>Menlo Castle</b> <br>
+        Castle <br>
         <a href="http://www.galwaycity.ie/heritage-conservation/" target="_blank">Website</a>`
     },
     {
-        name: "Menlo Castle",
+        name: "Fisheries Watchtower Museum",
         position: {      
-            lat: 53.26856891345938,
-            lng: -9.051686686150235
+            lat: 53.27099838985916, 
+            lng: -9.054373976391885
         },
-        content: `<b>Menlo Castle</b> <br>
+        content: `<b>Fisheries Watchtower Museum</b> <br>
+        Museum <br>
         <a href="http://www.galwaycity.ie/heritage-conservation/" target="_blank">Website</a>`
     },
     {
@@ -449,8 +618,69 @@ let historicSites = [
             lng: -9.064365343700054
         },
         content: `<b>Famine Ship Memorial</b> <br>
+        Historic site <br>
         <a href="https://www.salthill.com/" target="_blank">Website</a>`
     },
+    {
+        name: "Merlin Castle",
+        position: {       
+            lat: 53.27982909257506, 
+            lng: -8.998058599980107
+        },
+        content: `<b>Merlin Castle</b> <br>
+        Castle <br>
+        <a href="https://www.facebook.com/groups/FriendsofMerlinWoods/" target="_blank">Website</a>`
+    },
+    {
+        name: "Terryland Castle",
+        position: {       
+            lat: 53.2831008071796, 
+            lng: -9.059537457652421
+        },
+        content: `<b>Terryland Castle</b> <br>
+        Castle <br>
+        <a href="http://www.galwaycity.ie/heritage-conservation/" target="_blank">Website</a>`
+    },
+    {
+        name: "Lynch Memorial Window",
+        position: {       
+            lat: 53.27223027779617, 
+            lng: -9.053504940663169
+        },
+        content: `<b>Lynch Memorial Window</b> <br>
+        Historic Site <br>
+        <a href="https://www.tripadvisor.ie/Attraction_Review-g186609-d215972-Reviews-The_Lynch_Memorial-Galway_County_Galway_Western_Ireland.html" target="_blank">Website</a>`
+    },
+    {
+        name: "Oranmore Castle",
+        position: {       
+            lat: 53.268304123683784, 
+            lng: -8.934775853337134
+        },
+        content: `<b>Oranmore Castle</b> <br>
+        Castle <br>
+        <a href="http://www.oranmorecastle.com/" target="_blank">Website</a>`
+    },
+    {
+        name: "Ardfry Castle",
+        position: {       
+            lat: 53.23716534861427, 
+            lng: -8.977184239461574
+        },
+        content: `<b>Ardfry Castle</b> <br>
+        Castle <br>
+        <a href="https://visitgalway.ie/ardfry-castle/" target="_blank">Website</a>`
+    },
+    {
+        name: "Eyre Square",
+        position: {       
+            lat: 53.27436827052334, 
+            lng: -9.049195413471633
+        },
+        content: `<b>Eyre Square</b> <br> 
+        Historic City Centre <br>
+        <a href="http://www.galwaycity.ie/public-parks" target="_blank">Website</a>`
+    }
 ];
 
 let nature = [
@@ -461,6 +691,7 @@ let nature = [
             lng: -9.06598345236164
         },
         content: `<b>Grattan Beach</b> <br>
+        Beach <br>
         <a href="http://www.galwaycity.ie/" target="_blank">Website</a>`
     },
     {
@@ -470,6 +701,7 @@ let nature = [
             lng: -9.086925441291887
         },
         content: `<b>Salthill Prom</b> <br>
+        Scenic Walk <br>
         <a href="http://www.galwaycity.ie/" target="_blank">Website</a>`
     },
     {
@@ -479,6 +711,7 @@ let nature = [
             lng: -8.997749636070202
         },
         content: `<b>The Meadows Wildlife Park</b> <br>
+        Wildlife Park <br>
         <a href="https://www.facebook.com/groups/128207273995064/" target="_blank">Website</a>`
     },
     { 
@@ -488,6 +721,7 @@ let nature = [
             lng: -8.991792056950251
         },
         content: `<b>Merlin Park Woods</b> <br>
+        Scenic Walk <br>
         <a href="https://www.facebook.com/groups/FriendsofMerlinWoods/" target="_blank">Website</a>`
     },
     { 
@@ -497,6 +731,7 @@ let nature = [
             lng: -9.085544220716457 
         },
         content: `<b>Circle of Life Commemorative Garden</b> <br>
+        Garden/Park <br>
         <a href="https://www.galwaycity.ie/" target="_blank">Website</a>`
     },
     { 
@@ -506,6 +741,7 @@ let nature = [
             lng: -9.072428391573974
         },
         content: `<b>Claude Toft Park</b> <br>
+        Park <br>
         <a href="https://www.galwaycity.ie/" target="_blank">Website</a>`
     },
     { 
@@ -515,6 +751,7 @@ let nature = [
             lng: -9.080698691973739
         },
         content: `<b>Salthill Public Park</b> <br>
+        Park <br>
         <a href="https://www.galwaycity.ie/" target="_blank">Website</a>`
     },
     { 
@@ -524,6 +761,7 @@ let nature = [
             lng: -9.051847728007633
         },
         content: `<b>South Park Beach</b> <br>
+        Beach <br>
         <a href="https://www.galwaycity.ie/" target="_blank">Website</a>`
     },
     {
@@ -533,6 +771,7 @@ let nature = [
             lng: -9.06403632633284    
         },
         content: `<b>Celia Griffin Memorial Park</b> <br>
+        Park <br>
         <a href="https://www.salthill.com/" target="_blank">Website</a>`
     },
     {
@@ -542,6 +781,7 @@ let nature = [
             lng: -9.035236826894474
         },
         content: `<b>Deadmans Beach</b> <br>
+        Beach <br>
         <a href="https://www.galwaycity.ie/" target="_blank">Website</a>`
     },
     {
@@ -551,6 +791,7 @@ let nature = [
             lng: -9.049229623478606
         },
         content: `<b>Eyre Square</b> <br>
+        Park/City Centre <br>
         <a href="http://www.galwaycity.ie/public-parks" target="_blank">Website</a>`
     },
 ];
@@ -563,6 +804,7 @@ let activities = [
             lng: -9.050767775472758
         },
         content: `<b>IMC Cinema Galway</b> <br>
+        Cinema <br>
         <a href="http://www.imccinemas.ie/home.asp?venue=galway" target="_blank">Website</a>`
     },
     {
@@ -572,6 +814,7 @@ let activities = [
             lng: -9.03940732825368
         },
         content: `<b>Galway Greyhound Stadium</b> <br>
+        Race Track <br>
         <a href="http://www.galwaygreyhoundstadium.ie/?utm_source=google&utm_medium=maps" target="_blank">Website</a>`
     },
     {
@@ -581,6 +824,7 @@ let activities = [
             lng: -9.09499208975245
         },
         content: `<b>Galway Golf Club</b> <br>
+        Golf <br>
         <a href="http://www.galwaygolf.com/" target="_blank">Website</a>`
     },
 ];

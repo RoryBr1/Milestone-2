@@ -19,8 +19,8 @@ function initMap() {
 
   const galway = { lat: 53.27108077506178, lng: -9.056759662752283 };
   map = new google.maps.Map(document.getElementById("map"), {
-      zoom: 16,
-      minZoom:9,
+      zoom: 14,
+      minZoom:5,
       center: galway,
       mapTypeId: "terrain",
       streetViewControl: false,
@@ -56,7 +56,7 @@ const addMarker = (markerData) => {
       activeMarkerName = markerData.name;
   });
   bounds.extend(marker.getPosition());
-  map.fitBounds(bounds); // show all the markers.
+  map.fitBounds(bounds, 0.5); // show all the markers.
 }
 
 
