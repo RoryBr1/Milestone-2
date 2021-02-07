@@ -174,6 +174,7 @@ An interactive map which allows the user to view markers on the map based on cat
 The map is built using [Google Maps Javascript API](https://developers.google.com/maps/documentation/javascript/overview).
 Users can zoom in/out of the map by using the buttons on the bottom right of the map, or by double-clicking with the left and right mouse buttons. <br><br>
 
+The map zooms to fit all markers on the map.
 [Back to Top](#table-of-content)
 
 <hr>
@@ -182,13 +183,19 @@ Users can zoom in/out of the map by using the buttons on the bottom right of the
 * *The list of markers in assets/js/markersData.js must be kept up-to-date by the web team, by adding new markers and removing obsolete markers (for instance, if a restaurant closes or if a new business opens). In the future, this could be automated by loading marker data from an external, up-to-date source if one is found.* 
 * As this project was created for educational purposes, the Contact Us form has not been linked to an e-mail account and does not trigger an e-mail to be sent to any mailbox. In the future, this can be done easily using [EmailJS](https://www.emailjs.com/). 
 
+## Known Bugs
+The following bugs have been noted and should be of priority in future development.
+* If two markers on the map are close together, it can be difficult for the user to accurately click the correct one without zooming in.
+    The developer has tried using a smaller map icon image
+
 ## Future Features
 While the primary functionalities of the site have been achieved, additional features could add to the user's experience on the site.
 Future developers should consider this list of potential features. 
-* The map does not automatically zoom to the scope of all markers; this means that when a category is clicked, some markers may be loaded outside of the visible portion of the map, and users may have to maneuver the map to view them. Scoping the map to include all loaded markers is an useful feature and should be of priority to future developers.
+
 * An informational video on the homepage to increase the educational value of the website. A visual media professional could be employed to produce a high-quality informational video for the front page of the website. 
 * On the "Plan A Visit" section > Interactive Map > "Saved Places" list, functionality could be added so that when a list-item is clicked, the relevant marker and info-window is highlighted on the map. This would enable users to quickly find the location of their Saved Places.
 * "Suggested Places to Visit" or similar. A list could be added on either the homepage or the "Plan A Visit" page, which displays suggested locations for the user to discover on the map. The list could be updated with popular locations, or locations which are holding events on the given week. When clicked, list-items open the location's marker on the map, allowing them to save the suggested place to their Saved Places.
+* Allow users to share points of interest on social media or e-mail with a Share button on the info window.
 
 [Back to Top](#table-of-content)
 

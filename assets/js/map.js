@@ -11,9 +11,12 @@ var markers = []; // array into which markers are pushed to drop them on the map
 let selected = []; // selected marker
 let activeInfoWindow; // info window related to clicked marker. can only be one info window open at any time.
 let activeMarkerName; // name of the clicked marker. 
+var bounds;
 
 // Initialize map
 function initMap() {
+  bounds = new google.maps.LatLngBounds();
+
   const galway = { lat: 53.27108077506178, lng: -9.056759662752283 };
   map = new google.maps.Map(document.getElementById("map"), {
       zoom: 13,
@@ -51,7 +54,10 @@ const addMarker = (markerData) => {
       activeInfoWindow = infowindow;
       activeMarkerName = markerData.name;
   });
+  bounds.extend(marker.getPosition());
+  map.fitBounds(bounds); // show all the markers.
 }
+
 
 // Deletes all markers in the array by removing references to them.
 const deleteMarkers = () => {
