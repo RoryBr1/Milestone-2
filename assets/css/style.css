@@ -1,4 +1,7 @@
+/* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
+
+/* Main Styling */
 html {
     background-image: url("../images/background.jpg");
     margin:0;
@@ -20,6 +23,7 @@ body {
     margin:0;
 }
 
+/* .wrapper is used to ensure a minimum viewport height so that the footer will appear at the bottom of the page */
 .wrapper {
     min-height:100vh;
 }
@@ -39,6 +43,7 @@ p a:hover {
     text-shadow: 0px 0px 2px rgba(64, 77, 255, 0.219);
 }
 
+/* .highlight-blue is used to illustrate the Add to Favorites button in .welcome-text of plan-a-visit.html */
 .highlight-blue {
     background-color:rgb(107, 139, 255, 0.5);
     padding:2px;
@@ -46,6 +51,7 @@ p a:hover {
     white-space:nowrap;
 }
 
+/* .highlight-red is used to illustrate the trash button in .welcome-text of plan-a-visit.html */
 .highlight-red {
     background-color:rgb(240, 128, 128, 0.5);
     padding:2px;
@@ -54,6 +60,7 @@ p a:hover {
     border-radius:4px;
 }
 
+/* logo styling; Visit and Galway given separate colours and font weight */
 #visit {
     opacity:0.8;
     color:rgba(103, 19, 29);
@@ -73,10 +80,12 @@ p a:hover {
     vertical-align: middle;
 }
 
+/* #hooker is the silhouette of the boat in the site logo */
 #hooker {
     vertical-align:middle;
 }
 
+/* contains logo and desktop nav bar */
 .header-bar {
     box-sizing: border-box;
     width:100%;
@@ -85,6 +94,7 @@ p a:hover {
     margin:0;
 }
 
+/* nav bar styling */
 #desktop-nav {
     display:inline;
     vertical-align: middle;
@@ -116,7 +126,7 @@ nav a:hover {
     display:none;
 }
 
-.invisible { /* This class is toggled on #mobile-nav when #menu-button is clicked */
+.invisible { /* This class is used by assets/js/toggle.js to enable toggle functionality on site elements */
     display:none;
     animation-name:fadeBounce;
     animation-duration:0.6s;
@@ -124,7 +134,7 @@ nav a:hover {
 	transition-duration:.3s;
 }
 
-.welcome-text {
+.welcome-text { /* this applies to the welcome-text above the interactive map on plan-a-visit.html */
     font-size:0.9rem;
     max-width:100vw;
     height:fit-content;
@@ -139,7 +149,7 @@ nav a:hover {
     margin-bottom:32px;
 }
 
-.homepage-article {
+.homepage-article { /* this applies to the main block of content on index.html */
     height:fit-content;
     width:75%;
     background:white;
@@ -148,7 +158,7 @@ nav a:hover {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
 }
 
-#homepage-splash-text {
+#homepage-splash-text { /* splash header on top of main content block on index.html */
     height:300px;
     background-image: url("../images/index-splash.jpg");
     background-size: cover;
@@ -186,24 +196,24 @@ nav a:hover {
     padding-bottom:20px;
 }
 
-.container{
+.container{ /* this container holds the slideshow on index.html */
     width:80%;
     margin:0 auto;
 }
 
 /* MAP STYLING */
-.map-buttons {
+.map-buttons { /* container for the category ("Hotels, Restaurants"..) buttons on plan-a-visit.html */
     display:inline-block;
     vertical-align:top;
     width:25%;
 }
 
-.map-buttons i {
+.map-buttons i { /* map button FontAwesome icons */
     opacity:60%;
     padding-right:7%;
 }
 
-.map-buttons button {
+.map-buttons button { /* styling for the actual map buttons */
     background-color: rgba(103, 19, 29);
     font-size:2rem;
     display:inline-block;
@@ -229,27 +239,23 @@ nav a:hover {
     box-shadow: inset 0px 0px 3px rgba(0,0,0,0.3);
 }
 
-#map-container {
+#map-container { /* contains map on plan-a-visit.html */
     display: inline-block;
     width:50%;
 }
 
-#map {
+#map { /* actual map element. this id is used by Google Maps Javascript API to render the map */
     margin:0 auto;
     box-shadow: 0px 0px 6px rgba(0,0,0,0.8);
     width:100%;
     height:500px;
 }
 
-#map img {
-    height:5px;
-    width:5px;
-}
-#map a {
+#map a { /* links within the map, ie. the Website links on info-windows. */
     font-weight:700;
 }
 
-#map button {
+#map button { /* this is the styling for the Add to Favorites button on info-windows */
     opacity:95%;
     width:100px;
     display:block;
@@ -278,16 +284,16 @@ nav a:hover {
 }
 
 /* TODO LIST STYLING */
-#todo-list-header {
+#todo-list-header { /* this is the header of the list which says "Saved Places" */
     background:rgba(20, 9, 73, 0.89);
     padding-top:7px;
 }
 
-#todo-list-header i {
-    padding-right:5px;
+#todo-list-header i { /* fontawesome icon to left of Saved Places text */
+    padding-right:5px; 
 }
 
-#todo-list {
+#todo-list { /* styling for the overall Saved Places list */
     display: inline-block;
     background:rgba(20, 9, 73, 0.6);
     box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
@@ -300,7 +306,7 @@ nav a:hover {
     list-style:none;
 }
 
-.todo-li {
+.todo-li { /* individual list item styling on the Saved Places list */
     height:36px;
     width:100%;
     margin-top:1px;
@@ -331,7 +337,7 @@ nav a:hover {
     margin-left:3%;
 }
 
-.delete-btn {
+.delete-btn { /* delete (trash) button styling on list items */
     opacity:0.9;
     display:inline;
     float:right;
@@ -360,7 +366,8 @@ nav a:hover {
     box-shadow: none;
 }
 
-/* TODO LIST SCROLLBAR STYLING */
+/* TODO LIST SCROLLBAR STYLING created with some code from https://w3generator.com/scrollbar 
+    This scrollbar is only relevant to the Saved Places list. It becomes visible when there are too many items on the list, and scroll is needed */
 ul::-webkit-scrollbar {
     width: 20px;
     height: 16px;
@@ -388,7 +395,7 @@ ul::-webkit-scrollbar-corner {
 }
 
 /* FOOTER STYLING */
-footer {
+footer { /* footer container */
     margin:auto;
     margin-top:10px;
     color:rgba(255,255,255,0.7);
@@ -400,7 +407,7 @@ footer {
     padding-bottom:3px;
 }
 
-#socials-footer div:hover {
+#socials-footer div:hover { /* hover effect for social icons */
     opacity:100%;
     animation-name:fade;
     animation-duration:0.3s;
@@ -408,7 +415,7 @@ footer {
 	transition-duration:.3s;
 }
 
-.social-icon {
+.social-icon { /* social icons */
     opacity:85%;
     font-size:1.8rem;
     color:white;
@@ -430,7 +437,7 @@ footer {
 }
 
 /* CONTACT WINDOW MODAL STYLING */
-#contact-window {
+#contact-window { /* contact window */
     width:40%;
     height:fit-content;
     margin-left:30%;
@@ -448,7 +455,7 @@ footer {
 	transition-duration:.3s;
 }
 
-#contact-window h1 {
+#contact-window h1 { /* "Contact Us" text */
     color:rgba(255,255,255,0.9);
     margin-left:15px;
     letter-spacing:0.03ch;
@@ -460,7 +467,7 @@ footer {
     margin-right:10%;
 }
 
-#close-window {
+#close-window { /* "X" button in top right corner */
     color:rgba(255,255,255,0.6);
     border-radius:50%;
     text-align:center;
@@ -479,7 +486,7 @@ footer {
     text-shadow: 0px 0px 4px rgba(255,255,255,0.9);
 }
 
-#contact-window form {
+#contact-window form { /* Form styling */
     padding:20px;
     padding-top:20px;
     width:70%;
@@ -487,14 +494,14 @@ footer {
     outline:none;
 }
 
-#contact-window form input {
+#contact-window form input { /* Form inputs (name, email) */
     font-family: 'Roboto', sans-serif;
     margin-bottom:2%;
     width:100%;
     outline:none;
 }
 
-#contact-window form textarea {
+#contact-window form textarea { /* message input box */
     font-family: 'Roboto', sans-serif;
     margin:0;
     width:100.5%;
@@ -502,7 +509,7 @@ footer {
     outline:none;
 }
 
-#send-button {
+#send-button { /* Send Message button */
     cursor: pointer;
     color:rgba(255,255,255,0.9);
     background:inherit;
@@ -520,7 +527,7 @@ footer {
 	transition-duration:.2s;
 }
 
-#send-button i {
+#send-button i { /* Paper plane icon to right of Send Message text */
     opacity:0.6;
     padding-left:10px;
 }
@@ -529,7 +536,7 @@ footer {
     background:rgb(29, 17, 88);
 }
 
-.conditions-agree {
+.conditions-agree { /* disclaimer at bottom of Contact Us modal */
     width:fit-content;
     padding-top:15px;
     margin:0 auto;
@@ -537,7 +544,7 @@ footer {
     font-size:0.6rem;
 }
 
-#form-error-message {
+#form-error-message { /* form error message toggled visible by toggle.js if a field is left blank */
     width:fit-content;
     padding-top:15px;
     margin:0 auto;
@@ -549,7 +556,7 @@ footer {
 	transition-duration:.3s;
 }
 
-#form-error-email-message {
+#form-error-email-message { /* form error message toggled visible by toggle.js if email format is invalid  */
     width:fit-content;
     padding-top:15px;
     margin:0 auto;
@@ -561,7 +568,7 @@ footer {
 	transition-duration:.3s;
 }
 
-#sent-confirmation {
+#sent-confirmation { /* "Your message has been received" modal shown after successful form submission. Visibility toggled by toggle.js */
     color:rgba(255,255,255,0.8);
     width:30%;
     margin-left:35%;
@@ -582,7 +589,7 @@ footer {
 	transition-duration:.3s;
 }
 
-#sent-confirmation i {
+#sent-confirmation i { /* small green "tick" icon on #sent-confirmation */
     color:#90ee90;
     opacity:0.6;
     margin-left:10px;
