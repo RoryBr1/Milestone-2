@@ -19,7 +19,8 @@ function initMap() {
 
   const galway = { lat: 53.27108077506178, lng: -9.056759662752283 };
   map = new google.maps.Map(document.getElementById("map"), {
-      zoom: 13,
+      zoom: 16,
+      minZoom:9,
       center: galway,
       mapTypeId: "terrain",
       streetViewControl: false,
