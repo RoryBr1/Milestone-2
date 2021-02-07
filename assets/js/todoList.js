@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', getTodos);
 document.querySelector('body').addEventListener('click', event => {
     // Check if the clicked element was actually a #add-button
     if (event.target.matches('#add-button')) {
-        console.log(activeMarkerName);
         addTodo();
     }
 });
@@ -71,8 +70,6 @@ function removeLocalTodos(thisTodo){
       todos = JSON.parse(localStorage.getItem('todos'));
     }
     
-    const todoIndex = todos.indexOf(thisTodo);
-    console.log(todoIndex);
     todos.splice(todos.indexOf(thisTodo), 1);
     localStorage.setItem('todos', JSON.stringify(todos));
 }

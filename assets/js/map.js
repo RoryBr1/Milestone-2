@@ -6,11 +6,11 @@
 
   All location data is stored in assets/js/markersData.js. */
 
-var markers = [];//some array
+var markers = []; // array into which markers are pushed to drop them on the map
 
-let selected = [];
-let activeInfoWindow;
-let activeMarkerName;
+let selected = []; // selected marker
+let activeInfoWindow; // info window related to clicked marker. can only be one info window open at any time.
+let activeMarkerName; // name of the clicked marker. 
 
 // Initialize map
 function initMap() {
