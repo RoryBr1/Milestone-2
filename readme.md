@@ -192,6 +192,8 @@ The following bugs have been noted and should be of priority in future developme
 While the primary functionalities of the site have been achieved, additional features could add to the user's experience on the site.
 Future developers should consider this list of potential features. 
 
+* A "search" feature on the Plan A Visit map which allows users to type keywords or partial names of places they are interested to view on the map.
+* More details could be added to info-windows, such as pricing for hotels/restaurants and ratings. These could be pulled from TripAdvisor or Google Places.
 * An informational video on the homepage to increase the educational value of the website. A visual media professional could be employed to produce a high-quality informational video for the front page of the website. 
 * On the "Plan A Visit" section > Interactive Map > "Saved Places" list, functionality could be added so that when a list-item is clicked, the relevant marker and info-window is highlighted on the map. This would enable users to quickly find the location of their Saved Places.
 * "Suggested Places to Visit" or similar. A list could be added on either the homepage or the "Plan A Visit" page, which displays suggested locations for the user to discover on the map. The list could be updated with popular locations, or locations which are holding events on the given week. When clicked, list-items open the location's marker on the map, allowing them to save the suggested place to their Saved Places.
@@ -287,6 +289,7 @@ Source links are listed below for each image. Some images have been edited and a
 
 ## Acknowledgements 
 
+* The [Google Maps JavaScript API Documentation](https://developers.google.com/maps/documentation/javascript/overview) was vital to all features of the interactive map.
 * Special thanks to [Code Institute](https://codeinstitute.net/) Tutor Support who helped me troubleshoot at multiple points in the development of the project.
 * Special thanks to my [Code Institute](https://codeinstitute.net/) mentor, Arnold Kyeza, who gave helpful guidance and constructive feedback at multiple points throughout the project. 
 * [Javascript Google Maps Api Tutorial](https://www.youtube.com/watch?v=8NUqDc1bQ84) by Framework Television on [YouTube](http://www.youtube.com/) helped me in learning how to use the Google Maps JavaScript API.
