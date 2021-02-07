@@ -56,7 +56,7 @@ const addMarker = (markerData) => {
       activeMarkerName = markerData.name;
   });
   bounds.extend(marker.getPosition());
-  map.fitBounds(bounds, 0.5); // show all the markers.
+  map.fitBounds(bounds, 0.5); // fit map viewport to all markers all the markers.
 }
 
 
