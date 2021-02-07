@@ -236,11 +236,14 @@ The site was also tested in Chrome Developer Tools with the console open to test
 
     ✔ If I try to submit the form without completing it, an error message appears.
 
+    ✔ If I try to submit the form with an invalid e-mail address format, an error message appears.
+
     ✔ Once I have filled the form out correctly, and click "Send Message", the window closes, and a notification is displayed assuring me that my message has been received.
 
     ✔ If I click "Contact" again, I can see that the form has been reset since my message was successfully submitted.
 
     ![Opening, error message when not complete, closing contact modal](testing-contact-1.gif)
+    ![Error message if e-mail is entered in invalid format](feature-email-error.png)
     ![Success message on contact form submission](testing-contact-3.gif)
 
     [Back to top](#testing)

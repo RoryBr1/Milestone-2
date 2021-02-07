@@ -11,6 +11,8 @@ const username = document.getElementById("username");
 const useremail = document.getElementById("useremail");
 const usermessage = document.getElementById("usermessage");
 const formError = document.getElementById("form-error-message");
+const emailError = document.getElementById("form-error-email-message")
+var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
 menuButton.addEventListener("click", toggleMobNav);
 contactButton.addEventListener("click", openContactWindow);
@@ -36,9 +38,15 @@ function closeWindow() {
 }
 
 function messageSent() {
+
 	function displayErrorMessage(){
 		formError.classList.remove("invisible");
 		formError.classList.add("visible");
+	}
+
+	function displayEmailError(){
+		emailError.classList.remove("invisible");
+		emailError.classList.add("visible");
 	}
 
 	if (username.value.length == 0){
@@ -49,6 +57,9 @@ function messageSent() {
 	} else {
 	if (usermessage.value.length == 0){
 		displayErrorMessage();
+	} else {
+	if (!useremail.value.match(mailformat)){
+		displayEmailError();
 	} else {
 
 	contactWindow.classList.remove("visible");
@@ -62,6 +73,8 @@ function messageSent() {
 	contactForm.reset();
 	formError.classList.remove("visible");
 	formError.classList.add("invisible");
+	emailError.classList.remove("visible");
+	emailError.classList.add("invisible");
 	};
 }}
-}
+}}
