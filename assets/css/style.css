@@ -55,6 +55,7 @@ p a:hover {
 }
 
 #visit {
+    opacity:0.8;
     color:rgba(103, 19, 29);
     font-size:2.5rem;
     font-weight:500;
@@ -64,6 +65,7 @@ p a:hover {
 }
 
 #galway {
+    opacity:1;
     color:royalblue;
     text-shadow: 0px 0px 2px rgba(255,255,255,1);
     font-size:2.5rem;
