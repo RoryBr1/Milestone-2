@@ -320,7 +320,7 @@ The site was also tested in Chrome Developer Tools with the console open to test
 
 After the above testing, the developer is confident that the site meets the needs of the User Stories without error or experience interruption.
 
-    <hr>
+<hr>
 
 ## Feedback
 The site was shown to peers and fellow developers who were encouraged to interact with the site and provide their feedback. Overall response from users was positive and no new bugs were encountered. Suggestions were noted and may be included in [Future Features](https://github.com/RoryBr1/Milestone-2/blob/master/readme.md#future-features) .
